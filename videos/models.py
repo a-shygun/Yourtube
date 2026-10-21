@@ -4,18 +4,29 @@ from django.conf import settings
 from django.db import models
 
 from django.contrib.auth.models import User
+from helper.media_location import get_media_root
 
 
 def media_file_path(relative_path):
     if not relative_path:
         return None
-    media_root = Path(settings.MEDIA_ROOT).resolve()
-    file_path = (media_root.parent / relative_path).resolve()
+    media_root = get_media_root()
+    candidate = (media_root / relative_path).resolve()
     try:
-        file_path.relative_to(media_root)
+        candidate.relative_to(media_root)
     except ValueError:
         return None
-    return file_path if file_path.is_file() else None
+    if candidate.is_file():
+        return candidate
+
+    # Older database rows stored paths from the project root, such as media/video.mp4.
+    legacy_root = Path(settings.MEDIA_ROOT).resolve()
+    legacy = (Path(settings.BASE_DIR) / relative_path).resolve()
+    try:
+        legacy.relative_to(legacy_root)
+    except ValueError:
+        return None
+    return legacy if legacy.is_file() else None
 
 
 class Channel(models.Model):

@@ -14,6 +14,7 @@ from django.db import transaction
 from django.utils.dateparse import parse_datetime
 
 from accounts.models import Account
+from helper.media_location import get_media_root
 from videos.models import Category, Channel, Comment, Playlist, Tag, Video
 
 
@@ -38,7 +39,7 @@ def local_file(info_path, suffixes):
 
 
 def relative_media_path(path):
-    return path.relative_to(settings.BASE_DIR).as_posix() if path else ""
+    return path.relative_to(get_media_root()).as_posix() if path else ""
 
 
 def upload_day(value):
@@ -51,7 +52,7 @@ def upload_day(value):
 
 
 class Command(BaseCommand):
-    help = "Download a URL list with yt-dlp and import all media/*.info.json metadata."
+    help = "Download a URL list with yt-dlp and import metadata from the selected media folder."
 
     IMPORT_STEPS = [
         ("prepare", "Prepare import"),
@@ -62,7 +63,7 @@ class Command(BaseCommand):
         ("channels", "Prepare channels and playlists"),
         ("videos", "Add videos to the library"),
         ("comments", "Add comments and replies"),
-        ("reconcile", "Remove videos no longer in media/"),
+        ("reconcile", "Remove videos no longer in the selected folder"),
         ("finish", "Finish up"),
     ]
 
@@ -73,7 +74,7 @@ class Command(BaseCommand):
         parser.add_argument("--history-file", type=Path, help=argparse.SUPPRESS)
 
     def handle(self, *args, **options):
-        media_root = Path(settings.MEDIA_ROOT)
+        media_root = get_media_root()
         media_root.mkdir(parents=True, exist_ok=True)
         status_file = options.get("status_file")
         self.history_file = options.get("history_file")
@@ -123,7 +124,7 @@ class Command(BaseCommand):
                 raise CommandError("yt-dlp failed. Check the URLs and your yt-dlp installation, then retry; existing files were kept.")
             self.update_stage(status_file, "download", "yt-dlp finished downloading the requested items.", state="complete")
         else:
-            self.update_stage(status_file, "download", "Skipped; importing files already present in media/.", state="complete")
+            self.update_stage(status_file, "download", "Skipped; importing files already present in the selected folder.", state="complete")
 
         try:
             self.set_stage(status_file, "structure", "Cleaning metadata and incomplete or duplicate media files.")
@@ -137,10 +138,10 @@ class Command(BaseCommand):
             self.write_status(status_file, state="failed", message=f"Media preparation failed: {error}")
             raise
 
-        self.set_stage(status_file, "scan", "Searching media/ for yt-dlp .info.json files.")
+        self.set_stage(status_file, "scan", "Searching the selected folder for yt-dlp .info.json files.")
         infos = metadata_files(media_root)
         if not infos:
-            self.write_status(status_file, state="failed", message="No yt-dlp .info.json files were found under media/.")
+            self.write_status(status_file, state="failed", message="No yt-dlp .info.json files were found in the selected folder.")
             raise CommandError(f"No yt-dlp .info.json files found under {media_root}.")
         self.update_stage(status_file, "scan", f"Found {len(infos)} metadata file(s).", state="complete")
         try:
@@ -369,8 +370,8 @@ class Command(BaseCommand):
                 self.update_stage(status_file, "comments", f"Processed comments for {index} of {len(parsed)} videos ({comments_count} comments).")
 
         if not video_by_url:
-            raise CommandError("No valid videos were generated from media/; database records were left unchanged.")
-        self.set_stage(status_file, "reconcile", "Removing database videos whose metadata is no longer present in media/.")
+            raise CommandError("No valid videos were generated from the selected folder; database records were left unchanged.")
+        self.set_stage(status_file, "reconcile", "Removing database videos whose metadata is no longer present in the selected folder.")
         stale_videos = Video.objects.exclude(video_url__in=video_by_url)
         removed_count = stale_videos.count()
         stale_videos.delete()

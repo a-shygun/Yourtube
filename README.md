@@ -37,13 +37,15 @@ YouTube video files are large, so every user downloads their own library. Run Yo
 
 1. Sign in and open **Import library**.
 2. Make a plain text file with one video, playlist, or channel URL on each line. Blank lines and lines beginning with `#` are ignored.
-3. Choose the text file and select **Download and import**. YourTube downloads videos, thumbnails, and yt-dlp info JSON files under `media/`, then imports channels, playlists, videos, tags, categories, and comments into the local database.
+3. Enter the absolute path to a local media folder. It can be outside the repository or on an external drive, as long as the computer running YourTube can read and write it. Choose the text file and select **Download and import**. YourTube downloads videos, thumbnails, and yt-dlp info JSON files into that folder, then imports channels, playlists, videos, tags, categories, and comments into the local database.
+
+YourTube saves the selected directory for future imports and playback. The default is the project's `media/` folder. Changing directories does not move files; importing a different directory makes the database library reflect that directory's contents.
 
 The built-in downloader uses yt-dlp's `--write-info-json`, `--write-thumbnail`, `--convert-thumbnails jpg`, `--write-comments`, `--no-overwrites`, `--merge-output-format mp4`, and `--yes-playlist` options. It does not read the user's yt-dlp configuration file. Install yt-dlp in the same Python environment as Django; it is included in `requirements.txt`.
 
 ### Download manually with yt-dlp
 
-You can also use yt-dlp directly. Create `video-urls.txt` beside `media/`, with one URL per line. Install yt-dlp (for example, `brew install yt-dlp` on macOS), then create its configuration file:
+You can also use yt-dlp directly. Create `video-urls.txt` with one URL per line. Install yt-dlp (for example, `brew install yt-dlp` on macOS), then create its configuration file:
 
 ```sh
 mkdir -p ~/.config/yt-dlp
@@ -64,7 +66,7 @@ Paste these options into the config file. The browser-cookie option is optional;
 --no-write-subs
 --no-write-auto-subs
 --no-embed-subs
--o "media/%(title)s - %(channel)s/%(title)s.%(ext)s"
+-o "/absolute/path/to/your/media/%(title)s - %(channel)s/%(title)s.%(ext)s"
 ```
 
 This format prefers MP4 video with M4A audio up to 720p, prefers English audio, and falls back to compatible MP4 or WebM formats. `--playlist-end 50` limits a playlist or channel URL to its first 50 entries; remove that line to download every available entry. The comment option collects up to 50 comments per video. If your browser is not Safari, edit the cookie option or remove it.
@@ -75,7 +77,7 @@ Run yt-dlp on the URL list from the project directory:
 yt-dlp -a video-urls.txt
 ```
 
-When the downloads finish, sign in to YourTube, open **Import library**, and choose **Scan media/ and import**. This also works for compatible yt-dlp folders downloaded elsewhere: copy the folders into `media/` first and keep each video's `.info.json`, thumbnail, and media file together.
+Replace `/absolute/path/to/your/media` with the same absolute directory path entered on the **Import library** page. When downloads finish, enter that directory in YourTube and choose **Scan folder and import**. This also works for compatible yt-dlp folders downloaded elsewhere; point YourTube at the directory containing those folders and keep each video's `.info.json`, thumbnail, and media file together.
 
 ![Download and import instructions in YourTube](screenshots/import-guide.png)
 
@@ -84,21 +86,24 @@ When the downloads finish, sign in to YourTube, open **Import library**, and cho
 The output template above creates a folder for each video. Keep the info JSON and thumbnail beside the matching video file. The importer scans nested folders and accepts common video and thumbnail extensions.
 
 ```text
-Yourtube/
+Yourtube project/
 ├── manage.py
-├── db.sqlite3                 # created locally by Django
-├── media/
-│   ├── Video title - Channel/
-│   │   ├── Video title.mp4
-│   │   ├── Video title.info.json
-│   │   └── Video title.jpg
-│   └── Another video - Channel/
-│       ├── Another video.webm
-│       ├── Another video.info.json
-│       └── Another video.webp
-└── helper/
-    └── data/                  # generated import data; rebuilt on import
+├── db.sqlite3
+├── .library_media_root          # stores the selected absolute path
+└── helper/data/                  # generated import data
+
+Chosen media directory/           # default: Yourtube project/media/
+├── Video title - Channel/
+│   ├── Video title.mp4
+│   ├── Video title.info.json
+│   └── Video title.jpg
+└── Another video - Channel/
+    ├── Another video.webm
+    ├── Another video.info.json
+    └── Another video.webp
 ```
+
+By default, the chosen media directory is `Yourtube project/media/`. It can instead be anywhere YourTube can read and write, such as a folder on an external drive.
 
 Avoid renaming the sidecar files independently. Their shared filename lets the importer match metadata, thumbnail, and video. A valid `.info.json` is required for a video to be added to the database.
 
@@ -106,9 +111,9 @@ Avoid renaming the sidecar files independently. Their shared filename lets the i
 
 ## Local data and backups
 
-`db.sqlite3` contains local accounts, profiles, comments, and watch status. `media/` contains downloaded video files, thumbnails, metadata, and uploaded profile images. Both are excluded from Git and are not included in a clone. Back them up separately to preserve your library.
+`db.sqlite3` contains local accounts, profiles, comments, and watch status. The selected media directory contains downloaded videos, thumbnails, and metadata; it can be anywhere on the computer running YourTube. Account profile images remain under the project's Django media folder. The database and project media folder are excluded from Git. Back up the database and selected media directory separately to preserve your library.
 
-`helper/data/` contains generated fixture JSON used by the import helpers. The importer rebuilds it from `media/`.
+`helper/data/` contains generated fixture JSON used by the import helpers. The importer rebuilds it from the selected media directory. YourTube saves the chosen path in the ignored `.library_media_root` file in the project root.
 
 ## Configuration
 

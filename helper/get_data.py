@@ -1,12 +1,16 @@
 """Build Django fixture files from yt-dlp metadata in media/."""
 
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-MEDIA_ROOT = PROJECT_ROOT / "media"
+sys.path.insert(0, str(PROJECT_ROOT))
+from helper.media_location import get_media_root
+
+MEDIA_ROOT = get_media_root()
 DATA_ROOT = PROJECT_ROOT / "helper" / "data"
 PASSWORD = "pbkdf2_sha256$1500000$YOno61gdBqm7VlMFeD5BWx$RvuRw2OCywP1stm3HNYJLDfNlKoK3ZyE2kBz/Nd9Hrc="
 
@@ -143,8 +147,8 @@ def build_fixtures():
         playlist_url = item.get("playlist_webpage_url")
         fields = {
             "title": item.get("title") or video_url,
-            "video_loc": video_path.relative_to(PROJECT_ROOT).as_posix() if video_path else "",
-            "thumbnail_loc": thumbnail_path.relative_to(PROJECT_ROOT).as_posix() if thumbnail_path else "",
+            "video_loc": video_path.relative_to(MEDIA_ROOT).as_posix() if video_path else "",
+            "thumbnail_loc": thumbnail_path.relative_to(MEDIA_ROOT).as_posix() if thumbnail_path else "",
             "thumbnail_url": item.get("thumbnail") or "https://www.youtube.com/img/desktop/yt_1200.png",
             "description": item.get("description") or "",
             "duration": item["duration"],

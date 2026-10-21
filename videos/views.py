@@ -1,5 +1,7 @@
 from pathlib import Path
 import json
+import mimetypes
+import os
 import subprocess
 import sys
 from urllib.parse import parse_qs, urlparse
@@ -10,15 +12,16 @@ from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.db.models import Prefetch
 from django.core.management import call_command
-from django.http import HttpResponse, StreamingHttpResponse
+from django.http import FileResponse, HttpResponse, StreamingHttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils.dateparse import parse_datetime
 from django.utils import timezone
-from django.views.decorators.http import require_POST
+from django.views.decorators.http import require_GET, require_POST
 from django.views.generic import DetailView, ListView
 
 from .models import Category, Channel, Comment, Playlist, Video, media_file_path
 from .forms import CommentForm
+from helper.media_location import get_media_root, set_media_root
 
 
 def local_video_file(video):
@@ -45,10 +48,10 @@ def youtube_embed_url(video_url):
 
 @login_required(login_url="login")
 def library_import(request):
-    media_root = Path(settings.MEDIA_ROOT)
-    media_root.mkdir(parents=True, exist_ok=True)
-    status_path = media_root / f".import-status-{request.user.pk}.json"
-    history_path = media_root / f".import-history-{request.user.pk}.json"
+    state_root = Path(settings.MEDIA_ROOT)
+    state_root.mkdir(parents=True, exist_ok=True)
+    status_path = state_root / f".import-status-{request.user.pk}.json"
+    history_path = state_root / f".import-history-{request.user.pk}.json"
     if request.method == "POST":
         try:
             current_status = json.loads(status_path.read_text(encoding="utf-8"))
@@ -58,12 +61,28 @@ def library_import(request):
             messages.error(request, "An import is already running. Check this page again in a moment.")
             return redirect("library-import")
         uploaded = request.FILES.get("url_file")
+        requested_path = request.POST.get("media_directory", "").strip() or str(get_media_root())
+        try:
+            selected_root = Path(requested_path).expanduser()
+            if not selected_root.is_absolute():
+                raise ValueError("Enter an absolute path, such as /Volumes/Drive/YouTube media.")
+            selected_root = selected_root.resolve()
+            project_root = Path(settings.BASE_DIR).resolve()
+            if selected_root == Path(selected_root.anchor) or selected_root == project_root or project_root.is_relative_to(selected_root):
+                raise ValueError("Choose a media folder that does not contain the YourTube project.")
+            if not selected_root.is_dir():
+                raise ValueError("That directory does not exist or is not a folder. Create or mount it first.")
+            if not os.access(selected_root, os.R_OK | os.W_OK):
+                raise ValueError("YourTube needs read and write access to that folder.")
+        except (OSError, ValueError) as error:
+            messages.error(request, str(error))
+            return redirect("library-import")
         if uploaded:
             if not uploaded.name.lower().endswith(".txt"):
                 messages.error(request, "Choose a .txt file with one YouTube link per line.")
                 return redirect("library-import")
             links = uploaded.read().decode("utf-8-sig", errors="replace")
-            url_path = media_root / f".import-urls-{request.user.pk}.txt"
+            url_path = state_root / f".import-urls-{request.user.pk}.txt"
             url_path.write_text(links, encoding="utf-8")
             args = [sys.executable, str(settings.BASE_DIR / "manage.py"), "import_youtube",
                     "--urls", str(url_path), "--status-file", str(status_path),
@@ -73,15 +92,16 @@ def library_import(request):
                     "--no-download", "--status-file", str(status_path),
                     "--history-file", str(history_path)]
         else:
-            messages.error(request, "Choose a URL list, or import files already in media/.")
+            messages.error(request, "Choose a URL list, or import files already in the selected folder.")
             return redirect("library-import")
+        set_media_root(selected_root)
         status_path.write_text(json.dumps({
             "run_id": uuid4().hex,
             "started_at": timezone.now().isoformat(),
             "state": "running",
             "message": "Import starting",
         }), encoding="utf-8")
-        log_path = media_root / f".import-{request.user.pk}.log"
+        log_path = state_root / f".import-{request.user.pk}.log"
         with log_path.open("ab") as log_file:
             subprocess.Popen(args, cwd=settings.BASE_DIR, stdin=subprocess.DEVNULL,
                              stdout=log_file, stderr=subprocess.STDOUT,
@@ -109,10 +129,27 @@ def library_import(request):
     return render(request, "videos/library_import.html", {
         "status": status,
         "import_history": import_history,
+        "media_directory": str(get_media_root()),
         "video_count": Video.objects.count(),
         "playlist_count": Playlist.objects.count(),
         "channel_count": Channel.objects.count(),
     })
+
+
+@require_GET
+def library_media_file(request, relative_path):
+    """Serve only thumbnails referenced by a video or playlist record."""
+    referenced = (
+        Video.objects.filter(thumbnail_loc=relative_path).exists()
+        or Playlist.objects.filter(thumbnail_loc=relative_path).exists()
+    )
+    if not referenced:
+        return HttpResponse(status=404)
+    path = media_file_path(relative_path)
+    if not path:
+        return HttpResponse(status=404)
+    content_type = mimetypes.guess_type(path.name)[0] or "application/octet-stream"
+    return FileResponse(path.open("rb"), content_type=content_type)
 
 
 class VideoListView(ListView):

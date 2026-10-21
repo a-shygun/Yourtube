@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import (
     library_import,
+    library_media_file,
     stream_video,
     PlaylistDetailView,
     VideoListView,
@@ -13,6 +14,7 @@ from .views import (
 
 urlpatterns = [
     path("library/import/", library_import, name="library-import"),
+    path("library/media/<path:relative_path>/", library_media_file, name="library-media"),
     path("", VideoListView.as_view(), name="home"),
     path("category/<int:pk>/", CategoryVideosView.as_view(), name="category-videos"),
     path("channel/<int:pk>/", ChannelVideosView.as_view(), name="channel-videos"),

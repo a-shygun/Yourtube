@@ -63,7 +63,7 @@
         <article class="min-w-0">
           <a class="group relative block aspect-video overflow-hidden bg-surface-alt" href="{% url 'video-detail' item.id %}">
             {% if item.local_thumbnail_available %}
-              <img class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src="/{{ item.thumbnail_loc|urlencode:'/' }}" data-fallback="{{ item.thumbnail_url }}" onerror="var fallback=this.dataset.fallback;this.dataset.fallback='';if(fallback){this.src=fallback}else{this.onerror=null;this.src='{% static 'videos/img/video-placeholder.svg' %}'}" alt="{{ item.title }} thumbnail" loading="lazy" />
+              <img class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src="{% url 'library-media' item.thumbnail_loc %}" data-fallback="{{ item.thumbnail_url }}" onerror="var fallback=this.dataset.fallback;this.dataset.fallback='';if(fallback){this.src=fallback}else{this.onerror=null;this.src='{% static 'videos/img/video-placeholder.svg' %}'}" alt="{{ item.title }} thumbnail" loading="lazy" />
             {% elif item.thumbnail_url %}
               <img class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src="{{ item.thumbnail_url }}" data-fallback="{% static 'videos/img/video-placeholder.svg' %}" onerror="this.onerror=null;this.src=this.dataset.fallback" alt="{{ item.title }} thumbnail" loading="lazy" />
             {% else %}

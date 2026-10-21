@@ -1,9 +1,13 @@
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 project_root = Path(__file__).resolve().parents[1]
-root = project_root / "media"
+sys.path.insert(0, str(project_root))
+from helper.media_location import get_media_root
+
+root = get_media_root()
 VIDEO_KEYS_TO_DROP = set("""
 automatic_captions formats heatmap id channel_id age_limit playable_in_embed
 live_status media_type _format_sort_fields subtitles channel_url epoch was_live
@@ -58,7 +62,7 @@ def format_date(value):
 
 cleanup_media_files()
 
-for path in root.rglob("*.json"):
+for path in root.rglob("*.info.json"):
   try:
     data = json.loads(path.read_text(encoding="utf-8"))
   except json.JSONDecodeError:
@@ -102,7 +106,7 @@ for path in root.rglob("*.json"):
       None,
     )
     if thumbnail:
-      data["thumbnail_loc"] = str(thumbnail.relative_to(project_root))
+      data["thumbnail_loc"] = thumbnail.relative_to(root).as_posix()
 
   scalars = {key: value for key, value in data.items() if not isinstance(value, (list, dict))}
   nested = {key: data[key] for key in NESTED_ORDER if isinstance(data.get(key), (list, dict))}

@@ -10,7 +10,7 @@
       <div class="min-w-0">
         <div class="aspect-video overflow-hidden bg-black">
           {% if local_video_available %}
-            <video class="h-full w-full" controls preload="metadata" poster="{% if local_thumbnail_available %}/{{ object.thumbnail_loc|urlencode:'/' }}{% elif object.thumbnail_url %}{{ object.thumbnail_url }}{% else %}{% static 'videos/img/video-placeholder.svg' %}{% endif %}">
+            <video class="h-full w-full" controls preload="metadata" poster="{% if local_thumbnail_available %}{% url 'library-media' object.thumbnail_loc %}{% elif object.thumbnail_url %}{{ object.thumbnail_url }}{% else %}{% static 'videos/img/video-placeholder.svg' %}{% endif %}">
               <source src="{% url 'video-stream' object.pk %}" />Your browser cannot play this video. <a href="{% url 'video-stream' object.pk %}">Open the video file</a>.
             </video>
           {% elif youtube_embed_url %}

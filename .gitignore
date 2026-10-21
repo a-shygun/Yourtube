@@ -10,6 +10,7 @@ db.sqlite3-*
 .env
 .env.*
 !.env.example
+.library_media_root
 
 # User media, imports, and per-user import status/history
 media/**
