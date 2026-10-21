@@ -1,0 +1,104 @@
+{% extends 'videos/main.html' %}
+{% load static %}
+{% block title %}
+  {% if search_query %}
+    Search: {{ search_query }}
+  {% else %}
+    Discover
+  {% endif %}· YourTube
+{% endblock %}
+{% block content %}
+  <div class="mx-auto flex w-full max-w-[96rem] flex-col gap-5 px-4 py-6 sm:py-8 lg:flex-row lg:gap-6">
+    {% include 'videos/catalog_sidebar.html' %}
+    <div class="min-w-0 flex-1 py-2 sm:py-4">
+    {% if listing_type != 'home' %}
+      <a class="mb-5 inline-flex items-center gap-2 text-sm font-semibold text-muted hover:text-ink" href="{% url 'home' %}">← Back to home</a>
+    {% endif %}
+    <section class="mb-8 flex flex-wrap items-end justify-between gap-5 border-b border-line pb-6">
+      <div>
+        <p class="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-accent">
+          {% if search_query %}
+            SEARCH RESULTS
+          {% elif listing_type == 'category' %}
+            CATEGORY
+          {% elif listing_type == 'channel' %}
+            CHANNEL
+          {% else %}
+            DISCOVER
+          {% endif %}
+        </p>
+        <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
+          {% if search_query %}
+            Results for “{{ search_query }}”
+          {% elif listing_title %}
+            {{ listing_title }}
+          {% else %}
+            Discover something new.
+          {% endif %}
+        </h1>
+        <p class="mt-2 text-muted">{% if listing_type == 'category' %}Videos in this category.{% elif listing_type == 'channel' %}Videos from this channel.{% else %}Browse videos from your library.{% endif %}</p>
+      </div>
+      {% if paginator %}
+        <div class="flex flex-wrap items-center gap-3 text-sm text-muted">
+          <p>
+            <strong class="text-ink">{{ paginator.count }}</strong> videos
+          </p>
+          <form method="get" action="{% if listing_type == 'category' %}{% url 'category-videos' listing_id %}{% elif listing_type == 'channel' %}{% url 'channel-videos' listing_id %}{% else %}{% url 'home' %}{% endif %}" class="flex items-center">
+            {% if search_query %}
+              <input type="hidden" name="q" value="{{ search_query }}" />
+            {% endif %}
+            <label class="sr-only" for="sort-catalog">Sort videos</label>
+            <select id="sort-catalog" name="sort" class="border border-input-border bg-surface-alt px-3 py-2 text-ink focus:border-accent focus:ring-0">
+              <option value="latest"{% if sort_order == 'latest' %} selected{% endif %}>Latest</option>
+              <option value="oldest"{% if sort_order == 'oldest' %} selected{% endif %}>Oldest</option>
+              <option value="popular" {% if sort_order == 'popular' %}selected{% endif %}>Most popular</option>
+            </select>
+          </form>
+        </div>
+      {% endif %}
+    </section>
+
+    <section class="grid grid-cols-1 gap-x-5 gap-y-9 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {% for item in object_list %}
+        <article class="min-w-0">
+          <a class="group relative block aspect-video overflow-hidden bg-surface-alt" href="{% url 'video-detail' item.id %}">
+            {% if item.local_thumbnail_available %}
+              <img class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src="/{{ item.thumbnail_loc|urlencode:'/' }}" data-fallback="{{ item.thumbnail_url }}" onerror="var fallback=this.dataset.fallback;this.dataset.fallback='';if(fallback){this.src=fallback}else{this.onerror=null;this.src='{% static 'videos/img/video-placeholder.svg' %}'}" alt="{{ item.title }} thumbnail" loading="lazy" />
+            {% elif item.thumbnail_url %}
+              <img class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src="{{ item.thumbnail_url }}" data-fallback="{% static 'videos/img/video-placeholder.svg' %}" onerror="this.onerror=null;this.src=this.dataset.fallback" alt="{{ item.title }} thumbnail" loading="lazy" />
+            {% else %}
+              <img class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src="{% static 'videos/img/video-placeholder.svg' %}" alt="{{ item.title }} thumbnail unavailable" loading="lazy" />
+            {% endif %}
+            <span class="video-duration-badge absolute bottom-2 right-2 bg-black/80 px-2 py-1 text-xs font-semibold" data-video-duration="{{ item.duration }}">{{ item.duration }}</span>
+          </a>
+          <div class="pt-3">
+            <h2 class="line-clamp-2 text-base font-semibold leading-snug"><a class="hover:text-accent-light" href="{% url 'video-detail' item.id %}">{{ item.title }}</a></h2>
+            <a class="mt-1 block text-sm text-muted hover:text-ink" href="{% url 'channel-videos' item.channel_id %}">{{ item.channel_name }}</a>
+            <p class="mt-1 text-xs text-subtle">
+              <span data-compact-count="{{ item.view_count }}">{{ item.view_count }}</span> views · {{ item.date|date:'M j, Y' }}
+            </p>
+          </div>
+        </article>
+      {% empty %}
+        <div class="col-span-full border border-line bg-surface px-6 py-12 text-center">
+          <h2 class="text-xl font-semibold">
+            {% if search_query %}
+              No matching videos
+            {% else %}
+              Your next favorite video is on its way.
+            {% endif %}
+          </h2>
+          <p class="mt-2 text-muted">
+            {% if search_query %}
+              Try a different title or search term.
+            {% else %}
+              There aren’t any videos to show yet. Check back soon.
+            {% endif %}
+          </p>
+        </div>
+      {% endfor %}
+    </section>
+    {% include 'videos/paginator.html' %}
+    </div>
+  </div>
+{% endblock %}

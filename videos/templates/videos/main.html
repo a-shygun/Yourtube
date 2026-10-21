@@ -1,0 +1,240 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      tailwind = {
+        config: {
+          theme: {
+            extend: {
+              colors: {
+                paper: 'var(--paper)',
+                surface: 'var(--surface)',
+                'surface-alt': 'var(--surface-alt)',
+                'surface-hover': 'var(--surface-hover)',
+                line: 'var(--line)',
+                ink: 'var(--ink)',
+                muted: 'var(--muted)',
+                subtle: 'var(--subtle)',
+                soft: 'var(--soft)',
+                accent: 'var(--accent)',
+                'accent-hover': 'var(--accent-hover)',
+                'accent-light': 'var(--accent-light)',
+                'input-border': 'var(--input-border)',
+                focus: 'var(--focus)'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        color-scheme: dark;
+        --paper: #101112;
+        --surface: #151618;
+        --surface-alt: #191a1d;
+        --surface-hover: #24262a;
+        --line: #303236;
+        --ink: #f2f2f3;
+        --muted: #a1a2a6;
+        --subtle: #85878d;
+        --soft: #c7c8cb;
+        --accent: #4d7dff;
+        --accent-hover: #3d6de9;
+        --accent-light: #7da0ff;
+        --input-border: #37393e;
+        --focus: #8caaff;
+        --hover-accent: #f0442e;
+      }
+      :root[data-theme='light'] {
+        color-scheme: light;
+        --paper: #fff;
+        --surface: #fff;
+        --surface-alt: #f1f2f4;
+        --surface-hover: #e7e8eb;
+        --line: #b8bbc1;
+        --ink: #17181a;
+        --muted: #64666b;
+        --subtle: #73757a;
+        --soft: #37393e;
+        --accent: #315fda;
+        --accent-hover: #254dbc;
+        --accent-light: #315fda;
+        --input-border: #aeb2b9;
+        --focus: #315fda;
+      }
+      .site-header {
+        background-color: var(--paper);
+      }
+      .category-chip {
+        background-color: var(--accent);
+        color: #fff;
+      }
+      .tag-chip {
+        background-color: var(--accent-hover);
+        color: #fff;
+      }
+      a:hover,
+      button:hover {
+        color: var(--hover-accent) !important;
+        border-color: var(--hover-accent) !important;
+      }
+      input:hover,
+      input:focus,
+      select:hover,
+      select:focus,
+      textarea:hover,
+      textarea:focus {
+        color: var(--hover-accent) !important;
+        border-color: var(--hover-accent) !important;
+        outline: none !important;
+        box-shadow: none !important;
+      }
+      img[alt$=' profile'],
+      img[alt$=' profile picture'] {
+        border-radius: 0 !important;
+      }
+      .video-recommendation-title {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+      .video-recommendation-thumbnail {
+        aspect-ratio: 16 / 9;
+        height: auto;
+      }
+      .video-duration-badge,
+      a:hover .video-duration-badge {
+        color: #fff !important;
+      }
+      .scrollbar-hidden {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+      }
+      .theme-switch {
+        position: relative;
+        display: inline-flex;
+        width: 2.25rem;
+        height: 1.25rem;
+        flex-shrink: 0;
+        align-items: center;
+        border-radius: 9999px;
+        background: #4b4d52;
+        transition: background-color 160ms ease;
+      }
+      .theme-switch-knob {
+        position: absolute;
+        left: 3px;
+        width: 14px;
+        height: 14px;
+        border-radius: 9999px;
+        background: #fff;
+        transition: transform 160ms ease;
+      }
+      :root[data-theme='light'] .theme-switch {
+        background: var(--accent);
+      }
+      :root[data-theme='light'] .theme-switch-knob {
+        transform: translateX(16px);
+      }
+      #account-menu-panel a,
+      #account-menu-panel button:not(.account-menu-logout) {
+        color: #fff;
+      }
+      #account-menu-panel a:hover,
+      #account-menu-panel button:not(.account-menu-logout):hover {
+        background: #292929;
+        color: #fff !important;
+      }
+      #account-menu-panel .account-menu-logout,
+      #account-menu-panel .account-menu-logout:hover {
+        color: #ff5757 !important;
+      }
+      #account-menu-panel .account-menu-logout:hover {
+        background: #292929;
+      }
+    </style>
+    <script src="{% static 'videos/js/main.js' %}?v=15" defer></script>
+    <title>
+      {% block title %}
+        YourTube
+      {% endblock %}
+    </title>
+  </head>
+  <body class="min-h-screen bg-paper text-ink antialiased">
+    <header class="site-header sticky top-0 z-20 border-b border-line">
+      <div class="mx-auto flex min-h-14 w-full max-w-[96rem] flex-wrap items-center gap-3 px-4 py-2 sm:flex-nowrap sm:gap-4">
+        <a href="{% url 'home' %}" class="shrink-0 text-lg font-bold tracking-tight hover:text-accent">YourTube</a>
+        <form method="get" action="{% url 'home' %}" role="search" class="order-3 flex w-full sm:order-none sm:mx-auto sm:max-w-2xl">
+          <label for="site-search" class="sr-only">Search videos and playlists</label>
+          <input id="site-search" name="q" type="search" value="{{ request.GET.q|default:'' }}" placeholder="Search videos and playlists" class="min-w-0 flex-1 border border-r-0 border-input-border bg-surface-alt px-4 py-1.5 text-sm text-ink outline-none placeholder:text-subtle focus:border-accent focus:ring-0" />
+          <button type="submit" aria-label="Search" class="border border-input-border bg-surface-hover px-4 text-soft hover:bg-surface-hover focus:outline-none focus:ring-2 focus:ring-accent">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="10.8" cy="10.8" r="6.8"></circle>
+              <path d="m16 16 4.5 4.5"></path>
+            </svg>
+          </button>
+        </form>
+        <nav class="ml-auto flex min-w-0 max-w-full flex-wrap items-center justify-end gap-x-2.5 gap-y-2 text-xs font-bold uppercase tracking-wider text-muted sm:ml-0 sm:flex-nowrap sm:gap-3">
+          {% if user.is_authenticated %}
+            <div id="account-menu" class="relative normal-case tracking-normal">
+              <button id="account-menu-toggle" type="button" class="flex max-w-56 items-center gap-2 border border-line bg-surface px-2 py-1.5 text-sm font-semibold hover:bg-surface-hover" aria-haspopup="true" aria-expanded="false" aria-controls="account-menu-panel">
+              {% if user.account.profile_image %}
+                <img class="h-8 w-8 shrink-0 object-cover" src="{{ user.account.profile_image.url }}" alt="" />
+              {% elif user.account.image_url %}
+                <img class="h-8 w-8 shrink-0 object-cover" src="{{ user.account.image_url }}" alt="" />
+              {% else %}
+                <img class="h-8 w-8 shrink-0 object-cover" src="{% static 'videos/img/default-avatar.svg' %}" alt="" />
+              {% endif %}
+                <span class="truncate">{{ user.username }}</span>
+                <svg class="h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.17l3.71-3.94a.75.75 0 1 1 1.08 1.04l-4.25 4.5a.75.75 0 0 1-1.08 0l-4.25-4.5a.75.75 0 0 1 .02-1.06Z" clip-rule="evenodd" /></svg>
+              </button>
+              <div id="account-menu-panel" class="absolute right-0 z-30 mt-2 w-52 border border-line p-2 text-sm shadow-xl" style="background-color: #121212" role="menu" aria-labelledby="account-menu-toggle" hidden>
+                <a class="block px-3 py-2" role="menuitem" href="{% url 'profile' %}">Profile</a>
+                <a class="block px-3 py-2" role="menuitem" href="{% url 'library-import' %}">Import</a>
+                <button id="theme-toggle" type="button" role="menuitemcheckbox" aria-checked="false" class="flex w-full items-center justify-between px-3 py-2 text-left">
+                  <span>Light mode</span>
+                  <span class="theme-switch" aria-hidden="true"><span class="theme-switch-knob"></span></span>
+                </button>
+                <form class="mt-1 border-t border-line pt-1" method="post" action="{% url 'logout' %}" role="presentation">
+                  {% csrf_token %}<button class="account-menu-logout block w-full px-3 py-2 text-left" role="menuitem" type="submit">Logout</button>
+                </form>
+              </div>
+            </div>
+          {% else %}
+            <button id="theme-toggle" type="button" class="inline-flex items-center justify-center border border-line p-1.5 text-muted hover:bg-surface-hover" aria-label="Toggle light mode" title="Toggle light mode" aria-pressed="false">
+              <svg class="h-5 w-5" data-theme-icon="light" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+              <svg class="h-5 w-5" data-theme-icon="dark" style="display:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"></path></svg>
+            </button>
+            <a class="hover:text-ink" href="{% url 'login' %}?next={{ request.get_full_path|urlencode }}">Log in</a>
+            <a class="hover:text-ink" href="{% url 'register' %}">Register</a>
+          {% endif %}
+        </nav>
+      </div>
+    </header>
+    <main class="min-h-[calc(100vh-9rem)]">
+      {% if messages %}
+        <div class="mx-auto mt-4 w-full max-w-[96rem] space-y-2 px-4">
+          {% for message in messages %}
+            <p class="border border-line bg-surface-alt px-4 py-3 text-sm text-soft">{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% block content %}
+      {% endblock %}
+    </main>
+    <footer class="border-t border-line text-sm text-subtle">
+      <div class="mx-auto flex w-full max-w-[96rem] justify-between px-4 py-5">
+        <span class="font-bold text-ink">YourTube</span><span>Ideas worth watching.</span>
+      </div>
+    </footer>
+  </body>
+</html>

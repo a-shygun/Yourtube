@@ -1,0 +1,69 @@
+{% extends 'videos/main.html' %}
+{% load static %}
+{% block title %}
+  {{ object.name }} · YourTube
+{% endblock %}
+{% block content %}
+  <div class="mx-auto w-full max-w-7xl px-4 py-8 sm:py-10">
+    <a class="text-sm text-muted hover:text-ink" href="{% url 'home' %}">← Back to discover</a>
+    <div class="mt-6 grid items-start gap-8 lg:grid-cols-[minmax(18rem,0.8fr)_minmax(0,2fr)]">
+      <aside class="border border-line bg-surface p-4 sm:p-6 lg:sticky lg:top-24">
+        {% if object.local_thumbnail_available %}
+          <img class="aspect-video w-full object-cover" src="/{{ object.thumbnail_loc|urlencode:'/' }}" data-fallback="{% static 'videos/img/video-placeholder.svg' %}" onerror="this.onerror=null;this.src=this.dataset.fallback" alt="{{ object.name }} playlist thumbnail" />
+        {% else %}
+          {% with first_video=video_list|first %}
+            {% if first_video %}
+              {% if first_video.local_thumbnail_available %}
+                <img class="aspect-video w-full object-cover" src="/{{ first_video.thumbnail_loc|urlencode:'/' }}" data-fallback="{{ first_video.thumbnail_url }}" onerror="var fallback=this.dataset.fallback;this.dataset.fallback='';if(fallback){this.src=fallback}else{this.onerror=null;this.src='{% static 'videos/img/video-placeholder.svg' %}'}" alt="{{ object.name }} playlist thumbnail" />
+              {% elif first_video.thumbnail_url %}
+                <img class="aspect-video w-full object-cover" src="{{ first_video.thumbnail_url }}" data-fallback="{% static 'videos/img/video-placeholder.svg' %}" onerror="this.onerror=null;this.src=this.dataset.fallback" alt="{{ object.name }} playlist thumbnail" />
+              {% else %}
+                <img class="aspect-video w-full object-cover" src="{% static 'videos/img/video-placeholder.svg' %}" alt="{{ object.name }} playlist thumbnail unavailable" />
+              {% endif %}
+            {% else %}
+              <img class="aspect-video w-full object-cover" src="{% static 'videos/img/video-placeholder.svg' %}" alt="{{ object.name }} playlist thumbnail unavailable" />
+            {% endif %}
+          {% endwith %}
+        {% endif %}
+        <p class="mt-5 text-xs font-bold uppercase tracking-[0.2em] text-accent">PLAYLIST</p>
+        <h1 class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">{{ object.name }}</h1>
+        {% if object.description %}
+          <div class="mt-4">
+            <p class="whitespace-pre-line text-sm leading-relaxed text-soft line-clamp-5" data-expandable-text>{{ object.description }}</p><button class="mt-3 text-sm font-semibold text-accent-light hover:text-ink" type="button" data-expand-toggle hidden aria-expanded="false">View more</button>
+          </div>
+        {% endif %}
+        <p class="mt-4 text-sm text-muted">
+          {{ object.video_count }} videos · <span data-compact-count="{{ object.view_count }}">{{ object.view_count }}</span> views
+        </p>
+        <p class="mt-2 text-sm text-muted">Playlist by {{ object.creator.username }}</p>
+        <a class="mt-4 inline-block text-sm font-semibold text-accent-light hover:text-ink" href="{{ object.url }}" target="_blank" rel="noopener noreferrer">Open playlist on YouTube ↗</a>
+      </aside>
+
+      <section class="min-w-0 space-y-4">
+        {% for video in video_list %}
+          <article class="grid items-start gap-4 border border-line bg-surface p-3 sm:grid-cols-[minmax(12rem,0.8fr)_minmax(0,1.5fr)] sm:gap-6 sm:p-4">
+            <a class="relative block aspect-video w-full overflow-hidden bg-surface-alt" href="{% url 'video-detail' video.id %}">
+              {% if video.local_thumbnail_available %}
+                <img class="h-full w-full object-cover" src="/{{ video.thumbnail_loc|urlencode:'/' }}" data-fallback="{{ video.thumbnail_url }}" onerror="var fallback=this.dataset.fallback;this.dataset.fallback='';if(fallback){this.src=fallback}else{this.onerror=null;this.src='{% static 'videos/img/video-placeholder.svg' %}'}" alt="{{ video.title }} thumbnail" loading="lazy" />
+              {% elif video.thumbnail_url %}
+                <img class="h-full w-full object-cover" src="{{ video.thumbnail_url }}" data-fallback="{% static 'videos/img/video-placeholder.svg' %}" onerror="this.onerror=null;this.src=this.dataset.fallback" alt="{{ video.title }} thumbnail" loading="lazy" />
+              {% else %}
+                <img class="h-full w-full object-cover" src="{% static 'videos/img/video-placeholder.svg' %}" alt="{{ video.title }} thumbnail unavailable" loading="lazy" />
+              {% endif %}
+              <span class="video-duration-badge absolute bottom-2 right-2 bg-black/80 px-2 py-1 text-xs" data-video-duration="{{ video.duration }}">{{ video.duration }}</span>
+            </a>
+            <div class="min-w-0 py-1">
+              <h3 class="line-clamp-2 text-lg font-semibold leading-snug"><a class="hover:text-accent-light" href="{% url 'video-detail' video.id %}">{{ video.position_in_playlist|default:forloop.counter }}. {{ video.title }}</a></h3>
+              <a class="mt-1 block text-sm text-muted hover:text-ink" href="{{ video.channel.url }}">{{ video.channel.name }}</a>
+              <p class="mt-1 text-xs text-subtle">
+                <span data-compact-count="{{ video.view_count }}">{{ video.view_count }}</span> views · {{ video.upload_date|date:'M j, Y' }}
+              </p>
+            </div>
+          </article>
+        {% empty %}
+          <p class="border border-line bg-surface p-6 text-muted">This playlist has no videos yet.</p>
+        {% endfor %}
+      </section>
+    </div>
+  </div>
+{% endblock %}

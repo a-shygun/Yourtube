@@ -1,0 +1,39 @@
+<aside id="catalog-sidebar" class="w-full min-w-0 shrink-0 transition-all duration-200 lg:w-64" aria-label="Library navigation">
+  <button type="button" data-catalog-sidebar-toggle aria-label="Collapse library menu" aria-expanded="true" class="flex min-w-0 w-full items-center justify-between border border-line bg-surface px-4 py-3 text-left text-sm font-semibold hover:bg-surface-hover" aria-controls="catalog-sidebar-content">
+    <span data-catalog-sidebar-label>Library</span>
+    <span aria-hidden="true" data-catalog-sidebar-icon>‹</span>
+  </button>
+  <div id="catalog-sidebar-content" data-catalog-sidebar-content class="mt-3 space-y-5 border border-line bg-surface p-4">
+    <nav aria-label="Main sections" class="space-y-1 text-sm">
+      <a class="block px-3 py-2 {% if listing_type == 'home' %}bg-surface-hover font-semibold text-ink{% else %}text-muted hover:bg-surface-hover{% endif %}" href="{% url 'home' %}">⌂ <span class="ml-2">Homepage</span></a>
+    </nav>
+
+    <section>
+      <h2 class="px-3 text-xs font-bold uppercase tracking-wider text-subtle">Channels</h2>
+      <nav class="ml-3 mt-2 max-h-64 space-y-1 overflow-y-auto border-l border-line pl-2 text-sm scrollbar-hidden" aria-label="Channels">
+        {% for channel in sidebar_channels %}
+          <a class="block truncate px-3 py-2 {% if listing_type == 'channel' and listing_id == channel.id %}bg-surface-hover font-semibold text-ink{% else %}text-muted hover:bg-surface-hover{% endif %}" href="{% url 'channel-videos' channel.id %}">{{ channel.name }}</a>
+        {% empty %}<p class="px-3 py-2 text-xs text-subtle">No channels yet.</p>{% endfor %}
+      </nav>
+    </section>
+
+    <section>
+      <h2 class="px-3 text-xs font-bold uppercase tracking-wider text-subtle">Categories</h2>
+      <nav class="ml-3 mt-2 max-h-64 space-y-1 overflow-y-auto border-l border-line pl-2 text-sm" aria-label="Categories">
+        {% for category in sidebar_categories %}
+          <a class="block truncate px-3 py-2 {% if listing_type == 'category' and listing_id == category.id %}bg-surface-hover font-semibold text-ink{% else %}text-muted hover:bg-surface-hover{% endif %}" href="{% url 'category-videos' category.id %}">{{ category.name }}</a>
+        {% empty %}<p class="px-3 py-2 text-xs text-subtle">No categories yet.</p>{% endfor %}
+      </nav>
+    </section>
+
+    <section>
+      <h2 class="px-3 text-xs font-bold uppercase tracking-wider text-subtle">Playlists</h2>
+      <nav class="ml-3 mt-2 space-y-1 border-l border-line pl-2 text-sm" aria-label="Playlists">
+        {% for playlist in sidebar_playlists %}
+          <a class="block truncate px-3 py-2 text-muted hover:bg-surface-hover" href="{% url 'playlist-detail' playlist.id %}">{{ playlist.name }}</a>
+        {% empty %}<p class="px-3 py-2 text-xs text-subtle">No playlists yet.</p>{% endfor %}
+      </nav>
+    </section>
+
+  </div>
+</aside>

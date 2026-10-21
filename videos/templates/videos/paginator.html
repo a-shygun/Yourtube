@@ -1,0 +1,25 @@
+{% if is_paginated %}
+  <nav aria-label="Pagination" class="mt-10 flex flex-wrap items-center justify-center gap-2 text-sm">
+    {% if page_obj.number > 1 %}
+      <a class="border border-line px-3 py-2 hover:bg-surface-alt" href="?{% if search_query %}q={{ search_query|urlencode }}&amp;{% endif %}{% if sort_order %}sort={{ sort_order|urlencode }}&amp;{% endif %}page=1">First</a>
+    {% else %}
+      <span class="border border-line px-3 py-2 text-subtle">First</span>
+    {% endif %}
+    {% if page_obj.has_previous %}
+      <a class="border border-line px-3 py-2 hover:bg-surface-alt" href="?{% if search_query %}q={{ search_query|urlencode }}&amp;{% endif %}{% if sort_order %}sort={{ sort_order|urlencode }}&amp;{% endif %}page={{ page_obj.previous_page_number }}">Previous</a>
+    {% else %}
+      <span class="border border-line px-3 py-2 text-subtle">Previous</span>
+    {% endif %}
+    <span class="px-3 text-muted">Page <strong class="text-ink">{{ page_obj.number }}</strong> of {{ page_obj.paginator.num_pages }}</span>
+    {% if page_obj.has_next %}
+      <a class="border border-line px-3 py-2 hover:bg-surface-alt" href="?{% if search_query %}q={{ search_query|urlencode }}&amp;{% endif %}{% if sort_order %}sort={{ sort_order|urlencode }}&amp;{% endif %}page={{ page_obj.next_page_number }}">Next</a>
+    {% else %}
+      <span class="border border-line px-3 py-2 text-subtle">Next</span>
+    {% endif %}
+    {% if page_obj.number < page_obj.paginator.num_pages %}
+      <a class="border border-line px-3 py-2 hover:bg-surface-alt" href="?{% if search_query %}q={{ search_query|urlencode }}&amp;{% endif %}{% if sort_order %}sort={{ sort_order|urlencode }}&amp;{% endif %}page={{ page_obj.paginator.num_pages }}">Last</a>
+    {% else %}
+      <span class="border border-line px-3 py-2 text-subtle">Last</span>
+    {% endif %}
+  </nav>
+{% endif %}

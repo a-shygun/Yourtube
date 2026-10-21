@@ -1,0 +1,63 @@
+{% extends 'videos/main.html' %}
+{% load static %}
+{% block title %}
+  Profile · YourTube
+{% endblock %}
+{% block content %}
+  <div class="mx-auto w-full max-w-[96rem] px-4 py-10 sm:py-12">
+    <p class="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-accent">PROFILE</p>
+    <section class="mb-10 flex flex-wrap items-center gap-5 border border-line bg-surface p-6 sm:p-8">
+      <div class="relative h-24 w-24 shrink-0 sm:h-28 sm:w-28">
+        {% if account.profile_image %}
+          <img class="h-full w-full border border-line object-cover" src="{{ account.profile_image.url }}" alt="{{ user.username }} profile" />
+        {% elif account.image_url %}
+          <img class="h-full w-full border border-line object-cover" src="{{ account.image_url }}" alt="{{ user.username }} profile" />
+        {% else %}
+          <img class="h-full w-full border border-line object-cover" src="{% static 'videos/img/default-avatar.svg' %}" alt="{{ user.username }} profile" />
+        {% endif %}
+        <form id="profile-image-form" class="absolute inset-0" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <input class="sr-only" type="file" name="profile_image" id="id_profile_image" accept="image/*" required />
+          <label class="absolute bottom-0 right-0 flex h-9 w-9 cursor-pointer items-center justify-center border border-line bg-accent text-white hover:bg-accent-hover" for="id_profile_image" title="Choose a profile picture">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="m15 5 4 4M4 20l4.5-1 10.8-10.8a2.1 2.1 0 0 0-3-3L5.5 16 4 20Z"></path>
+            </svg>
+            <span class="sr-only">Choose a profile picture</span>
+          </label>
+        </form>
+      </div>
+      <div class="min-w-0">
+        <h1 class="break-words text-2xl font-bold tracking-tight sm:text-3xl">{{ user.username }}</h1><p class="mt-1 text-sm text-subtle">Your activity on YourTube</p>
+        {% if form.profile_image.errors %}
+          <p class="mt-2 text-sm text-red-400">{{ form.profile_image.errors }}</p>
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="border border-line bg-surface p-5 sm:p-6">
+      <h2 class="mb-4 text-xl font-bold">Already watched</h2>
+      {% include 'accounts/profile_video_list.html' with videos=watched_videos empty_message="No watched videos yet." %}
+    </section>
+
+    <section class="mt-6 border border-line bg-surface p-5 sm:p-6">
+      <h2 class="mb-4 text-xl font-bold">To watch</h2>
+      {% include 'accounts/profile_video_list.html' with videos=to_watch_videos empty_message="Your watch list is empty." %}
+    </section>
+
+    <section class="mt-6 border border-line bg-surface p-5 sm:p-6">
+      <h2 class="mb-4 text-xl font-bold">Your comments</h2>
+      <div class="divide-y divide-line">
+        {% for comment in user_comments %}
+          <article class="py-4 first:pt-0 last:pb-0">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <a class="font-semibold hover:text-accent-light" href="{% url 'video-detail' comment.video_id %}">{{ comment.video.title }}</a><time class="text-xs text-subtle" datetime="{{ comment.timestamp|date:'c' }}">{{ comment.timestamp|date:'M j, Y' }}</time>
+            </div>
+            <p class="mt-2 whitespace-pre-line text-sm leading-relaxed text-soft">{{ comment.text }}</p>
+          </article>
+        {% empty %}
+          <p class="text-sm text-subtle">You haven’t commented on any videos.</p>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+{% endblock %}
