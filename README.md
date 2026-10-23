@@ -121,6 +121,14 @@ Local development defaults to Django debug mode and accepts requests from `local
 
 These instructions are for local use. A public deployment needs separate configuration for secrets, allowed hosts, HTTPS, static and media storage, and upload limits.
 
+## Deploy on Render
+
+The included `render.yaml` defines a single-instance Django web service with a 10 GB persistent disk. The service uses SQLite on that disk for the database and stores downloaded videos, thumbnails, import state, and profile images there. Render requires a paid web service for persistent disks; the disk is only available to that one service instance. Video downloads can quickly fill 10 GB, so increase the disk size in Render before importing a large library. Render runs the downloader on the server, and downloaded files are not saved to visitors' computers.
+
+To deploy, push this repository to a Git provider supported by Render, then in the Render Dashboard choose **New > Blueprint**, connect the repository, and apply the `render.yaml` blueprint. Render generates the Django secret, collects static files during the build, and applies database migrations when the service starts. Once the deploy is live, open the service URL and register an account.
+
+The persistent disk keeps the database and media across deploys. Back up the database and media separately if you need to preserve the library beyond the lifetime of the Render service.
+
 ## Screenshots
 
 ![YourTube library in light mode](screenshots/library-light.png)

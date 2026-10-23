@@ -1,11 +1,13 @@
 """Resolve the local media library directory chosen in the import page."""
 
 from pathlib import Path
+import os
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_MEDIA_ROOT = PROJECT_ROOT / "media"
-CONFIG_PATH = PROJECT_ROOT / ".library_media_root"
+DATA_ROOT = Path(os.environ.get("YOURTUBE_DATA_DIR", PROJECT_ROOT)).resolve()
+DEFAULT_MEDIA_ROOT = Path(os.environ.get("YOURTUBE_MEDIA_ROOT", DATA_ROOT / "media")).resolve()
+CONFIG_PATH = DATA_ROOT / ".library_media_root"
 
 
 def get_media_root():
