@@ -1,33 +1,22 @@
 {% extends 'videos/main.html' %}
+{% load crispy_forms_tags %}
 {% block title %}
   Log in · YourTube
 {% endblock %}
 {% block content %}
-  <section class="mx-auto my-14 w-[calc(100%_-_2rem)] max-w-md border border-line bg-surface p-6 sm:p-8">
-    <p class="text-xs font-bold uppercase tracking-[0.2em] text-accent">WELCOME BACK</p>
+  <section class="mx-auto my-12 max-w-md border border-line bg-surface p-6">
+    <p class="font-semibold text-accent">WELCOME BACK</p>
     <h1 class="mt-2 text-2xl font-bold">Log in</h1>
-    <form class="mt-6 space-y-5" method="post">
+    <form class="mt-5 space-y-4" method="post">
       {% csrf_token %}
       {% if next %}
         <input type="hidden" name="next" value="{{ next }}" />
       {% endif %}
-      {% for field in form %}
-        <div>
-          <label class="text-sm font-medium" for="{{ field.id_for_label }}">{{ field.label }}</label>{{ field }}{% if field.help_text %}
-            <p class="mt-1 text-xs text-subtle">{{ field.help_text|safe }}</p>
-          {% endif %}
-          {% for error in field.errors %}
-            <p class="mt-1 text-sm text-red-400">{{ error }}</p>
-          {% endfor %}
-        </div>
-      {% endfor %}
-      {% for error in form.non_field_errors %}
-        <p class="text-sm text-red-400">{{ error }}</p>
-      {% endfor %}
-      <button class="w-full bg-accent px-4 py-2.5 font-semibold text-white hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-focus" type="submit">Log in</button>
+      {{ form|crispy }}
+      <button class="bg-accent px-4 py-2 text-white hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-focus" type="submit">Log in</button>
     </form>
-    <p class="mt-6 text-sm text-muted">
-      New to YourTube? <a class="font-semibold text-accent-light hover:text-ink" href="{% url 'register' %}">Create an account</a>
+    <p class="mt-5 text-sm text-muted">
+      New to YourTube? <a class="text-accent-light hover:text-ink" href="{% url 'register' %}">Create an account</a>
     </p>
   </section>
 {% endblock %}

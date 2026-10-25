@@ -12,7 +12,8 @@
       <h2 class="px-3 text-xs font-bold uppercase tracking-wider text-subtle">Channels</h2>
       <nav class="ml-3 mt-2 max-h-64 space-y-1 overflow-y-auto border-l border-line pl-2 text-sm scrollbar-hidden" aria-label="Channels">
         {% for channel in sidebar_channels %}
-          <a class="block truncate px-3 py-2 {% if listing_type == 'channel' and listing_id == channel.id %}bg-surface-hover font-semibold text-ink{% else %}text-muted hover:bg-surface-hover{% endif %}" href="{% url 'channel-videos' channel.id %}">{{ channel.name }}</a>
+          {% url 'channel-videos' channel.id as item_url %}
+          {% include 'videos/catalog_item.html' with item_type='channel' item_id=channel.id item_label=channel.name item_url=item_url %}
         {% empty %}<p class="px-3 py-2 text-xs text-subtle">No channels yet.</p>{% endfor %}
       </nav>
     </section>
@@ -21,7 +22,8 @@
       <h2 class="px-3 text-xs font-bold uppercase tracking-wider text-subtle">Categories</h2>
       <nav class="ml-3 mt-2 max-h-64 space-y-1 overflow-y-auto border-l border-line pl-2 text-sm" aria-label="Categories">
         {% for category in sidebar_categories %}
-          <a class="block truncate px-3 py-2 {% if listing_type == 'category' and listing_id == category.id %}bg-surface-hover font-semibold text-ink{% else %}text-muted hover:bg-surface-hover{% endif %}" href="{% url 'category-videos' category.id %}">{{ category.name }}</a>
+          {% url 'category-videos' category.id as item_url %}
+          {% include 'videos/catalog_item.html' with item_type='category' item_id=category.id item_label=category.name item_url=item_url %}
         {% empty %}<p class="px-3 py-2 text-xs text-subtle">No categories yet.</p>{% endfor %}
       </nav>
     </section>

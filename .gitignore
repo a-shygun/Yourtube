@@ -12,13 +12,17 @@ db.sqlite3-*
 !.env.example
 .library_media_root
 
-# User media, imports, and per-user import status/history
-media/**
-!media/.gitkeep
+# User profile uploads and import logs
+docs/account_images/**
+!docs/account_images/.gitkeep
+docs/import_logs/**
+!docs/import_logs/.gitkeep
 
 # Generated fixture/model data can contain personal and imported metadata.
 helper/data/**
 !helper/data/.gitkeep
+videos/management/data/*.json
+!videos/management/data/.gitkeep
 
 # Local editor and operating-system files
 .vscode/

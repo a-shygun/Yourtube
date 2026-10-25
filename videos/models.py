@@ -1,32 +1,17 @@
-from pathlib import Path
-
-from django.conf import settings
 from django.db import models
 
 from django.contrib.auth.models import User
-from helper.media_location import get_media_root
+from videos.management.media_location import get_media_root
 
 
 def media_file_path(relative_path):
     if not relative_path:
         return None
     media_root = get_media_root()
+    if not media_root:
+        return None
     candidate = (media_root / relative_path).resolve()
-    try:
-        candidate.relative_to(media_root)
-    except ValueError:
-        return None
-    if candidate.is_file():
-        return candidate
-
-    # Older database rows stored paths from the project root, such as media/video.mp4.
-    legacy_root = Path(settings.MEDIA_ROOT).resolve()
-    legacy = (Path(settings.BASE_DIR) / relative_path).resolve()
-    try:
-        legacy.relative_to(legacy_root)
-    except ValueError:
-        return None
-    return legacy if legacy.is_file() else None
+    return candidate if candidate.is_relative_to(media_root) and candidate.is_file() else None
 
 
 class Channel(models.Model):
@@ -53,20 +38,9 @@ class Playlist(models.Model):
     def __str__(self):
         return self.name
 
-    @property
-    def local_thumbnail_available(self):
-        return media_file_path(self.thumbnail_loc) is not None
-
 
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
-
-    def __str__(self):
-        return self.name
-
-
-class Tag(models.Model):
-    name = models.CharField(max_length=200, unique=True)
 
     def __str__(self):
         return self.name
@@ -84,35 +58,29 @@ class Video(models.Model):
     comment_count = models.IntegerField()
     like_count = models.IntegerField(default=0)
     channel = models.ForeignKey(Channel, on_delete=models.CASCADE)
-    playlist = models.ForeignKey(
-        Playlist, on_delete=models.SET_NULL, null=True, blank=True
-    )
+    playlist = models.ForeignKey(Playlist, on_delete=models.SET_NULL, null=True, blank=True)
     upload_date = models.DateField()
     position_in_playlist = models.IntegerField(null=True, blank=True)
     resolution = models.CharField(max_length=200)
     categories = models.ManyToManyField(Category, blank=True)
-    tags = models.ManyToManyField(Tag, blank=True)
-    watched_by = models.ManyToManyField(User, related_name="watched_videos", blank=True)
-    to_watch_by = models.ManyToManyField(User, related_name="videos_to_watch", blank=True)
 
     def __str__(self):
         return self.title
 
-    @property
-    def local_video_available(self):
-        return media_file_path(self.video_loc) is not None
 
-    @property
-    def local_thumbnail_available(self):
-        return media_file_path(self.thumbnail_loc) is not None
+class VideoStatus(models.Model):
+    video = models.ForeignKey(Video, on_delete=models.CASCADE, related_name="user_statuses")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="video_statuses")
+    status = models.CharField(
+        max_length=10,
+        choices=(("watched", "Watched"), ("to-watch", "To watch")),
+    )
 
 
 class Comment(models.Model):
     source_id = models.CharField(max_length=200)
     video = models.ForeignKey(Video, on_delete=models.CASCADE)
-    parent = models.ForeignKey(
-        "self", on_delete=models.CASCADE, null=True, blank=True, related_name="replies"
-    )
+    parent = models.ForeignKey("self", on_delete=models.CASCADE, null=True, blank=True, related_name="replies")
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     text = models.TextField()
     like_count = models.PositiveIntegerField(default=0)
@@ -120,5 +88,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"{self.author.username}: {self.text[:40]}"
-
-

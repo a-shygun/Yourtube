@@ -51,12 +51,6 @@ document.querySelectorAll("[data-video-duration]").forEach((element) => {
   element.textContent = formatDuration(element.dataset.videoDuration);
 });
 
-const profileImageForm = document.querySelector("#profile-image-form");
-const profileImageInput = profileImageForm?.querySelector('input[type="file"]');
-profileImageInput?.addEventListener("change", () => {
-  if (profileImageInput.files.length) profileImageForm.requestSubmit();
-});
-
 const catalogSort = document.querySelector("#sort-catalog");
 catalogSort?.addEventListener("change", () => catalogSort.form?.requestSubmit());
 

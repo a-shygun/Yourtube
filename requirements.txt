@@ -1,5 +1,5 @@
-Django>=6.1,<6.2
-Pillow>=13,<14
-yt-dlp>=2025.1
-gunicorn>=23,<24
-whitenoise>=6.9,<7
+asgiref==3.12.1
+Django==6.1.2
+pillow==13.0.0
+django-crispy-forms
+crispy-tailwind

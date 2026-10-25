@@ -1,0 +1,36 @@
+/* Override Crispy Tailwind's default input colors and rounding. */
+input.textinput,
+input.passwordinput,
+input.emailinput,
+input.numberinput {
+  background-color: var(--surface-alt) !important;
+  border-radius: 0 !important;
+  color: var(--ink) !important;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--soft) !important;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.profile-upload {
+  max-width: 34rem;
+}
+
+.profile-upload label {
+  text-align: left;
+}
+
+.profile-upload input[type="file"] {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  border: 1px solid var(--input-border) !important;
+  background: var(--surface-alt) !important;
+  padding: 0.6rem;
+  color: var(--ink) !important;
+}
+

@@ -1,138 +1,38 @@
 {% extends 'videos/main.html' %}
 {% block title %}Import your library · YourTube{% endblock %}
 {% block content %}
-  {% if status and status.state == 'running' %}<meta http-equiv="refresh" content="3">{% endif %}
-  <div class="mx-auto w-full max-w-4xl px-4 py-10 sm:py-14">
-    <p class="text-xs font-bold uppercase tracking-[0.2em] text-accent">YOUR LOCAL LIBRARY</p>
-    <h1 class="mt-2 text-3xl font-bold tracking-tight">Bring in your YouTube files</h1>
-    <p class="mt-3 max-w-2xl leading-relaxed text-muted">YourTube reads and stores video files on the computer running this site. The hosted site cannot access folders on a visitor’s device, so run YourTube locally and choose a folder available to that computer.</p>
+  <div class="mx-auto w-full max-w-4xl px-4 py-10">
+    <p class="text-sm font-semibold text-accent">YOUR LOCAL LIBRARY</p>
+    <h1 class="mt-2 text-3xl font-bold">Refresh your library</h1>
+    <p class="mt-3 text-muted">Enter the folder where you keep your videos. YourTube cleans the yt-dlp metadata sidecars there and refreshes the database.</p>
 
-    <div class="mt-5 border border-line bg-surface-alt p-4 text-sm text-soft">
-      <strong class="text-ink">Current media folder</strong>
-      <p class="mt-1 break-all font-mono text-xs">{{ media_directory }}</p>
-    </div>
-
-    <div class="mt-7 grid gap-3 sm:grid-cols-3">
-      <div class="border border-line bg-surface p-4"><strong class="block text-2xl">{{ video_count }}</strong><span class="text-sm text-muted">videos in database</span></div>
-      <div class="border border-line bg-surface p-4"><strong class="block text-2xl">{{ playlist_count }}</strong><span class="text-sm text-muted">playlists</span></div>
-      <div class="border border-line bg-surface p-4"><strong class="block text-2xl">{{ channel_count }}</strong><span class="text-sm text-muted">channels</span></div>
-    </div>
-
-    <section class="mt-8 border border-line bg-surface p-5 sm:p-7">
-      <h2 class="text-xl font-semibold">Download with yt-dlp</h2>
-      <ol class="mt-4 space-y-6 text-sm leading-relaxed text-soft">
-        <li>
-          <strong class="block text-ink">1. Create a links file</strong>
-          <p class="mt-1">Create <code>video-urls.txt</code> and put one YouTube video, playlist, or channel URL on each line. The download and metadata files will be saved in the media folder selected below.</p>
-        </li>
-        <li>
-          <strong class="block text-ink">2. Install yt-dlp and open its config</strong>
-          <p class="mt-1">Run these commands in Terminal on your Mac. The config file is <code>~/.config/yt-dlp/config</code>.</p>
-          <pre class="mt-3 overflow-x-auto border border-line bg-surface-alt p-4 text-xs text-soft"><code>brew install yt-dlp
-mkdir -p ~/.config/yt-dlp
-nano ~/.config/yt-dlp/config</code></pre>
-          <p class="mt-2">Paste this configuration into the editor, then save and exit.</p>
-          <pre class="mt-3 overflow-x-auto border border-line bg-surface-alt p-4 text-xs text-soft"><code># Use Safari cookies or change to chrome
---cookies-from-browser safari
--f "bv[ext=mp4][height&lt;=720]+ba[ext=m4a][language^=en]/b[ext=mp4][height&lt;=720][language^=en]/bv[ext=webm][height&lt;=720]+ba[ext=webm][language^=en]/b[ext=webm][height&lt;=720][language^=en]"
---ignore-errors
---write-info-json
---write-comments
---extractor-args "youtube:max_comments=50"
---playlist-end 50
---write-thumbnail
---no-write-subs
---no-write-auto-subs
---no-embed-subs
--o "/absolute/path/to/your/media/%(title)s - %(channel)s/%(title)s.%(ext)s"</code></pre>
-        </li>
-        <li>
-          <strong class="block text-ink">3. Download the URLs</strong>
-          <p class="mt-1">For a manual download, run this loop from the YourTube project folder. Set the config output path to your chosen media folder.</p>
-          <pre class="mt-3 overflow-x-auto border border-line bg-surface-alt p-4 text-xs text-soft"><code>for url in $(grep -vE '^[[:space:]]*(#|$)' video-urls.txt); do
-  yt-dlp "$url"
-done</code></pre>
-        </li>
-        <li>
-          <strong class="block text-ink">4. Add the folders to YourTube</strong>
-          <p class="mt-1">Set yt-dlp’s output path to the same folder you enter in YourTube. Then click <strong>Scan folder and import</strong> below.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="mt-5 border border-line bg-surface p-5 sm:p-7">
-      <h2 class="text-xl font-semibold">Choose your media folder</h2>
-      <p class="mt-2 text-sm leading-relaxed text-muted">Enter the absolute path to an existing local folder as seen by the computer running YourTube. It can be outside the YourTube project, including an external drive. Choose the folder containing your video folders, not the drive root or a broad parent folder. YourTube needs read and write access because it normalizes yt-dlp metadata during import. The folder path is saved for later imports and video playback.</p>
-      <form method="post" class="mt-4">
+    <section class="mt-7 border border-line bg-surface p-5 sm:p-7">
+      <h2 class="text-xl font-semibold">Media folder</h2>
+      <p class="mt-2 text-sm text-muted">Enter an absolute path to an existing folder. YourTube remembers it for playback and future refreshes.</p>
+      <form method="post" action="{% url 'library-import' %}" class="mt-4">
         {% csrf_token %}
-        <label class="block text-sm font-semibold" for="existing-media-directory">Media directory path</label>
-        <input id="existing-media-directory" name="media_directory" type="text" value="{{ media_directory }}" placeholder="/Volumes/External Drive/YouTube videos" required class="mt-2 block w-full border border-input-border bg-surface-alt px-3 py-2 text-sm text-ink" />
-        <input type="hidden" name="import_existing" value="1" />
-        <button type="submit" class="mt-4 border border-line px-5 py-2.5 text-sm font-semibold hover:bg-surface-hover">Scan folder and import</button>
+        <label for="media-directory" class="block text-sm font-medium">Media folder path</label>
+        <input id="media-directory" name="media_directory" type="text" value="{{ media_directory }}" placeholder="/absolute/path/to/your/media-folder" class="mt-2 block w-full border border-line bg-surface px-3 py-2 font-mono text-sm" required>
+        <button type="submit" class="mt-4 border border-line px-5 py-2.5 text-sm font-semibold hover:bg-surface-hover">Save path and scan folder</button>
       </form>
     </section>
 
-    <section class="mt-5 border border-line bg-surface p-5 sm:p-7">
-      <h2 class="text-xl font-semibold">Download links to a chosen folder</h2>
-      <p class="mt-2 text-sm leading-relaxed text-muted">Enter the absolute destination folder path and upload your one-link-per-line text file. The directory must already exist and be writable on the computer running YourTube.</p>
-      <form method="post" enctype="multipart/form-data" class="mt-4 space-y-4">
-        {% csrf_token %}
-        <label class="block text-sm font-semibold" for="download-media-directory">Media directory path</label>
-        <input id="download-media-directory" name="media_directory" type="text" value="{{ media_directory }}" placeholder="/Volumes/External Drive/YouTube videos" required class="block w-full border border-input-border bg-surface-alt px-3 py-2 text-sm text-ink" />
-        <label class="block text-sm font-semibold" for="url-file">YouTube links (.txt)</label>
-        <input id="url-file" name="url_file" type="file" accept=".txt,text/plain" required class="block w-full border border-input-border bg-surface-alt p-3 text-sm text-ink" />
-        <button type="submit" class="border border-accent bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-hover">Download and import</button>
-      </form>
+    <section class="mt-7 border border-line bg-surface p-5 sm:p-7">
+      <h2 class="text-xl font-semibold">Download videos with yt-dlp</h2>
+      <p class="mt-2 text-sm text-muted">Install yt-dlp, then run this command in Terminal. Replace <code>/absolute/path/to/your/media-folder</code> with the same path above and <code>YOUTUBE_URL</code> with a video or playlist link. Wait for the download to finish before scanning.</p>
+      <pre class="mt-4 overflow-x-auto whitespace-pre-wrap break-words bg-surface-alt p-4 text-xs text-ink"><code>python3 -m pip install -U yt-dlp
+
+yt-dlp \
+  --yes-playlist \
+  --write-info-json \
+  --write-thumbnail \
+  --write-comments \
+  --clean-info-json \
+  -o "%(uploader)s/%(title)s [%(id)s].%(ext)s" \
+  -P "/absolute/path/to/your/media-folder" \
+  "YOUTUBE_URL"</code></pre>
+      <p class="mt-3 text-sm text-muted">The metadata and thumbnail files are saved beside each video. On every scan, YourTube removes unused yt-dlp fields, converts dates and comment timestamps, and then refreshes the database.</p>
     </section>
 
-    <p class="mt-5 text-xs leading-relaxed text-subtle">Downloads can be large. The importer skips files without valid video info JSON, and rerunning it updates matching video URLs instead of duplicating them. YouTube access and download behavior depend on your local network and yt-dlp version. By default, the media folder is <code>media/</code> inside this project.</p>
-
-    <section class="mt-8 border border-line bg-surface p-5 sm:p-7" aria-live="polite">
-      <h2 class="text-xl font-semibold">Import history</h2>
-
-      {% if status and status.state == 'running' %}
-        <div class="mt-4 border border-accent/50 bg-surface-alt p-4">
-          <div class="flex flex-wrap items-baseline justify-between gap-2">
-            <strong>Import in progress</strong>
-            <span class="text-xs text-subtle">{{ status.message }}</span>
-          </div>
-          {% if status.steps %}
-            <ol class="mt-4 space-y-3">
-              {% for step in status.steps %}
-                <li class="flex gap-3 text-sm">
-                  <span class="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center border border-line text-xs {% if step.state == 'complete' %}bg-accent text-white{% elif step.state == 'active' %}border-accent text-accent{% else %}text-subtle{% endif %}" aria-hidden="true">
-                    {% if step.state == 'complete' %}✓{% elif step.state == 'active' %}›{% else %}·{% endif %}
-                  </span>
-                  <span class="min-w-0">
-                    <strong class="block font-medium">{{ step.label }}</strong>
-                    {% if step.detail %}<span class="mt-0.5 block break-words text-xs leading-relaxed text-muted">{{ step.detail }}</span>{% endif %}
-                  </span>
-                </li>
-              {% endfor %}
-            </ol>
-          {% endif %}
-          <p class="mt-4 text-xs text-subtle">This page updates every few seconds. Large playlists may take a while.</p>
-        </div>
-      {% endif %}
-
-      {% if import_history %}
-        <ol class="mt-4 divide-y divide-line border-y border-line">
-          {% for entry in import_history %}
-            <li class="py-4">
-              <div class="flex flex-wrap items-baseline justify-between gap-2">
-                <strong>{{ entry.finished_at_display|default:"Import run" }}</strong>
-                <span class="text-xs font-semibold {% if entry.state == 'complete' %}text-accent{% else %}text-red-500{% endif %}">{{ entry.state|title }}</span>
-              </div>
-              <p class="mt-1 text-sm text-muted">{{ entry.message }}</p>
-              {% if entry.result %}
-                <p class="mt-2 text-xs text-subtle">{{ entry.result.videos }} videos · {{ entry.result.playlists }} playlists · {{ entry.result.channels }} channels · {{ entry.result.comments }} comments processed · {{ entry.result.removed_videos }} removed</p>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ol>
-      {% else %}
-        {% if status.state != 'running' %}<p class="mt-3 text-sm text-muted">No imports recorded yet.</p>{% endif %}
-      {% endif %}
-    </section>
   </div>
 {% endblock %}

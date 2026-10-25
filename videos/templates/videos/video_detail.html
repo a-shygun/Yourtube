@@ -1,5 +1,4 @@
 {% extends 'videos/main.html' %}
-{% load static %}
 {% block title %}
   {{ object.title }} · YourTube
 {% endblock %}
@@ -10,20 +9,18 @@
       <div class="min-w-0">
         <div class="aspect-video overflow-hidden bg-black">
           {% if local_video_available %}
-            <video class="h-full w-full" controls preload="metadata" poster="{% if local_thumbnail_available %}{% url 'library-media' object.thumbnail_loc %}{% elif object.thumbnail_url %}{{ object.thumbnail_url }}{% else %}{% static 'videos/img/video-placeholder.svg' %}{% endif %}">
+            <video class="h-full w-full"
+              controls
+              preload="metadata"
+              poster="{% url 'library-media' object.thumbnail_loc %}">
               <source src="{% url 'video-stream' object.pk %}" />Your browser cannot play this video. <a href="{% url 'video-stream' object.pk %}">Open the video file</a>.
             </video>
-          {% elif youtube_embed_url %}
-            <iframe class="h-full w-full" src="{{ youtube_embed_url }}" title="{{ object.title }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           {% else %}
             <p class="flex h-full items-center justify-center p-6 text-center text-muted">
-              The local video file and a valid YouTube link are unavailable.
+              Local video unavailable. <a class="ml-1 break-all text-accent-light hover:text-ink" href="{{ object.video_url }}" target="_blank" rel="noopener noreferrer">{{ object.video_url }}</a>
             </p>
           {% endif %}
         </div>
-        {% if not local_video_available and youtube_embed_url %}
-          <p class="mt-2 text-sm text-muted">Playing from YouTube because no local video file was found. <a class="text-accent-light hover:text-ink" href="{{ object.video_url }}" target="_blank" rel="noopener noreferrer">Open on YouTube</a></p>
-        {% endif %}
         <div class="py-5">
           <p class="text-xs font-bold uppercase tracking-[0.2em] text-accent">VIDEO</p>
           <h1 class="mt-2 text-2xl font-bold leading-tight tracking-tight sm:text-3xl">{{ object.title }}</h1>
@@ -35,15 +32,15 @@
             </div>
             <div class="flex flex-wrap gap-2">
               {% if user.is_authenticated %}
-                <form method="post" action="{% url 'video-watch-status' object.pk %}">
-                  {% csrf_token %}<input type="hidden" name="status" value="watched" /><button class="border px-4 py-2 text-sm font-semibold hover:bg-surface-hover {% if video_watched %}border-accent bg-accent text-white{% else %}border-input-border{% endif %}" type="submit" aria-pressed="{{ video_watched|yesno:'true,false' }}">
-                    {% if video_watched %}✓ Already watched{% else %}Already watched{% endif %}
-                  </button>
-                </form>
-                <form method="post" action="{% url 'video-watch-status' object.pk %}">
-                  {% csrf_token %}<input type="hidden" name="status" value="to-watch" /><button class="border px-4 py-2 text-sm font-semibold hover:bg-surface-hover {% if video_to_watch %}border-accent bg-accent text-white{% else %}border-input-border{% endif %}" type="submit" aria-pressed="{{ video_to_watch|yesno:'true,false' }}">
-                    {% if video_to_watch %}＋ To watch{% else %}To watch{% endif %}
-                  </button>
+                <form class="flex items-center gap-2" method="post" action="{% url 'video-status' object.pk %}">
+                  {% csrf_token %}
+                  <label class="sr-only" for="video-status">Video status</label>
+                  <select id="video-status" name="status" class="border border-input-border bg-surface-alt px-3 py-2 text-sm text-ink">
+                    <option value="" {% if not video_status %}selected{% endif %}>None</option>
+                    <option value="watched" {% if video_status == 'watched' %}selected{% endif %}>Watched</option>
+                    <option value="to-watch" {% if video_status == 'to-watch' %}selected{% endif %}>To watch</option>
+                  </select>
+                  <button class="border border-input-border px-4 py-2 text-sm font-semibold hover:bg-surface-hover" type="submit">Save</button>
                 </form>
               {% else %}
                 <a class="border border-input-border px-4 py-2 text-sm hover:bg-surface-hover" href="{% url 'login' %}?next={{ request.get_full_path|urlencode }}">Log in to save watch status</a>
@@ -66,24 +63,20 @@
           {% if user.is_authenticated %}
             <form class="mb-6 space-y-3" method="post" action="{% url 'video-comment' object.pk %}">
               {% csrf_token %}
-              {{ comment_form.text }}
+              <textarea name="text" rows="3" placeholder="Write a comment..." class="w-full border border-input-border bg-surface px-3 py-2 text-sm" required></textarea>
               <button class="border border-input-border px-4 py-2 text-sm font-semibold hover:bg-surface-hover" type="submit">Comment</button>
             </form>
           {% else %}
-            <p class="mb-6 text-sm text-muted"><a class="text-accent-light hover:text-ink" href="{% url 'login' %}?next={{ request.get_full_path|urlencode }}">Log in</a> to leave a comment.</p>
+            <p class="mb-6 text-sm text-muted">
+              <a class="text-accent-light hover:text-ink" href="{% url 'login' %}?next={{ request.get_full_path|urlencode }}">Log in</a> to leave a comment.
+            </p>
           {% endif %}
           {% if root_comments %}
             <div class="space-y-5">
               {% for comment in root_comments %}
                 <article>
                   <div class="flex gap-3">
-                    {% if comment.author.account.profile_image %}
-                      <img class="h-10 w-10 shrink-0 object-cover" src="{{ comment.author.account.profile_image.url }}" alt="{{ comment.author.username }} profile picture" />
-                    {% elif comment.author.account.image_url %}
-                      <img class="h-10 w-10 shrink-0 object-cover" src="{{ comment.author.account.image_url }}" alt="{{ comment.author.username }} profile picture" />
-                    {% else %}
-                      <img class="h-10 w-10 shrink-0 object-cover" src="{% static 'videos/img/default-avatar.svg' %}" alt="{{ comment.author.username }} profile picture" />
-                    {% endif %}
+                    {% include 'videos/avatar.html' with account=comment.author.account username=comment.author.username size='h-10 w-10' %}
                     <div class="min-w-0 flex-1">
                       <div class="flex flex-wrap items-baseline gap-x-3">
                         <strong class="text-sm">{{ comment.author.username }}</strong><time class="text-xs text-subtle" datetime="{{ comment.timestamp|date:'c' }}">{{ comment.timestamp|date:'M j, Y' }}</time>
@@ -95,13 +88,7 @@
                     <button class="ml-12 mt-3 text-sm font-semibold text-accent-light hover:text-ink" type="button" data-replies-toggle aria-controls="replies-{{ comment.pk }}" aria-expanded="false">View replies</button><div id="replies-{{ comment.pk }}" class="ml-8 mt-4 hidden space-y-4 border-l border-line pl-4 sm:ml-12 sm:pl-5" data-replies>
                       {% for reply in comment.reply_list %}
                         <div class="flex gap-3">
-                          {% if reply.author.account.profile_image %}
-                            <img class="h-8 w-8 shrink-0 object-cover" src="{{ reply.author.account.profile_image.url }}" alt="{{ reply.author.username }} profile picture" />
-                          {% elif reply.author.account.image_url %}
-                            <img class="h-8 w-8 shrink-0 object-cover" src="{{ reply.author.account.image_url }}" alt="{{ reply.author.username }} profile picture" />
-                          {% else %}
-                            <img class="h-8 w-8 shrink-0 object-cover" src="{% static 'videos/img/default-avatar.svg' %}" alt="{{ reply.author.username }} profile picture" />
-                          {% endif %}
+                          {% include 'videos/avatar.html' with account=reply.author.account username=reply.author.username size='h-8 w-8' %}
                           <div class="min-w-0 flex-1">
                             <div class="flex flex-wrap items-baseline gap-x-3">
                               <strong class="text-sm">{{ reply.author.username }}</strong><time class="text-xs text-subtle" datetime="{{ reply.timestamp|date:'c' }}">{{ reply.timestamp|date:'M j, Y' }}</time>
@@ -139,21 +126,13 @@
           {% endif %}
         </section>
         <section class="border border-line bg-surface p-5">
-          <h2 class="mb-4 text-xs font-bold tracking-[0.16em] text-subtle">CATEGORIES &amp; TAGS</h2>
+          <h2 class="mb-4 text-xs font-bold tracking-[0.16em] text-subtle">CATEGORIES</h2>
           <h3 class="mb-2 text-sm font-semibold">Categories</h3>
           <div class="mb-4 flex flex-wrap gap-2">
             {% for category in object.categories.all %}
               <span class="category-chip inline-block px-3 py-1 text-xs font-semibold">{{ category.name }}</span>
             {% empty %}
               <span class="text-xs text-subtle">No categories</span>
-            {% endfor %}
-          </div>
-          <h3 class="mb-2 text-sm font-semibold">Tags</h3>
-          <div class="flex flex-wrap gap-2">
-            {% for tag in object.tags.all %}
-              <span class="tag-chip inline-block px-3 py-1 text-xs font-semibold">{{ tag.name }}</span>
-            {% empty %}
-              <span class="text-xs text-subtle">No tags</span>
             {% endfor %}
           </div>
         </section>

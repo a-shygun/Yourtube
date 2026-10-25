@@ -1,0 +1,8 @@
+{% load static %}
+{% if account.profile_image and account.profile_image.name != 'videos/img/default-avatar.svg' %}
+  <img class="{{ size }} shrink-0 object-cover" src="{{ account.profile_image.url }}" alt="{% if username %}{{ username }} profile picture{% endif %}" />
+{% elif account.image_url %}
+  <img class="{{ size }} shrink-0 object-cover" src="{{ account.image_url }}" alt="{% if username %}{{ username }} profile picture{% endif %}" />
+{% else %}
+  <img class="{{ size }} shrink-0 object-cover" src="{% static 'videos/img/default-avatar.svg' %}" alt="{% if username %}{{ username }} profile picture{% endif %}" />
+{% endif %}
