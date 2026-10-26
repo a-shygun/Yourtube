@@ -1,11 +1,31 @@
-<div class="flex flex-col gap-3">
+<section class="grid grid-cols-1 gap-x-5 gap-y-9 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
   {% for item in video_statuses %}
-    <a class="flex items-center gap-4 border border-line p-3 hover:bg-surface-alt" href="{% url 'video-detail' item.video_id %}">
-      <img class="aspect-video w-40 object-cover" src="{% url 'library-media' item.video.thumbnail_loc %}" alt="{{ item.video.title }} thumbnail" loading="lazy" />
-      <span class="flex-1 line-clamp-2 text-sm font-medium">{{ item.video.title }}</span>
-      <span class="text-sm text-muted">{{ item.get_status_display }}</span>
-    </a>
+    {% with video=item.video %}
+      <article class="min-w-0">
+        <div class="group relative aspect-video overflow-hidden bg-surface-alt">
+          <a class="absolute inset-0 block overflow-hidden" href="{% url 'video-detail' video.id %}">
+            <img class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src="{% url 'library-media' video.thumbnail_loc %}" alt="{{ video.title }} thumbnail" loading="lazy" />
+            <span class="video-duration-badge absolute bottom-2 right-2 bg-black/80 px-2 py-1 text-xs font-semibold" data-video-duration="{{ video.duration }}">{{ video.duration }}</span>
+          </a>
+          <form class="absolute left-2 top-2 z-10 {% if item.status != 'watched' %}opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100{% endif %}" method="post" action="{% url 'video-status' video.id %}">
+            {% csrf_token %}{% if item.status != 'watched' %}<input type="hidden" name="status" value="watched" />{% endif %}<input type="hidden" name="next" value="{{ request.get_full_path }}" />
+            <button class="bg-black/55 px-2 py-1 text-xs font-bold text-white hover:bg-black/75" type="submit" aria-label="{% if item.status == 'watched' %}Remove watched status{% else %}Mark watched{% endif %}">{% if item.status == 'watched' %}Watched{% else %}Mark watched{% endif %}</button>
+          </form>
+          <form class="absolute right-2 top-2 z-10 {% if item.status != 'to-watch' %}opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100{% endif %}" method="post" action="{% url 'video-status' video.id %}">
+            {% csrf_token %}{% if item.status != 'to-watch' %}<input type="hidden" name="status" value="to-watch" />{% endif %}<input type="hidden" name="next" value="{{ request.get_full_path }}" />
+            <button class="bg-black/55 px-2 py-1 text-xs font-bold text-white hover:bg-black/75" type="submit" aria-label="{% if item.status == 'to-watch' %}Remove to-watch status{% else %}Mark to watch{% endif %}">To watch</button>
+          </form>
+        </div>
+        <div class="pt-3">
+          <h2 class="line-clamp-2 text-base font-semibold leading-snug"><a class="hover:text-accent-light" href="{% url 'video-detail' video.id %}">{{ video.title }}</a></h2>
+          <a class="mt-1 block text-sm text-muted hover:text-ink" href="{% url 'channel-videos' video.channel_id %}">{{ video.channel.name }}</a>
+          <p class="mt-1 text-xs text-subtle">
+            <span data-compact-count="{{ video.view_count }}">{{ video.view_count }}</span> views · {{ video.upload_date|date:'M j, Y' }}
+          </p>
+        </div>
+      </article>
+    {% endwith %}
   {% empty %}
-    <p class="text-sm text-subtle">{{ empty_message }}</p>
+    <p class="col-span-full text-sm text-subtle">{{ empty_message }}</p>
   {% endfor %}
-</div>
+</section>

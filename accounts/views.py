@@ -62,6 +62,6 @@ def profile(request):
         "account": account,
         "form": form,
         "user_comments": Comment.objects.filter(author=request.user).select_related("video"),
-        "video_statuses": VideoStatus.objects.filter(user=request.user).select_related("video").order_by("video__title"),
+        "video_statuses": VideoStatus.objects.filter(user=request.user).select_related("video__channel").order_by("video__title"),
     }
     return render(request, "accounts/profile.html", context)
