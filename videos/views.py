@@ -6,7 +6,8 @@ from uuid import uuid4
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.management import CommandError
-from django.db.models import F, Prefetch
+from django.utils.http import url_has_allowed_host_and_scheme
+from django.db.models import CharField, F, OuterRef, Prefetch, Subquery, Value
 from django.http import FileResponse, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
@@ -70,6 +71,16 @@ class VideoListView(ListView):
             "oldest": ("upload_date", "pk"),
         }.get(self.sort_order, ("-upload_date", "-pk"))
 
+        if self.request.user.is_authenticated:
+            videos = videos.annotate(
+                user_status=Subquery(
+                    VideoStatus.objects.filter(video=OuterRef("pk"), user=self.request.user)
+                    .values("status")[:1]
+                )
+            )
+        else:
+            videos = videos.annotate(user_status=Value("", output_field=CharField()))
+
         return videos.order_by(*order_by).values(
             "id",
             "title",
@@ -77,6 +88,7 @@ class VideoListView(ListView):
             "view_count",
             "duration",
             "channel_id",
+            "user_status",
             date=F("upload_date"),
             channel_name=F("channel__name"),
         )
@@ -113,7 +125,15 @@ class PlaylistDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["video_list"] = self.object.video_set.select_related("channel").order_by("position_in_playlist", "pk")
+        video_list = self.object.video_set.select_related("channel").order_by("position_in_playlist", "pk")
+        if self.request.user.is_authenticated:
+            video_list = video_list.annotate(
+                user_status=Subquery(
+                    VideoStatus.objects.filter(video=OuterRef("pk"), user=self.request.user)
+                    .values("status")[:1]
+                )
+            )
+        context["video_list"] = video_list
         return context
 
 
@@ -159,6 +179,9 @@ def set_video_status(request, pk):
         )
     else:
         VideoStatus.objects.filter(video=video, user=request.user).delete()
+    next_url = request.POST.get("next", "")
+    if next_url and url_has_allowed_host_and_scheme(next_url, allowed_hosts={request.get_host()}):
+        return redirect(next_url)
     return redirect("video-detail", pk=video.pk)
 
 
