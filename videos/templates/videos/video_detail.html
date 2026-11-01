@@ -9,10 +9,14 @@
     <a class="text-sm text-muted hover:text-ink" href="{% url 'home' %}">← Back to discover</a>
     <article class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
       <div class="min-w-0">
-        <div class="aspect-video overflow-hidden bg-black">
-          <video class="h-full w-full" controls playsinline preload="metadata" {% if object.thumbnail_loc %}poster="{% url 'media' object.thumbnail_loc %}"{% else %}poster="{% static 'videos/img/video-placeholder.svg' %}"{% endif %}>
+        <div class="group relative aspect-video overflow-hidden bg-black">
+          <video class="h-full w-full" data-video-player controls playsinline preload="metadata" {% if object.thumbnail_loc %}poster="{% url 'media' object.thumbnail_loc %}"{% else %}poster="{% static 'videos/img/video-placeholder.svg' %}"{% endif %}>
             <source src="{% url 'media' object.video_loc %}" />Your browser cannot play this video. <a href="{% url 'media' object.video_loc %}">Open the video file</a>.
           </video>
+          <button class="absolute left-1/2 top-1/2 z-10 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-black/70 text-white opacity-100 transition-opacity group-hover:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" type="button" data-video-toggle aria-label="Play video" title="Play video">
+            <svg class="h-8 w-8" data-play-icon viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+            <svg class="hidden h-8 w-8" data-pause-icon viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg>
+          </button>
         </div>
         <div class="py-5">
           <p class="text-xs font-bold uppercase tracking-[0.2em] text-accent">VIDEO</p>
