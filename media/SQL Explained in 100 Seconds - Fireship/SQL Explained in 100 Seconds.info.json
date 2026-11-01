@@ -1,0 +1,472 @@
+{
+  "title": "SQL Explained in 100 Seconds",
+  "thumbnail": "https://i.ytimg.com/vi_webp/zsjvFFKOm3c/maxresdefault.webp",
+  "description": "Learn the fundamentals of Structured Query Language SQL! Even though it's over 40 years old, the world's most popular databases still run on SQL.\n\nForeign key basics https://docs.microsoft.com/en-us/sql/relational-databases/tables/create-foreign-key-relationships\n\n#dev #database #100SecondsOfCode\n\nDraw SQL Diagrams https://drawsql.app/\n\nInstall the quiz app 🤓\n\niOS https://itunes.apple.com/us/app/fireship/id1462592372?mt=8\nAndroid https://play.google.com/store/apps/details?id=io.fireship.quizapp\n\nUpgrade to Fireship PRO at https://fireship.io/pro\nUse code lORhwXd2 for 25% off your first payment. \n\nMy VS Code Theme\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font",
+  "duration": 142,
+  "view_count": 1596875,
+  "webpage_url": "https://www.youtube.com/watch?v=zsjvFFKOm3c",
+  "comment_count": 50,
+  "like_count": 47050,
+  "channel": "Fireship",
+  "channel_follower_count": 4320000,
+  "channel_is_verified": true,
+  "uploader_id": "@Fireship",
+  "uploader_url": "https://www.youtube.com/@Fireship",
+  "upload_date": "2021-04-06",
+  "resolution": "1280x720",
+  "categories": [
+    "Science & Technology"
+  ],
+  "comments": [
+    {
+      "id": "UgxnwAzePADf1f8Ih1R4AaABAg",
+      "parent": "root",
+      "text": "Dumb question, what’s that tool showing the table structure and relationships",
+      "like_count": 0,
+      "author": "@mykedev4377",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kjz2U4NjTRAoprYY21NgBwrJlyjUNLHlkyVK-Mnu0=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-10-05T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx_zmsP68B8-Qy1uIR4AaABAg",
+      "parent": "root",
+      "text": "And DB2 !!!!!!",
+      "like_count": 0,
+      "author": "@ldjzst",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kPk_BQ1cpJRyUobWrSSQJUi4dwLvBoIOXyf8FlVEE=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-09-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwL_MuTZBbjoFe2bLN4AaABAg",
+      "parent": "root",
+      "text": "SQL so easy now😏",
+      "like_count": 0,
+      "author": "@dalarnovanrooi4612",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lDRCUzhguKrB0ILW5xkrco0MfJiYxz0CvWuZHDtaeV3Gnx=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-09-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugxfypaky_NKbKCb5ut4AaABAg",
+      "parent": "root",
+      "text": "The fact that you used players and teams I know made it so easy for me to understand 😭🙏🏾\nI do that a lot to make sense of programming examples and stuff so great to see I'm not the only one 😭❤️‍🔥🔥🔥",
+      "like_count": 0,
+      "author": "@timamutambo1",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lSY6b_2p5-nHEk1NPOitX2iocNV_0c6IJrXDJ-RMkXwdc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-09-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzVfy6CVx58AeWXosR4AaABAg",
+      "parent": "root",
+      "text": "This video really explains a lot",
+      "like_count": 0,
+      "author": "@CloudLanee",
+      "author_thumbnail": "https://yt3.ggpht.com/9-USJrapoVzJMisTeo4LJ7xLtj3HDtd6PSBG1wp4GDN5hPPIJ2RWCxI0ynIW1sG0YSHwiKgY3xo=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-09-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz-yYqqqYarYmpAcXJ4AaABAg",
+      "parent": "root",
+      "text": "Okay",
+      "like_count": 0,
+      "author": "@DevLaunchPad-c8u",
+      "author_thumbnail": "https://yt3.ggpht.com/0QbLh2Zj9Gdaf0WoEHv13N6fyCmbaRSO5D3wduI5Ei4synmVH4KWNZ5JSzbWOCdGicvLCUytPg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-08-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyuUAk6cdVQYEdPVwp4AaABAg",
+      "parent": "root",
+      "text": "this is a short and simple good video thank you",
+      "like_count": 0,
+      "author": "@JacobGarcia-r5u",
+      "author_thumbnail": "https://yt3.ggpht.com/Z77_bdjm18SzKyY0pRP6iZKz6qfpzIzWtiMFp9NqA_7E1E5PSqm1xYkYoItkZdlXRbvyw7r8kzI=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-08-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugzpmm7RTthvLU0w_Gd4AaABAg",
+      "parent": "root",
+      "text": "bro can't decide whether to call it SQL or sequel within the same sentence hahaha",
+      "like_count": 1,
+      "author": "@CryptoShroom-l4u",
+      "author_thumbnail": "https://yt3.ggpht.com/IyFI4buTtTfRyh3DF7Laue2jVCYuN0Y-agZ8Nc3Y2Yg0uIMGj-m2hyxm7KVn8w3FNlHtFgMV=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-07-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxoY_pjjp9c0T7Usyh4AaABAg",
+      "parent": "root",
+      "text": "@2:01 primary and foreign key should be switched no?",
+      "like_count": 0,
+      "author": "@fastyfoxy",
+      "author_thumbnail": "https://yt3.ggpht.com/lC2yukcYZ4-CHLOOKq6yB-Os0XH0cDT5EKcXtfBs5DiauoJQ9ffJcPrwIqTHB2IiEe-VfqAVgg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-07-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgysjnJkCshzX7qVG7N4AaABAg",
+      "parent": "root",
+      "text": "the raymond boyce logo shown looks like a temu discord logo",
+      "like_count": 0,
+      "author": "@boringkory",
+      "author_thumbnail": "https://yt3.ggpht.com/sRvdCd_F5UXhmS2qH8cyNUngGRt6sQMCsUbG5izvPUJDxwxyB2eDLUE0M6HAapGhPs8IvNTnhg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-07-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzOQj0mRcpxxdkZCeZ4AaABAg",
+      "parent": "root",
+      "text": "110 seconds, actually 😂 from lesson start to finish. Thanks",
+      "like_count": 1,
+      "author": "@MylesGmail",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m5Z4yqQsf6sz3zQNbBFqUH-e15ZlY8MbV5IswxTJU=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-07-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxhsumU3u1gLs1rabl4AaABAg",
+      "parent": "root",
+      "text": "This 100-second breakdown of SQL makes relational data so much easier to understand! It actually reminds me of last month when a client asked me to track user signups from a social campaign. As a social media manager who is a total newcomer to database management, looking at primary and foreign keys completely made my head spin. I panicked about setting up a database and ended up avoiding the backend bloat entirely by just dragging and dropping my plain HTML file into Tiiny Host to get the static link live in seconds instead. But seeing how easily tables connect here definitely makes me want to face my fears and practice basic queries tonight!",
+      "like_count": 0,
+      "author": "@jae9246",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nvCGG9cGn2LhOgIasnpHt5_HrUKVtDqNaFBAThPWJZSyfO-e9dBiL6d1nivf887HmArw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-05-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzwxwZwpoL8zGpU2GJ4AaABAg",
+      "parent": "root",
+      "text": "Probably the most OP programming language for landing a job",
+      "like_count": 0,
+      "author": "@SuccessMindset2180",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mJWnsy-4D0HHK7e70lAjKZZtXkBBcCBOJGArgGB83flQAgJc3mP46709hKr12KPbfx0A=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-05-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzXQYnR2RPmXATlkH94AaABAg",
+      "parent": "root",
+      "text": "✅ Useful Platform to Practice SQL Programming 🧠🖥️\n\nLearning SQL is just the first step — practice is what builds real skill. Here are the best platforms for hands-on SQL:\n\n1️⃣ LeetCode – For Interview-Oriented SQL Practice \n• Focus: Real interview-style problems \n• Levels: Easy to Hard \n• Schema + Sample Data Provided \n• Great for: Data Analyst, Data Engineer, FAANG roles \n✔ Tip: Start with Easy → filter by “Database” tag \n✔ Popular Section: Database → Top 50 SQL Questions \nExample Problem: “Find duplicate emails in a user table” → Practice filtering, GROUP BY, HAVING\n\n2️⃣ HackerRank – Structured & Beginner-Friendly \n• Focus: Step-by-step SQL track \n• Has certification tests (SQL Basic, Intermediate) \n• Problem sets by topic: SELECT, JOINs, Aggregations, etc. \n✔ Tip: Follow the full SQL track \n✔ Bonus: Company-specific challenges \nTry: “Revising Aggregations – The Count Function” → Build confidence with small wins\n\n3️⃣ Mode Analytics – Real-World SQL in Business Context \n• Focus: Business intelligence + SQL \n• Uses real-world datasets (e.g., e-commerce, finance) \n• Has an in-browser SQL editor with live data \n✔ Best for: Practicing dashboard-level queries \n✔ Tip: Try the SQL case studies & tutorials\n\n4️⃣ StrataScratch – Interview Questions from Real Companies \n• 500+ problems from companies like Uber, Netflix, Google \n• Split by company, difficulty, and topic \n✔ Best for: Intermediate to advanced level \n✔ Tip: Try “Hard” questions after doing 30–50 easy/medium\n\n5️⃣ DataLemur – Short, Practical SQL Problems \n• Crisp and to the point \n• Good UI, fast learning \n• Real interview-style logic \n✔ Use when: You want fast, smart SQL drills \n\n📌 How to Practice Effectively: \n• Spend 20–30 mins/day \n• Focus on JOINs, GROUP BY, HAVING, Subqueries \n• Analyze problem → write → debug → re-write \n• After solving, explain your logic out loud\n\n🧪 Practice Task: \nTry solving 5 SQL questions from LeetCode or HackerRank this week. Start with SELECT, WHERE, and GROUP BY.",
+      "like_count": 0,
+      "author": "@infoaitechworlds",
+      "author_thumbnail": "https://yt3.ggpht.com/Tp9C6uO3Ycu4t1z1x00PEZdq8TrHDXLueHqj6-rQnyH4apEryMUWCKBdFfw11ZhWeN1tqMHX=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-05-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw9ajm0KadFOA-q1t54AaABAg",
+      "parent": "root",
+      "text": "Great video! what is the software that is shown that you can grab and move tables to organize information? thank you!",
+      "like_count": 0,
+      "author": "@gorollafro",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m9gxbkGouLEP4TLLTVmNtjDsjpx9GoaYthpcKRmQornGek=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-04-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwKn7bz76cGWFZsPNt4AaABAg",
+      "parent": "root",
+      "text": "The query is even syntactically wrong!",
+      "like_count": 0,
+      "author": "@Expert246",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k8tlbmFKZdF5O26G1INFcisiRTwQsKpiS45HfOxcI=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-04-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwKH_bf0CfoT8B8nxd4AaABAg",
+      "parent": "root",
+      "text": "Back then, Fireship was serious business lol",
+      "like_count": 0,
+      "author": "@vanashell",
+      "author_thumbnail": "https://yt3.ggpht.com/qeheD5GsOJO8ikD0ybCvxm_D1petZc-v-n45OTA32NL_LwUgSf8F3kuBOgIo-5DwaB_uSElF-cM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-03-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxjwqFeoIL4LgYVvqB4AaABAg",
+      "parent": "root",
+      "text": "Hello, your video is amazing, I would like your permission to use your video on my website to educate many people. Is that okay?",
+      "like_count": 0,
+      "author": "@ferrynuryaman1915",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nrCwZWEi0JFuR4-LTCtsGApK-9PwjEMNknxqaXeK0=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxjwqFeoIL4LgYVvqB4AaABAg.ATEJdJ73EOGAUAPYoAO1wh",
+      "parent": "UgxjwqFeoIL4LgYVvqB4AaABAg",
+      "text": "yes",
+      "like_count": 0,
+      "author": "@gorantyson5294",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kou3dO5GhrvBQru7jrDY7-p0Ls3-FwpdfJn_A0CdgtFmBIy5ofV2XYbnym-k-Zi8t6WA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-03-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzRMMqItMzDpxhxTUR4AaABAg",
+      "parent": "root",
+      "text": "Starting my SQL journey, seems amazing ! Thank you for the video !",
+      "like_count": 1,
+      "author": "@Skoll4295",
+      "author_thumbnail": "https://yt3.ggpht.com/Eur9hJ07OwMGT5WL1stgDGip3bL0h7oS2-vsQfziBUT6JjvlpMfn2c5Et5jHikwf2v0q6joP-Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzRMMqItMzDpxhxTUR4AaABAg.ASnOnirz41xASsVmpWBS6f",
+      "parent": "UgzRMMqItMzDpxhxTUR4AaABAg",
+      "text": "Are you preparing for a DA role?",
+      "like_count": 1,
+      "author": "@Anonymous-w9g8q",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mIq3VHfPUrGhS9seKsJqeGzc2vC6doz0-nM2OENLkRxafGhMnaFzOjB0stCwcIPBngbw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzRMMqItMzDpxhxTUR4AaABAg.ASnOnirz41xASsgVS6K3AF",
+      "parent": "UgzRMMqItMzDpxhxTUR4AaABAg.ASnOnirz41xASsVmpWBS6f",
+      "text": "​ @Anonymous-w9g8q No I'm already dba. I have 7 years experience",
+      "like_count": 0,
+      "author": "@oracle_DBA_smart",
+      "author_thumbnail": "https://yt3.ggpht.com/Bq0T8h_Gh1j2w2mwjpLVwNHyGtncPuwtIMZZF7_w9-k47btX3ziKAnTlIwg1XSlg27Wl2idM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzRMMqItMzDpxhxTUR4AaABAg.ASnOnirz41xASoAopJmzGH",
+      "parent": "UgzRMMqItMzDpxhxTUR4AaABAg",
+      "text": "❤ great luv to see",
+      "like_count": 0,
+      "author": "@oracle_DBA_smart",
+      "author_thumbnail": "https://yt3.ggpht.com/Bq0T8h_Gh1j2w2mwjpLVwNHyGtncPuwtIMZZF7_w9-k47btX3ziKAnTlIwg1XSlg27Wl2idM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwpMt9lnqEjVus0Zvp4AaABAg",
+      "parent": "root",
+      "text": "We are taught this shi in indian school when we are 17\n\nYooo we are cooked 😢😢",
+      "like_count": 1,
+      "author": "@done-i7r",
+      "author_thumbnail": "https://yt3.ggpht.com/ICCcXgKrdYsRUrM6vTIYN4rg9X4A-WDp-KU0Uq2zAu82lem4Q1VmirCxjWrVT2DgO36vLQ5V=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwpMt9lnqEjVus0Zvp4AaABAg.ARcIitgLrZcASoApZ36qcm",
+      "parent": "UgwpMt9lnqEjVus0Zvp4AaABAg",
+      "text": "❤",
+      "like_count": 0,
+      "author": "@oracle_DBA_smart",
+      "author_thumbnail": "https://yt3.ggpht.com/Bq0T8h_Gh1j2w2mwjpLVwNHyGtncPuwtIMZZF7_w9-k47btX3ziKAnTlIwg1XSlg27Wl2idM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz6qsciT3_z4HFGwgJ4AaABAg",
+      "parent": "root",
+      "text": "must be created by american by it counter intuitive design following mm/dd/yyyy instead dd/mm/yyyy T___T",
+      "like_count": 1,
+      "author": "@ashaariahmad708",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nBvYnpFZDu-TBf_47CQSJdpKS5ylfTuJhxiRb_e0AVPXnY=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz6qsciT3_z4HFGwgJ4AaABAg.ARZIkym20W3ASoAqI9Oyx7",
+      "parent": "Ugz6qsciT3_z4HFGwgJ4AaABAg",
+      "text": "❤",
+      "like_count": 0,
+      "author": "@oracle_DBA_smart",
+      "author_thumbnail": "https://yt3.ggpht.com/Bq0T8h_Gh1j2w2mwjpLVwNHyGtncPuwtIMZZF7_w9-k47btX3ziKAnTlIwg1XSlg27Wl2idM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwlZv3wAE2K1vxtIaV4AaABAg",
+      "parent": "root",
+      "text": "so concise and precise! fantastic.",
+      "like_count": 1,
+      "author": "@tiowu",
+      "author_thumbnail": "https://yt3.ggpht.com/mc7N06jJ2m0MAFaj8CfRRL6yRifZCBkJlIaeYJAAJMN97bO--p6D8oJaX3jJ4qY_NMSjN7b2=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwlZv3wAE2K1vxtIaV4AaABAg.ART6fOxScndASoArHtKOz1",
+      "parent": "UgwlZv3wAE2K1vxtIaV4AaABAg",
+      "text": "❤",
+      "like_count": 0,
+      "author": "@oracle_DBA_smart",
+      "author_thumbnail": "https://yt3.ggpht.com/Bq0T8h_Gh1j2w2mwjpLVwNHyGtncPuwtIMZZF7_w9-k47btX3ziKAnTlIwg1XSlg27Wl2idM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxzYEIYjj4UMqJREtl4AaABAg",
+      "parent": "root",
+      "text": "watching this and all i can think of is how kd used to be a net",
+      "like_count": 1,
+      "author": "@dingadingadingadinga",
+      "author_thumbnail": "https://yt3.ggpht.com/I3Z1w9BGNBuaeQYgr9h1trwJYr6LUVxw6JgymBehtwHkbl1zMG69KNwyLmH6hdlwaD_9uBNg6g=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxzYEIYjj4UMqJREtl4AaABAg.AQZywcSQrOCASoAtg_iVxk",
+      "parent": "UgxzYEIYjj4UMqJREtl4AaABAg",
+      "text": "❤",
+      "like_count": 0,
+      "author": "@oracle_DBA_smart",
+      "author_thumbnail": "https://yt3.ggpht.com/Bq0T8h_Gh1j2w2mwjpLVwNHyGtncPuwtIMZZF7_w9-k47btX3ziKAnTlIwg1XSlg27Wl2idM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzCWEbcwDPADx6UtF94AaABAg",
+      "parent": "root",
+      "text": "I did not understand 😅",
+      "like_count": 0,
+      "author": "@WillemFred-f3c",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kNz_6aT-NycY4qt2fXvKjNAZKgnU-RWARilIH00fMc1hywr9x8YSSH3p64Yrcz7pNH6Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyHGTKIashK8ZL3-KF4AaABAg",
+      "parent": "root",
+      "text": "Is this easy to learn?",
+      "like_count": 1,
+      "author": "@Jennifer_Jenn_Jenny",
+      "author_thumbnail": "https://yt3.ggpht.com/8YHoNJ31agmLgbux_hxHiapFZGMEVKSz6CxlcyIOvERyjngPwvMyudvSOl5XscLcyKd79SM5KQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyHGTKIashK8ZL3-KF4AaABAg.APvuv9VBk9yASoAuhJ4kXV",
+      "parent": "UgyHGTKIashK8ZL3-KF4AaABAg",
+      "text": "❤",
+      "like_count": 0,
+      "author": "@oracle_DBA_smart",
+      "author_thumbnail": "https://yt3.ggpht.com/Bq0T8h_Gh1j2w2mwjpLVwNHyGtncPuwtIMZZF7_w9-k47btX3ziKAnTlIwg1XSlg27Wl2idM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxuJ6GKRLwrh0yBsMR4AaABAg",
+      "parent": "root",
+      "text": "Donald Chamberlin founder of SQL a lookalike of the late Philippine hero Senator Benigno Ninoy Aquino Jr.",
+      "like_count": 0,
+      "author": "@FrancisHubertoVasquez-u7d",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nLfOnFMQ6NzSrw2H6I0IxTOTRaFU4KZF3Ivl1BybLM4uIzdNMIJ_YKaZy2rosNSpTifw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwckfvYebbkAoqzrZN4AaABAg",
+      "parent": "root",
+      "text": "Good Explained",
+      "like_count": 0,
+      "author": "@codevannakitv",
+      "author_thumbnail": "https://yt3.ggpht.com/UR1pcmA39gciEUQURjLpVzW183fH427g4zEN3znYJzB9o5hEz-_aVUrOTfGSiQQtVWJel_oPPQc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyD5NMMV14Tw-BFpCJ4AaABAg",
+      "parent": "root",
+      "text": "watching this after studying linguistic makes me feel high",
+      "like_count": 0,
+      "author": "@_miya6513",
+      "author_thumbnail": "https://yt3.ggpht.com/58bU8DbIcM2k8yYkmT0tA1aOMplFTXLggMVBAwMPaSIPLh1E06Qrz-QJEkaOFLTjOHS0psg0GQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzhKE-sY8w_Ezt-iut4AaABAg",
+      "parent": "root",
+      "text": "Around 58 seconds. Aint you naming the Primary key wrong and it should be named \"team_id\" instead of \"id\" since your refering the team ID to link the player to the team. From what I do understand is that the ID on the players tab would be linked to the Primary ID the way it is shown. Please correct me if im wrong.",
+      "like_count": 0,
+      "author": "@ZenguGaming",
+      "author_thumbnail": "https://yt3.ggpht.com/oUrnZZUfxhAAENQOxMgnBd90v6kSg6q0mrCps9tfT8nXk4bLg6zRm-ioLAE_xnykNXGtwvcncA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyBDOq-f5oMkT0-W8l4AaABAg",
+      "parent": "root",
+      "text": "I just don't know why I learns this years ago in dang 6th grade what was my,school",
+      "like_count": 0,
+      "author": "@MaxBondar-x6d",
+      "author_thumbnail": "https://yt3.ggpht.com/7hlNkxgckv84zuCc599_H-pg2DLeIbK5U1Lixol5wZuY02iOQySatvSqpaAcMVpD3goj8YOUwJQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzLJ_mfi4DuTdzUOOJ4AaABAg",
+      "parent": "root",
+      "text": "I wish I took a related field in college",
+      "like_count": 0,
+      "author": "@Gorkisittruee",
+      "author_thumbnail": "https://yt3.ggpht.com/4RE3DEWqxgRRKFcCLqGIxaYrUArLpOY4IKL4_mm70dCRspKV5_zXcRQsEdxFstzjCQzFBW9NjQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugzr9RZVUo9S6WSHaXF4AaABAg",
+      "parent": "root",
+      "text": "It is sql  \nStructured Query Language  \nSQL \nNot sequel",
+      "like_count": 1,
+      "author": "@kcmadmax3562",
+      "author_thumbnail": "https://yt3.ggpht.com/qLbrhJaXbGi-jNvtHogtYtv_30_oWnxwIlOI4NTRch22A0bs11wQLnnzrcAXCdLCEH8DoK5X=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxPyOsB_JK-oKy_uKJ4AaABAg",
+      "parent": "root",
+      "text": "Thanks!",
+      "like_count": 1,
+      "author": "@dmantoronto",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lZd3IV7nI5_r78xBsGqdeDUSf6ZKDy1utzm1ofOugkvJaNztTT_zrN-CFCRviw34O3NA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxPyOsB_JK-oKy_uKJ4AaABAg.AK3n1Ek9vy3AKJxmAVqrk5",
+      "parent": "UgxPyOsB_JK-oKy_uKJ4AaABAg",
+      "text": "Thank you!",
+      "like_count": 0,
+      "author": "@Fireship",
+      "author_thumbnail": "https://yt3.ggpht.com/3fPNbkf_xPyCleq77ZhcxyeorY97NtMHVNUbaAON_RBDH9ydL4hJkjxC8x_4mpuopkB8oI7Ct6Y=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwy45h0YEF8JqFBH214AaABAg",
+      "parent": "root",
+      "text": "I'll wait for the fireship video",
+      "like_count": 1,
+      "author": "@ammo7123",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nbU0Oa3nKDrqGYLTiXJlhOxuh-_1yjOnwqFnGzkZ_R=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxVv61H8P4jvJj4rlN4AaABAg",
+      "parent": "root",
+      "text": "Confusing explanation",
+      "like_count": 0,
+      "author": "@istriver.",
+      "author_thumbnail": "https://yt3.ggpht.com/OcH9FlVzGtoYGUqnlU8KYWbXJtabkp9jaJpBAcaSh1idGqsBj-kWC9BHFXfl8Paf3CIul5Um=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyHHx92TBtmQ4hIwBl4AaABAg",
+      "parent": "root",
+      "text": "❤",
+      "like_count": 0,
+      "author": "@tharindudeshan7170",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lqOtM9SApVArkGAZzgQ8PbSoiKbGYHIJIGrnrTEqE=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyfyRAW3FZt9vCpaIp4AaABAg",
+      "parent": "root",
+      "text": "Your speed talk and mumbo jumbo switches of images so quickly may not give concepts of sql to new learner 😅😅😅 get better with teaching. Slow down be patient 😅",
+      "like_count": 0,
+      "author": "@MikeP999",
+      "author_thumbnail": "https://yt3.ggpht.com/OJc56FqCz3Xd_UYomAUYFH0ixrX9xhzpBr81It88xa5E-vE7lf8OV2jx-7ayNEfZiTKzLJBHsA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyfyRAW3FZt9vCpaIp4AaABAg.AJC2okdk5BIAJwkFFYc7Sp",
+      "parent": "UgyfyRAW3FZt9vCpaIp4AaABAg",
+      "text": "Why are you watching a 100 second summary video if you are trying to learn SQL for the first time? Be patient.",
+      "like_count": 4,
+      "author": "@medogerty6013",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nJt--FMZDQvJmtImj6-fXiunnoMljDbvKrlK8t9Do=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwe1C0iOhL3PCgx_654AaABAg",
+      "parent": "root",
+      "text": "useless as fuck",
+      "like_count": 0,
+      "author": "@XEONFX23",
+      "author_thumbnail": "https://yt3.ggpht.com/-x1LjmZs3qj3cwa3JHG7m1twZ-0dl5nrMPpdi3vtk7eoEBwj51AVM3d2ggf1Xg-9RCVn37Ts=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwTKrM2IqWibRmzpHR4AaABAg",
+      "parent": "root",
+      "text": "Amaznig",
+      "like_count": 0,
+      "author": "@OMARYassin1",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k-jyVJbdJeBfoHlnuxN5lc8o3-Rou7e228VIGVvBehbmom=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    }
+  ]
+}

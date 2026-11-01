@@ -1,0 +1,472 @@
+{
+  "title": "Binary Search Algorithm in 100 Seconds",
+  "thumbnail": "https://i.ytimg.com/vi/MFhxShGxHWc/maxresdefault.jpg",
+  "description": "Binary Search is an algorithm that can find the index of an element in a sorted array data structure. You've likely used Binary Search it in everyday life without even realizing it. \n\n#compsci #programming #100SecondsOfCode\n\n🔗 Resources\n\nBinary Search https://en.wikipedia.org/wiki/Binary_search_algorithm\nBig-O in 100 Seconds https://youtu.be/g2o22C3CRfU\nRecursion in 100 seconds https://youtu.be/rf60MejMz3E\n\n🔥 Get More Content - Upgrade to PRO\n\nUpgrade to Fireship PRO at https://fireship.io/pro\nUse code lORhwXd2 for 25% off your first payment. \n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n🔖 Topics Covered\n\n- Binary Search in JavaScript\n- How does binary search work?\n- When was binary search first used?\n- How code recursive binary search?\n- Big-O Time complexity of binary search",
+  "duration": 140,
+  "view_count": 818006,
+  "webpage_url": "https://www.youtube.com/watch?v=MFhxShGxHWc",
+  "comment_count": 50,
+  "like_count": 40361,
+  "channel": "Fireship",
+  "channel_follower_count": 4320000,
+  "channel_is_verified": true,
+  "uploader_id": "@Fireship",
+  "uploader_url": "https://www.youtube.com/@Fireship",
+  "upload_date": "2022-03-23",
+  "resolution": "1280x720",
+  "categories": [
+    "Science & Technology"
+  ],
+  "comments": [
+    {
+      "id": "UgydLsO7sRo328dwNzV4AaABAg",
+      "parent": "root",
+      "text": "i feel like I just enjoy fireship and i am happy because his content is for free",
+      "like_count": 0,
+      "author": "@TypingIndicator",
+      "author_thumbnail": "https://yt3.ggpht.com/Dv6nWoedNYX5rYOPczYC8I6PNFYEPTrV49yq3skXpGJUCTO3WbqY7tdArz6SGjhpSl3431ujJ2c=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-10-25T19:00:00+00:00"
+    },
+    {
+      "id": "UgzrrlRg_AeyomBoRM94AaABAg",
+      "parent": "root",
+      "text": "good but it must assume  that the array has already sorted elements",
+      "like_count": 0,
+      "author": "@somuchinfo4879",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_keImY-ZwLZuUu_vLxJiaKJeXFjRIX70VwqVONP1wyO=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-07-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy2zJk5FDPtMkVRpzd4AaABAg",
+      "parent": "root",
+      "text": "Thank u sir!",
+      "like_count": 0,
+      "author": "@IITIAN_A-v2o",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kyKYN6nMKhyF6lfsxaBhBggLTm_UXP4uFvN9PMRyshUwp-sjIgLnMzEEoqVfCofXlIcQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-07-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugyw6O2iekmiHZZTAD54AaABAg",
+      "parent": "root",
+      "text": "ANCIENT BABYLONIANS WERE ALBE TO DO IT IN 200BC, WITH HIEROGLYPHES",
+      "like_count": 0,
+      "author": "@xsanos2586",
+      "author_thumbnail": "https://yt3.ggpht.com/UsTIUJW4F0AQZ8H3x1OhREOXBC50CQfRB-itVMYIzcCDmHeVhnwOrM66EMjEoZTFarBDHKtx_aU=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-06-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxSKzg62VMTjxAlU4N4AaABAg",
+      "parent": "root",
+      "text": "I learned this in log(n) time",
+      "like_count": 0,
+      "author": "@timmyburda8250",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k1dy7BWTmJk4U715BXMIQ8iFdh36MunJJ39qRxVNzXLA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-04-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzCFBTaV8kaMzwjZUR4AaABAg",
+      "parent": "root",
+      "text": "\"seacrh\" 🥀✌",
+      "like_count": 0,
+      "author": "@monnomestkarima",
+      "author_thumbnail": "https://yt3.ggpht.com/G5Su_WYfyyeIu8GpFdVUS0SEntQof9SH3H1lvnBdboUvblVN3IU1B2zE6KN-SamemEi0tffD=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-03-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyZ1u6fqKMJRY-sih14AaABAg",
+      "parent": "root",
+      "text": "crazyyyy editing damn🔥",
+      "like_count": 0,
+      "author": "@KanishkaJain-o7w",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nzTtI6dXn-Cu4_vvTKcrP230DTqZvqC3fSmF5X7oUDAJmoMTco-_b3LV3y5NsoSbrKww=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-03-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy-VybQNL8Aj-TUyTV4AaABAg",
+      "parent": "root",
+      "text": "00:08 well that escalated fast.",
+      "like_count": 0,
+      "author": "@vikatempest6966",
+      "author_thumbnail": "https://yt3.ggpht.com/2XwLbPLfJLLapulh4oIPuTShLruf2Su8bfz04xzodsCi8yPpqDSHV2zd4yJqJPLwwhOGQM79=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-03-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzX9cxcwrgkzUnmsJh4AaABAg",
+      "parent": "root",
+      "text": "I think recursive approach is not ideal as recursive calls use memory. I think the best approach is just using a while loop",
+      "like_count": 0,
+      "author": "@eaglecode0776",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_l4Xy7ZVIsDXbGLFmh1HTB-CNDoYpi4YerjJholI5xu9w=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy_H7UmJT5yP8_Sbrp4AaABAg",
+      "parent": "root",
+      "text": "As a class 10 icse computer science student i think this video explained the topic than my teacher...😅",
+      "like_count": 0,
+      "author": "@atharv0_8",
+      "author_thumbnail": "https://yt3.ggpht.com/aeHUWZcvn2NX5TtyZIhhoGjkjRjidRbK-3Hwl6_Rq5VetrAT-Huk-BhzLgRSFDXVbH3kOu63Pw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzFWC7CF2fyJmQaYm54AaABAg",
+      "parent": "root",
+      "text": "THE GOAT",
+      "like_count": 0,
+      "author": "@MhmdAlayan-q2r",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k18TQOefWzLa5SvdJmEE0dDZLfk4am4CaTqv-UUpCP4ll3lucs6Ttsxlbnh6UOy4Y8dw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyzrmKndSXDdVryKbt4AaABAg",
+      "parent": "root",
+      "text": "Fun fact , if you wanted to find a specific moment since planet earth formed about 4.5 billion years ago , until today , you can do it using binary search , in about 2 hours , which is honestly insane.",
+      "like_count": 4,
+      "author": "@TheTrialRunner",
+      "author_thumbnail": "https://yt3.ggpht.com/j0qCwOdzwrAR9UHMm-8lFNsxrq54L3NMuigsO1P59GSmfyCi5kUllqEwAGAjsv5pjiqZni-Q-EQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgySi2KnJEdmE3Fsv8B4AaABAg",
+      "parent": "root",
+      "text": "is this C++ ?",
+      "like_count": 0,
+      "author": "@koshkaya2",
+      "author_thumbnail": "https://yt3.ggpht.com/h7HJHtuQJJZlInGKKaLfK1b_JodPmXTIl0xQD_o6cjPk-Ek8BfX_Drky6CkSfMO_TsJs8L80=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgztPs0pY2nk-eUfId14AaABAg",
+      "parent": "root",
+      "text": "1:15 isn't that supposed to be \"middle < target\" ??",
+      "like_count": 1,
+      "author": "@koshkaya2",
+      "author_thumbnail": "https://yt3.ggpht.com/h7HJHtuQJJZlInGKKaLfK1b_JodPmXTIl0xQD_o6cjPk-Ek8BfX_Drky6CkSfMO_TsJs8L80=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgztPs0pY2nk-eUfId14AaABAg.AOaIA6d-_UTARqLSv24hYm",
+      "parent": "UgztPs0pY2nk-eUfId14AaABAg",
+      "text": "no, that's correct. \"middle > target\" is asking if the middle is to the right of the target, meaning the target is to the left the middle, so we search to the left",
+      "like_count": 1,
+      "author": "@Mega-wt9do",
+      "author_thumbnail": "https://yt3.ggpht.com/9HqcY5lYCZ_u6XdFO_WkLnQN_f8PsnxWm8zuZWIeQqL1BODi9ICW3HHoPRvrQS3lKcTwIBvpyQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgztPs0pY2nk-eUfId14AaABAg.AOaIA6d-_UTARxVCxhhKP3",
+      "parent": "UgztPs0pY2nk-eUfId14AaABAg.AOaIA6d-_UTARqLSv24hYm",
+      "text": " @Mega-wt9do  tyyyyyyyysmmm",
+      "like_count": 0,
+      "author": "@koshkaya2",
+      "author_thumbnail": "https://yt3.ggpht.com/h7HJHtuQJJZlInGKKaLfK1b_JodPmXTIl0xQD_o6cjPk-Ek8BfX_Drky6CkSfMO_TsJs8L80=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyFXVYLOWbXSKr7l_J4AaABAg",
+      "parent": "root",
+      "text": "wow. a fireship video with good editing and music? truly peak, how far we have fallen to ai slop shills per vid...",
+      "like_count": 2,
+      "author": "@GodSnake001",
+      "author_thumbnail": "https://yt3.ggpht.com/4zprsE7yQQ-cN3GpR4rY8HKWFDLEqJ3gSq_r5yx1lj9Wj3LivIyyrmpr-pylP4_sBkhbC-IR=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwcKNsd_usG_vWqNQF4AaABAg",
+      "parent": "root",
+      "text": "lol saw the mispelled 'seacrh' :>",
+      "like_count": 0,
+      "author": "@Kraken_TL",
+      "author_thumbnail": "https://yt3.ggpht.com/pVnDfnSmVJPXMBXMjEf5OA45v6k98tHfUxOCTzNiTWUaVZnGX3uWfq032k7Ei_sgrXbRrGtjjaI=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugzy_UX39jep4kwbTUd4AaABAg",
+      "parent": "root",
+      "text": "Is it just me, or is that the first time I've seen the the like button glow with a red border when the like button was mentioned in the video?\nWhat the hell is this sorcery?",
+      "like_count": 0,
+      "author": "@dangoitaliano2690",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_ma4khz9kQoYTNnCTkdp8zVbtKojobR1Cp2QA1HtSXRhMwN=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy1eI_oc6neEnyF-294AaABAg",
+      "parent": "root",
+      "text": "That's why he is the GOAT🐐🔥",
+      "like_count": 0,
+      "author": "@ikeoji_chris",
+      "author_thumbnail": "https://yt3.ggpht.com/jr1oyhCSpYNBwwf6pLWJp7APN59JZ5RhwZB-j_Yj0l9-YdZB85h-UF2ZI6btMUUlkq1NXyzjHw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzuOAjel00zQRvn97R4AaABAg",
+      "parent": "root",
+      "text": "that zuckerberg made me laugh...🤣",
+      "like_count": 1,
+      "author": "@ZakirHussain-nd4fw",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nbQ6X6EPE6hkMfnK7bIRtaNAFQPhxilyKJhuG8PbAPCQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyNuaVnWgXnBGgvcI14AaABAg",
+      "parent": "root",
+      "text": "binary search to find file on smartphone with around 5k files",
+      "like_count": 0,
+      "author": "@ravi99217",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kVt-2KnstlTCEKQNERtFu1r0nkoGfCbDaBeHqzzAeOW6FjInY1ji4XDCDXS_eKGhY0Pw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxFLlKSXT7XYzSfFlB4AaABAg",
+      "parent": "root",
+      "text": "Great job on this video; I really appreciate the depth of insight provided.",
+      "like_count": 0,
+      "author": "@28alis",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mHABxys7o5BOumMvW-CcSaJcTwNat-vFvWX1bRKzwOsvGYa84=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwKPacDOL1W1fTVShJ4AaABAg",
+      "parent": "root",
+      "text": "Oh damn, it's honestly insane, but I actually did something similar without knowing what a binary search is. Essentially I was writing an algorithm that returns the roots of a polynomial of any degrees and one way I did that was to supply a range where that root lies withing and then use a recursive function that splits the range in half, checks whether the root lies to the left or right of that point, and then calls itself again until it reaches an arbitrary point of precision. It's just cool to see how I sorta used that idea wothout realizing it.",
+      "like_count": 0,
+      "author": "@somedudes6455",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_l7u_VipJ9er6OvB6UZGmO-UUz5IE7iFwJyMIUl1Mc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyQlUM6QV2mJv7StiZ4AaABAg",
+      "parent": "root",
+      "text": "can you teach all my courses",
+      "like_count": 0,
+      "author": "@themysteriousfox3767",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_n330ER3oWuFp_YAJBsuXkZtc7HIQ2kIveQ8-AvIHU=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwlmMnS1gYH6kIfaZ94AaABAg",
+      "parent": "root",
+      "text": "🤓 Erm actually its 140 seconds",
+      "like_count": 0,
+      "author": "@RetailEagle6500",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lAyCmPuPTcTtYpOA4QnUiNiel5MSi2UOypDgNoiTtaAGtGVrLt1wtS6foazk69LW0x-w=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxROovUoOZXMo-yckV4AaABAg",
+      "parent": "root",
+      "text": "You're hired. Also, someone is an Irving Finkel stan. (same)",
+      "like_count": 0,
+      "author": "@meinbherpieg4723",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nbdgEoxIbCdIETkxQRz77kh_xHJR8PeLk6tRwSy85daxCu=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxLk4svEMy6QsaQ5Zx4AaABAg",
+      "parent": "root",
+      "text": "thanks a lot",
+      "like_count": 0,
+      "author": "@dhruvk6854",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kk_kX3W80JTcI-k5JpPepyxisJq_n-UknAYF-E6c3TF-I=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzuRiLr6j3Gt9ZWDdR4AaABAg",
+      "parent": "root",
+      "text": "A brilliant analogy with a book!",
+      "like_count": 0,
+      "author": "@gameplay-ld6ch",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mWT7uWC6DGLj-wtN1TCtqC13x8drhMnAlmqKPq6-YgHQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyBwdDTqSjfx4N8hPB4AaABAg",
+      "parent": "root",
+      "text": "Holy crap, he can highlight the like button under the video when it reaches a certain timestamp. That's crazy.",
+      "like_count": 0,
+      "author": "@daddy7860",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_n51sD7y-EAFMEHu8YgpHU-LAOA91SepmriDprqiEtepg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxjasY323EqDV-_OwZ4AaABAg",
+      "parent": "root",
+      "text": "Amazing Binary Search Algorithm",
+      "like_count": 0,
+      "author": "@qa-paas",
+      "author_thumbnail": "https://yt3.ggpht.com/hjq8__SVMJ_ZugFchv_sKpD_JSyl1JUQqZITyecKjcbbxc3gHn8A3WxyOeXD5wHPBF_-XDgC=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxJu3AtUmQw20iXvVZ4AaABAg",
+      "parent": "root",
+      "text": "lier...",
+      "like_count": 0,
+      "author": "@hououin-kyouma1688",
+      "author_thumbnail": "https://yt3.ggpht.com/M4HgBxzZBmfz2XacmRsxTTOmIIxgopRVDYoLiV9ZT1D0LE3S1eDu9Ae_Afr8r7YM20GhZnHk2Ys=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz68xvlK4xc7Hs3BHR4AaABAg",
+      "parent": "root",
+      "text": "Nice work! Thank You!",
+      "like_count": 0,
+      "author": "@typehrishi13",
+      "author_thumbnail": "https://yt3.ggpht.com/L57vNhzk2fMDfazT-LU5JBwweX0X_NeX2kKlMGxHWf7Mm3qv1oBi4aLV6rFEBJFUzgxb8Z1Wyw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx3Aua805YBXjSdnGB4AaABAg",
+      "parent": "root",
+      "text": "Now make it 40x faster",
+      "like_count": 0,
+      "author": "@paprikar",
+      "author_thumbnail": "https://yt3.ggpht.com/NmvZH0YQJrgEt1Ba9N_vSwz03Du-JXS380oqE16lxkw_hlcU8ebQs1M4Qd6k72leLJ7yAK7NpfM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwjrn9N7l9Z9JBcuDd4AaABAg",
+      "parent": "root",
+      "text": "wthe voice was ai generated, right?",
+      "like_count": 0,
+      "author": "@prombeats",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_ndriXConhD5sB6pXYr5yGkUtxWltN10IVQyP1SJogXNQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxW3TTrANBoENBen714AaABAg",
+      "parent": "root",
+      "text": "Hmmmm",
+      "like_count": 0,
+      "author": "@isaiasyoyo",
+      "author_thumbnail": "https://yt3.ggpht.com/yKFHCan3AzMdZ_NgFd-jiUaGJ1j8BxfnrwVJzNF6Wu5OV6MTGjFwz0XbWqbBOT1OLpiaZ3oe=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzwmG6jlA3qnMe4lit4AaABAg",
+      "parent": "root",
+      "text": "Thanks",
+      "like_count": 0,
+      "author": "@AbdurRShanto17",
+      "author_thumbnail": "https://yt3.ggpht.com/MEtVEf_YSs4-xACwVG0VLASSZ-HdZ0CsMFdcGnGWve6foZZMApRrbQY2T0m4hr-0Qw5BMG9blQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwlpurOGQtTYd1XVhp4AaABAg",
+      "parent": "root",
+      "text": "you have a typo at 1:11",
+      "like_count": 0,
+      "author": "@jdjdnxb5000",
+      "author_thumbnail": "https://yt3.ggpht.com/plZGKo0lvcuUOzW2hdlx6YJ5hEfWMX7RJGpbqcgPn0P6jwCm-2sCr8NDAZBxc0VelDVL3ju0Ww=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxWGKRgkN5rkiZ1kkx4AaABAg",
+      "parent": "root",
+      "text": "Thanks. I have exam in 3 hrs.",
+      "like_count": 0,
+      "author": "@LoyabaSalam",
+      "author_thumbnail": "https://yt3.ggpht.com/26TSAnGzlawyECmo3L6nHbeExAixiiYfjdZUbYCKcSCxkXraj7_tRTsY4bBX1qhhR0fGPlui=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugzn7WBhRdnr7aZQDVJ4AaABAg",
+      "parent": "root",
+      "text": "Great video but would prefer it without the annoying music and sound effects",
+      "like_count": 0,
+      "author": "@rodneytrotter5656",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_ledJ2_R10ZMyp51544BHo4w462QW05MFgsSszp2FwDow=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyTPKqJDe6MtAZkBKt4AaABAg",
+      "parent": "root",
+      "text": "yes Please cover all the topics from data structures and algorithm",
+      "like_count": 0,
+      "author": "@saneptumnta8680",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nz0WQ2urjkwjkAfqK_EdLBYiMnKV9tTCAehms64-BY7J4wgAZK-pM-tV9QNNg395wpAQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgytofAMBu-n2oEstbx4AaABAg",
+      "parent": "root",
+      "text": "Great and on point explanation. \nI think using recursion  the also will take extra space (recursive space), instead we can use while loop and find the element in O(logN) time...  ONLY  WHEN THE ARRAY IS SORTED.",
+      "like_count": 0,
+      "author": "@prakharrSharrma",
+      "author_thumbnail": "https://yt3.ggpht.com/FsbbwchyY7XvdkZxBRI91nXOXbe8ap79fr6FHFF47TdCV71bnM_RB47ecSCrZROsuPgE-rtVfbo=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx7EEBvssv0dUq3-Z54AaABAg",
+      "parent": "root",
+      "text": "Thank you",
+      "like_count": 0,
+      "author": "@imrankhansaami",
+      "author_thumbnail": "https://yt3.ggpht.com/AGf0s_Dymq9nlcFYMThDE9vXpwvES9tJjY35YuawZFh33UvSMdLG_hDMLj6pw2hZChMT_iRk=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwXkQAVcDmewcsDovJ4AaABAg",
+      "parent": "root",
+      "text": "1:12  it should be < then >",
+      "like_count": 0,
+      "author": "@intrinia",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k2buOKiMtYeL5U7E2gH2xjlNAloWjfGqYLliaTr66S1AE=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwblJxYyA4Pc5nZwaZ4AaABAg",
+      "parent": "root",
+      "text": "What was that typo at 1:08?",
+      "like_count": 2,
+      "author": "@domeletsplay333",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k6PeR6vFyEEZW6tQSShGC1aV3Va_eKt5-eZKxDxv4qsrA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwblJxYyA4Pc5nZwaZ4AaABAg.AAO0oM0l_GNAPXNwHwpeXk",
+      "parent": "UgwblJxYyA4Pc5nZwaZ4AaABAg",
+      "text": "its a typo dumbt",
+      "like_count": 0,
+      "author": "@amerejest",
+      "author_thumbnail": "https://yt3.ggpht.com/_JnZQFeasC9BiQ5TL_5qVnyL-ox_nOp_H7pO-KUN7HIU1h44-zfou0zXUHFuzYrsaCzJ003cHw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzWdqESN8xbmU1ev7x4AaABAg",
+      "parent": "root",
+      "text": "His name is bscateringandententerment all one work I looked like 30 comments and nobody mentioned his name just how much they love him",
+      "like_count": 0,
+      "author": "@protojay-1",
+      "author_thumbnail": "https://yt3.ggpht.com/8ZwFk5UUblXAZi1_4iIWhCbGFNO9gxF88uwo8ngYjUB8hZU3yzOaP6b9QekKSHPQzFcvhiuXbw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzPtiykRAjCIk-rMMZ4AaABAg",
+      "parent": "root",
+      "text": "ধন্যবাদ ,উপকার হলো।\r\nআমার নতুন চ্যানেল,তাই নতুন নতুন অনেক কিছুই শিখছি।আমি আপনার ভিডিওই বেশি দেখি,আর উপকৃত হই🙏দয়া করে পাশে থাকবেন।",
+      "like_count": 0,
+      "author": "@ITjobGuide-v3r",
+      "author_thumbnail": "https://yt3.ggpht.com/xhYM8r8cyNiu-dLPLvjKXP3jtrdPO0Cb-qKVUM2jldFu-NERw0AWG6HG3slcb1b90ZKdY5ov=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxCENEbzeCsdAUsTV54AaABAg",
+      "parent": "root",
+      "text": "TBH, just about 0:20 - 0:30 this one is easily to understand",
+      "like_count": 0,
+      "author": "@Themen012341",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kkDzUFL_cVPpRiyGp0oFA4XfcMoVFT2DxVi1w5mxOHIg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwrikCNUgWvn3P03kZ4AaABAg",
+      "parent": "root",
+      "text": "damn, babylonians were debugging VSCode python drinking soy lattes in URUK and NINEVEH and Babylon",
+      "like_count": 0,
+      "author": "@Psi-ivy",
+      "author_thumbnail": "https://yt3.ggpht.com/hhTVI8vuTKcicFrOJ7Du0T1FfTWmVJv_dcSzlaOU6D3zJzHkpNaMszP2lQbEHGXs1jI4ApmH7gg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    }
+  ]
+}

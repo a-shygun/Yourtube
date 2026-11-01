@@ -1,0 +1,472 @@
+{
+  "title": "Tailwind in 100 Seconds",
+  "thumbnail": "https://i.ytimg.com/vi/mr15Xzb1Ook/maxresdefault.jpg",
+  "description": "Tailwind is a utility-first CSS framework for building websites. It takes a functional approach to web design by providing thousands of tiny classes to use directly in your HTML. Learn why web developers love tailwind in this quick breakdown.\n\n🔗 Resources\n\nTailwind https://tailwindcss.com/\nTailwind Criticism https://dev.to/jaredcwhite/why-tailwind-isn-t-for-me-5c90\n\n 🤓 Install the quiz app\n\niOS https://itunes.apple.com/us/app/fireship/id1462592372?mt=8\nAndroid https://play.google.com/store/apps/details?id=io.fireship.quizapp\n\n🔥 Watch more with Fireship PRO\n\nUpgrade to Fireship PRO at https://fireship.io/pro\nUse code lORhwXd2 for 25% off your first payment. \n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font",
+  "duration": 141,
+  "view_count": 1084433,
+  "webpage_url": "https://www.youtube.com/watch?v=mr15Xzb1Ook",
+  "comment_count": 50,
+  "like_count": 59560,
+  "channel": "Fireship",
+  "channel_follower_count": 4320000,
+  "channel_is_verified": true,
+  "uploader_id": "@Fireship",
+  "uploader_url": "https://www.youtube.com/@Fireship",
+  "upload_date": "2021-08-26",
+  "resolution": "1280x720",
+  "categories": [
+    "Science & Technology"
+  ],
+  "comments": [
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "parent": "root",
+      "text": "We blew through 10K likes in no time 🤯 What is a challenging UI you'd like to see implemented with Tailwind?",
+      "like_count": 697,
+      "author": "@Fireship",
+      "author_thumbnail": "https://yt3.ggpht.com/3fPNbkf_xPyCleq77ZhcxyeorY97NtMHVNUbaAON_RBDH9ydL4hJkjxC8x_4mpuopkB8oI7Ct6Y=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYn6xmSBUl",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "A responsive layout with state management (hover, focus …etc)",
+      "like_count": 22,
+      "author": "@myeljoud",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k9ZKNYGh1rbJciu56NHg8kT2vcpKGKxXAmm_mB9NPf2qOS=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYo3YdM89T",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Anything that shows the usage of pseudo classes, and dark/light mode",
+      "like_count": 17,
+      "author": "@felixpuscasu5625",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nlClXusGZRuER24T_sbem1zAvfFThXavowu_mDSR86hDg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYtpdODljY",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Anything responsive with dark mode would be great.",
+      "like_count": 13,
+      "author": "@g-luu",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kPnlmvl5zcdR65sA69snjQZQg80Br7oaU10cGuSvoelA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYkaKpw9r2",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "how about a discord clone 🙃",
+      "like_count": 104,
+      "author": "@devtk",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_krzwcaNpEeqqfvX5crYqk4hCoofqhQI_a0bd-qazfS0E0=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9TgeV2Ww4ob",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYkaKpw9r2",
+      "text": " @devtk  you got it today",
+      "like_count": 0,
+      "author": "@islami00-k2l",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mnhrY6rivn-FmoGbk7EfRX_Tn1NtWaHbObu07ARW1p2w=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9YPmi-WusZZ",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYkaKpw9r2",
+      "text": " @devtk  69 likes\njust perfect",
+      "like_count": 0,
+      "author": "@anantgupta1188",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nzGDtCuwIOjbkZ1gEPQgNxjfsQYWJG5NncMsb5wOc8BVQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2022-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYlVIVLzmG",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "A product browsing page with cart and dark and light mode",
+      "like_count": 43,
+      "author": "@helderlimaletsgo",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kmY5kxviho-UgZti9ZqTr4fdOzkd1_2pbJja0qZPCPtnRx=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYq48BjT-u",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "a responsive navigation bar / menu",
+      "like_count": 7,
+      "author": "@fabiankunz5619",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_ke_eqU099zkz5H9mg6SFtHyYOOm-9OSFXKkT7u1TU=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9eJGKBV5wAB",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYq48BjT-u",
+      "text": " @fabiankunz5619  but",
+      "like_count": 0,
+      "author": "@nflendoff5189",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nqG5kNb9WDoM5cFrNSQr9fzliieK8lWbCqB52t7OKShdvcGjZ-DNkPlowQu3IE1MHYgQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2022-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYvVrTMk9D",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Spotify Clone",
+      "like_count": 5,
+      "author": "@masoudmohajeri6644",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kAZRC1IJs7-V-qMeWsDfCL9LtqRpB-QY48X4BbD5M=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RZ7Qraop87",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "centering a div",
+      "like_count": 31,
+      "author": "@ratulr",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nozkN1nNn0rajD6Jel1PNZpLmCmrn712ifU07keGXIKz8=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9Rfb3CemLQp",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RZ7Qraop87",
+      "text": " @ratulr   You made me giggle 🙂",
+      "like_count": 2,
+      "author": "@nextentrepreneur9288",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m5GeZyutLleL2D9pwOXlGn8VDt9YXdgyp2WmoS15l2fQU=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYwASoo2Dz",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Responsive and modern blog page",
+      "like_count": 4,
+      "author": "@shateq",
+      "author_thumbnail": "https://yt3.ggpht.com/7i3GYK9yYKJ1iDa-3r0bzS6QTT4Mfn5LpfG7xAK8puJ6XoIGKtWwUbXtRDyO_4jwV3eqtKCM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RZBpd60xwg",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Something with sass",
+      "like_count": 3,
+      "author": "@Not_Existing",
+      "author_thumbnail": "https://yt3.ggpht.com/HhOoMNJ2zwb_Uj8Q557qb7H7QbsdSvgKez92MQDOUQwzT3ad1IVlx0vgV0lePBp9goYuctG5=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9R_SFHU6FCY",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "yeah whatever you decide please include dark mode.",
+      "like_count": 3,
+      "author": "@hadipawar2539",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lYIGeDSh1cr6MTIKN3vgHNItMugnsUcuu69CduPTbuLWY=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RelLGsMopE",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Dashboard using tailwind",
+      "like_count": 2,
+      "author": "@Vikas_Singh_00",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mXL20OzYXIEDpGjKHuW-E9Ucn4hv50tINFI4kxXnBHALQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RZPbOlfcmB",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "I think something with a responsive layout would be great to show off Tailwind media queries. Something like a navigation bar would be really cool.",
+      "like_count": 1,
+      "author": "@m.minkov",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kyDltBoRrwZX8KRE_QBxn0lryVzHRa57PSPvUcojOe9g=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RZii7th9Lq",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Business portfolio with essential parts ( payment plans, accordion, nav..)",
+      "like_count": 1,
+      "author": "@mohammedsofienebarka6400",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lmxPNedL8O176Kk42dNrcHreO0UojkMKZ3vGE8te98GBU=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9ScjEtw1nfA",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "LTR + RTL + Dark Mode Admin Dashboard",
+      "like_count": 1,
+      "author": "@LearnTogetherYT",
+      "author_thumbnail": "https://yt3.ggpht.com/1Wb_aPBCNix1Vgc5npvwPaSoVB6z3lvRtPZPy_5A5EQBRsWnjhQlNPRcnh3WOLd4kVVEglma=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9Se4KyxiQAN",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Tailwind with NEXT JS",
+      "like_count": 1,
+      "author": "@talhaibnemahmud",
+      "author_thumbnail": "https://yt3.ggpht.com/iTTE36JqKMEEO8J2oSq_48tlVSQRCA_MSbVW-M5Tqt6VZCBfEajubedYkr0_XCmvKKjmscLkww=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9TZFdWwc7yi",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9Se4KyxiQAN",
+      "text": " @talhaibnemahmud  THIS! Specially how to configure JIT in order to dev quickly.",
+      "like_count": 0,
+      "author": "@michaeldebetaz",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lrj5s_2dyHN_z-JjQV1KAKO46cw-paWKTm70BcDL0N0Wo=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9R_t_UIuIqb",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "A sveltekit and tailwind in jit mode app",
+      "like_count": 0,
+      "author": "@vanshbansal1444",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mRo8VySPNfYDZ-6U4LLQ9JmJyN5vfCWtaZlwuHN1w=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RavjkjaNqI",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "OnlyFans clone 🤯",
+      "like_count": 0,
+      "author": "@krzheph7373",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k9Mq0OxnBBJErtU7QpLRGZNR8hWkKmOE11Np_1Aqy4Nl4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RbvfLmTWdB",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Twitter UI clone",
+      "like_count": 0,
+      "author": "@abdullahh10",
+      "author_thumbnail": "https://yt3.ggpht.com/Muory9RNsTj_iVtH6o6AZuIQp4fRUKzHUs3ZP9-1HP_HOlDnLiBnFk-2H2GB7jjk5ANbNbkKFA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RcB3eihCnr",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "can you make a list of all (or some of) the songs you've used?",
+      "like_count": 0,
+      "author": "@L-8",
+      "author_thumbnail": "https://yt3.ggpht.com/oWY3HDR8HRHR_aqw5Fuv8KLd7AZTgLMEyf90As3SWmJwRKVN9uXOeD3RnXOE8eH73x9cr-VaeLQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9Rc_HgzgGTI",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "a page with a sidebar and navbar something like a dashboard",
+      "like_count": 0,
+      "author": "@tgames3397",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nvEIa2jW_z2htAnn75I2tNWNL7tN6CjzOm5lNdojFpM20=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RdEtGcGNrw",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Whatever you choose ...We want a tutorial STAT 👍",
+      "like_count": 0,
+      "author": "@kapow6867",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_l-Vjrn78nqbn6QHUVY1zrA7RgOBMkwgeFWJ-A65A8=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RfoMKbuL3m",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "INSTAGRAM CLONE",
+      "like_count": 0,
+      "author": "@arkantos14821",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kAF7SYMDU1HPQpAZeDB7usKU0zc6C3i_0ZczJKrGKTIxM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RiJqBESzTi",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Great vid! \nSlack, discord, Instagram with tailwind",
+      "like_count": 0,
+      "author": "@leanprogrammer",
+      "author_thumbnail": "https://yt3.ggpht.com/02YIus43x0sCiwni4PbgMmMjcEQq54KZWGcmBzmEJgH74iHiJnN_Wnpwhg5cH5B_eK-O1-vJ_Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9S8fuXpGQ_-",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Make video on Alpine js that would be good idea",
+      "like_count": 0,
+      "author": "@robotprogrammer2902",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lW6qdpjuoxpZfDPz11eYTi6KFcBtN7DvLFQ31VPEBxpQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9SX7M9ZZdGi",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Netflix clone with light and dark",
+      "like_count": 0,
+      "author": "@nikilragav",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nbPrd_1licWysx7u17T19wWXM9kCZJ070B6ltMfJM39lg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9jrvVAY2jue",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "We would like a full course on TailWind :)",
+      "like_count": 0,
+      "author": "@dreamtwister8680",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m3mgIUnCeFeMZ7rGsWEjiVfY5yVLEJJwXo8gJ1RhA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2023-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9nbsOSj_AYb",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "I'd love to see a 100 sec. of Bootstrap Jeff.\n\n(surely not as good as your 100 sec. Cobol but still worth every second ❤)",
+      "like_count": 0,
+      "author": "@wtl912",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kL9NxTVCiyawGPrfFC3Oq7c33OXT3QUyYMD1t77FBDfH0OwC0YMR7Pwpiv5fl7AhGdOQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2023-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9rHz_-IHoV7",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "I want a chat box that starts every reply with \"n\" and ends every reply with \"you'll never be a women\"   Make it so. BTW i know that isn't what you asked.",
+      "like_count": 0,
+      "author": "@MichaelMantion",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mLPeW09_1SjUJ-BMj_vShoq-xtZEmYu0u0TCKgmG6it4Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2023-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9wviJBDXF4G",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "A replica of any Apple product landing pages",
+      "like_count": 0,
+      "author": "@skapethegoat",
+      "author_thumbnail": "https://yt3.ggpht.com/h8I0ifE9ebWuU2hw7RLBnsPH5a5NGVH5niNLI_TQRsugrhXyjreHJAEe3avufyK_6hi0Wf-EjA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4VA5a-A3CiJWm",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "SaaS landing and/or admin",
+      "like_count": 0,
+      "author": "@webpreneur07",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_l-mdUZgELmHFOoSzTYYO7tzwsqFbCF6zN75jciR8dWLcBy=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYthwdpC0c",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "VS Code clone.",
+      "like_count": 6,
+      "author": "@6pakAL",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kYuL9nIUncuaqs0qw9uDsbc-dXSoRTiP5RrF4Hpa6TX-4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9eJGJGPJNWg",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9RYthwdpC0c",
+      "text": " @6pakAL  no",
+      "like_count": 0,
+      "author": "@nflendoff5189",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nqG5kNb9WDoM5cFrNSQr9fzliieK8lWbCqB52t7OKShdvcGjZ-DNkPlowQu3IE1MHYgQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2022-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwUqe_0VGIfHHGVR0F4AaABAg.9RYjf-vtV4V9R_VLr8SZqd",
+      "parent": "UgwUqe_0VGIfHHGVR0F4AaABAg",
+      "text": "Great video! Challenging? Well, a responsive Youtube clone with dark/light mode seems pretty challenging to me :) \n\nCongratulations for being Amazing!",
+      "like_count": 3,
+      "author": "@alvarofranz",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kOEb8GruJMtLwOwZIIfOlrRKpsIrBo03Benk9gjm6QMi4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyHyWHAW3FkioNwfal4AaABAg",
+      "parent": "root",
+      "text": "I disagree about css being hard, tailwind is awesome 100% but learning ang getting into css isn't hard..",
+      "like_count": 0,
+      "author": "@mr_lemao",
+      "author_thumbnail": "https://yt3.ggpht.com/9ILPHptj0Z8xydu-LqoG-DWvU0O4ThMD9MDMEF9izaDd9BhzYUVxQkrF2Daoo_CC_owXz4pFfw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-04-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyqcY2N0sbLw1v-Ws94AaABAg",
+      "parent": "root",
+      "text": "That was a great 100 seconds.  You have cleared up a lot of questions I had.  THX.",
+      "like_count": 0,
+      "author": "@mattyharkin5787",
+      "author_thumbnail": "https://yt3.ggpht.com/guA0hJ9OInB6ppjND0PisGUJCjqi6asGiH4eBGfLN3TwbHHkhghreiW6ZHf9MrYSnuqij6-4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-04-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzQpVZYkjonntQYoi54AaABAg",
+      "parent": "root",
+      "text": "Perfect video. Information and delivery is absolutely phenomenal for experienced OS developers who are getting into the web world and diving into front end. Greatly appreciated.",
+      "like_count": 0,
+      "author": "@jimbot7330",
+      "author_thumbnail": "https://yt3.ggpht.com/6gO0KqQ5wUqoLRBERNGZ6OECHIEvMmcaA8hN8cVFtk0QZbGsvwUsKMYdX8i3REQ3S0FhB1QiNcs=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-03-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxY7JlJ-sOQ-RMhIVh4AaABAg",
+      "parent": "root",
+      "text": "I love how humorous we are as developers \"it does produce some uglyass html\" 😂😂😂",
+      "like_count": 1,
+      "author": "@TheHomieTre",
+      "author_thumbnail": "https://yt3.ggpht.com/NW92XLD7-VzkCoaJ0-HWhrA77DmO_x5cGBR-p7Ur71mcqsp0rW1mIZ_7G90By6fLTkUVNp1L=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-03-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxAZcy0ndfk8H0Ik194AaABAg",
+      "parent": "root",
+      "text": "Just use AI.",
+      "like_count": 1,
+      "author": "@antdx316",
+      "author_thumbnail": "https://yt3.ggpht.com/JdROsY4yFullL-r93A-kwxp1bRjP9mr5698BCTfyHlstFqBBwTzW4rIJmyKgRLA5QcCoKtz-lcQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz0mI1hYS5prlZIFrR4AaABAg",
+      "parent": "root",
+      "text": "🎉",
+      "like_count": 0,
+      "author": "@paradoxial_sas",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mL5AcD1g44LBAuDqwNx43wXm0Ag2DM15y-xgqr60QEEIlmQdJi-HpFUQjDW-Zp-bCHzw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw-5Sp7Rf5_ARETr0p4AaABAg",
+      "parent": "root",
+      "text": "Has anyone read the title of this video as \"Talwiinder in 100 sec\"?",
+      "like_count": 0,
+      "author": "@AbhoyM",
+      "author_thumbnail": "https://yt3.ggpht.com/_RMSQufV1EikU4n6GJbOWEyWhsmcMYK6d9hmDMTpBpENJKZ71QZW-ya9DONAPZ_rusEDHD6Q6w=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwtGORj-4_2U-lzs1V4AaABAg",
+      "parent": "root",
+      "text": "Found tailwind about 2 years ago and I am never going back to plain css ever again.",
+      "like_count": 0,
+      "author": "@RogueRadar-x",
+      "author_thumbnail": "https://yt3.ggpht.com/Ftdqyqs737RcGmnXAw20b2jAgaWxLBvxytFqri1k9CJ2sq4Zn__MrwCPWx-mvnz46S2FNGQXFQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxsHZirJsvsbJAvC5B4AaABAg",
+      "parent": "root",
+      "text": "One of the sidebar videos is \"Tailwind css is the worst\" by this same channel.",
+      "like_count": 0,
+      "author": "@chestnut4860",
+      "author_thumbnail": "https://yt3.ggpht.com/5llL8bjfR4bBiDew6UiYPUgL-ngxe1_HoyiFPUlG0mvDu8bOQAaCjLB1uzEL_-68UV_R6EvHedI=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzZmf4l6WqejSkVVjZ4AaABAg",
+      "parent": "root",
+      "text": "I see what you did at 01:50 😁",
+      "like_count": 3,
+      "author": "@ajakrami9936",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_l5LLkTg-D-orAjIv3QnONs9TM45y_AotBXm2mRPRn4eltxYktPs1EaE6EeEfGMXSfLHQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    }
+  ]
+}

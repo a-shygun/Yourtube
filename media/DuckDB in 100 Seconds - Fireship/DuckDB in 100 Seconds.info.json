@@ -1,0 +1,472 @@
+{
+  "title": "DuckDB in 100 Seconds",
+  "thumbnail": "https://i.ytimg.com/vi/uHm6FEb2Re4/maxresdefault.jpg",
+  "description": "Learn the basics of DuckDB - an in-process, analytical database optimized for OLAP workloads. It's lightweight, portable and requires no server setup, allowing it to excel at complex queries on structured data.\n\n💬 Chat with Me on Discord\n\nhttps://discord.gg/fireship\n\n🔗 Resources\n\nhttps://duckdb.org/\n\n📚 Chapters\n\n🔥 Get More Content - Upgrade to PRO\n\nUpgrade at https://fireship.io/pro\nUse code YT25 for 25% off PRO access \n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n🔖 Topics Covered\n- What is DuckDB?\n- Why DuckDB is great for analyzing massive datasets\n- Which companies use DuckDB?\n- How to run DuckDB\n- Useful DuckDB commands\n- Aggregations with time series data",
+  "duration": 142,
+  "view_count": 537551,
+  "webpage_url": "https://www.youtube.com/watch?v=uHm6FEb2Re4",
+  "comment_count": 50,
+  "like_count": 29813,
+  "channel": "Fireship",
+  "channel_follower_count": 4320000,
+  "channel_is_verified": true,
+  "uploader_id": "@Fireship",
+  "uploader_url": "https://www.youtube.com/@Fireship",
+  "upload_date": "2025-08-14",
+  "resolution": "1280x720",
+  "categories": [
+    "Science & Technology"
+  ],
+  "comments": [
+    {
+      "id": "UgyRDLsYiPGENAuTBxp4AaABAg",
+      "parent": "root",
+      "text": "DuckDB is an absolute game-changer for data analytics! 🦆 Just like SQLite revolutionized embedded storage, DuckDB is transforming the way we handle massive analytical workloads without the overhead of a dedicated server. Its columnar vectorized engine makes complex aggregations and time-series queries feel incredibly fast and seamless. Truly an essential tool for any modern data stack!",
+      "like_count": 0,
+      "author": "@hypervanse",
+      "author_thumbnail": "https://yt3.ggpht.com/qXQNSEBtSgRQ1GFUemJQc3dvYfS3AsqNuwP5Nzn2ssKs9TJ0hP-EklG3VW2a8NAFoWkr4TT5=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-10-06T00:00:00+00:00"
+    },
+    {
+      "id": "UgxBUO46dgL1PJ0ZaLZ4AaABAg",
+      "parent": "root",
+      "text": "So sad, I liked duck DB.",
+      "like_count": 1,
+      "author": "@AshutoshSamantaray-w7z",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lImVEFshLCzwKPwsKil_wI44W3fLO5VgHisdM_-Jtm5ZMsPSMXFTRot9-tSU3zW38Ftw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-09-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwCDY2SCxmaLsLRcw54AaABAg",
+      "parent": "root",
+      "text": "Taking example of \"Silk Road\" as an E-Commerce website was unexpected 💀",
+      "like_count": 0,
+      "author": "@parakhchauhan",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kjQers5dF5tY4oSQ6HszZuWpPkWTEUYiLOaoYeY8cLBLaf=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-09-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzflVGNcaRNjnUA63V4AaABAg",
+      "parent": "root",
+      "text": "It now acquired by aws",
+      "like_count": 0,
+      "author": "@thetensor",
+      "author_thumbnail": "https://yt3.ggpht.com/rtJdR8W2VLIDSggvS18H5bj6R4YJgoUviu3KbeDsPHit7bBn7IC49z8ypAmZMqK_cNIoKoQPNA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-09-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzUTsxynmUgWdpDmbF4AaABAg",
+      "parent": "root",
+      "text": "0:38  \nrow-wise DB: OLTP (Online transaction processing)\ncol-wise DB: OLAP (Online analytical processing)",
+      "like_count": 0,
+      "author": "@yash1152",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m9J-KB0fQ912temudIwC1DULd8FZq-CnYm9vWvCx4sMhY=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-07-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwL-Ct5ykgx_ShCLd94AaABAg",
+      "parent": "root",
+      "text": "HTML Table --> ROFL",
+      "like_count": 0,
+      "author": "@semo-s1m",
+      "author_thumbnail": "https://yt3.ggpht.com/w4WoXDjzgGyU2_4k20A-JaKpj1UXJb9JdB3UgwxtG84hiJuyIpLWsd0CT5InqRKJWtuD1-hWxlg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-05-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwPu0B89lZCt06RB9t4AaABAg",
+      "parent": "root",
+      "text": "SQLite runs as a single binary? NO its a SINGLE FILE. No binary needed. your apps talk directly to the file.",
+      "like_count": 0,
+      "author": "@gamertechkid1490",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mGRu9NiVyYfAp_vNsP61sDr1G2QVtCBB7-7LxfFY3K6A=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-05-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzPPk1-B46OzbRfOvp4AaABAg",
+      "parent": "root",
+      "text": "1:08 i love the 'big word phobia' reference",
+      "like_count": 0,
+      "author": "@KnewSaad",
+      "author_thumbnail": "https://yt3.ggpht.com/OeZ0i2qvombQR9Y4V1ZAFhm7fiWSfxuxho7kYRLldApOV1qWe0alA3WCCMvoYgvWMNVk2gP4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-04-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwo8ksuiH9ZRJbq_pJ4AaABAg",
+      "parent": "root",
+      "text": "Could you say that is is similar to GCP BigQuery but you can run it locally on your system?",
+      "like_count": 0,
+      "author": "@ericpeck7858",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mlEnA_CYn0rV_-6H-O6JC0kGdGAGuGYECltlo0LZHcLZnMN_xr6jbqVUURpcF0dDIR5g=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy24dNFWx7_WhzE9VN4AaABAg",
+      "parent": "root",
+      "text": "quack",
+      "like_count": 0,
+      "author": "@adrgonzato",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mHIP-hl2VdwpTA5QRpG-_P-P4h70jTlvLA8tMp2uCUZoE=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy_JJPo-CuiZwNk-Rd4AaABAg",
+      "parent": "root",
+      "text": "Millions of e-commerce website but still chooses Silk Road.",
+      "like_count": 0,
+      "author": "@EverythingKollywood",
+      "author_thumbnail": "https://yt3.ggpht.com/CLB-HeiuitDHJzzAI8Vaxq_aJL1PYW0MOLXLvkx_uI6iLRpsZQ1ayORKtN1y10rPoWsBCsQx=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyXFYT2AJziWOBb14x4AaABAg",
+      "parent": "root",
+      "text": "I love that he showed Silk Road as an example of an e-commerce website.",
+      "like_count": 0,
+      "author": "@RamonOliveira-d9s",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lAyCmPuPTcTtYpOA4QnUiNiel5MSi2UOypDgNoiTtaAGtGVrLt1wtS6foazk69LW0x-w=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugxpi6gte4iA6SMuCP54AaABAg",
+      "parent": "root",
+      "text": "the string of buzz words at the beginning always makes my hart skip a beat",
+      "like_count": 0,
+      "author": "@Apocfall700",
+      "author_thumbnail": "https://yt3.ggpht.com/mPyCBbIX7bSi9xMNwNO4W0eE0ZE9OvPHt7OD3_tFZ-QwO3HBjM3TT_lwXF9PPx765eJS67qE6A=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzP1vRiCxHWKQzbFo94AaABAg",
+      "parent": "root",
+      "text": "Surprisingly 100secs actually explains the olap vs oltp better than any AI I've ever used... Are you guys sure this guy is powered by AI :?",
+      "like_count": 0,
+      "author": "@dangtu-work",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_l-WDp-o_4dad4i1cjUt6kk_enCwRptrR1dr37Af1EdVVg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwzSsrZy6HEsncUx-94AaABAg",
+      "parent": "root",
+      "text": "This is not the only OLAP database out there. There are plenty of other you can use for analytics e.g. Exasol, Snowflake, ClickHouse.",
+      "like_count": 0,
+      "author": "@abdullahfarooqui2479",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_ktKVgQ7_YVqn4Z81Lbv3DmprQ7lJyPcnzEdsBJYUFcuh4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgynKw9Xv4N8uyrtCGt4AaABAg",
+      "parent": "root",
+      "text": "thanks",
+      "like_count": 0,
+      "author": "@mikeafter5",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m6nwcZ2_7BB60WKzbulOJj_Oo6qpF2xEagd6DPQM4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwes1e_uxHSBZEIuqF4AaABAg",
+      "parent": "root",
+      "text": "How render Latex notation, stored in the database, displaying in the web app to mathematical expression with Marhjax?",
+      "like_count": 0,
+      "author": "@kisho2679",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kxGymFiLieDb-7hGYFL78_71A0FkrOOj3xcYT_ZJ-4ZQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzGP1u_6NzROtMa3JJ4AaABAg",
+      "parent": "root",
+      "text": "Is it akin to  ClickHouse?",
+      "like_count": 0,
+      "author": "@zixuanzhao6043",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kBJaEGdFrPeJF8-Ky2lPwyezuXrOJskM7GXbkDwGY=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxKnF7PKJs5bbFVchV4AaABAg",
+      "parent": "root",
+      "text": "Python for haters\nC++ for haters\nWindows for haters\nReact Native for haters",
+      "like_count": 0,
+      "author": "@Assembly_x86_32",
+      "author_thumbnail": "https://yt3.ggpht.com/yxydQfNS6lJwBybJ32EACcLf72OTvJ9sTwpEpLGOc4CoNCHJa950VmXe3oQK3631Ptcl3ZLG=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzhcRVt2u3WsII_B2R4AaABAg",
+      "parent": "root",
+      "text": "The \"HTML Table\" had me 😂",
+      "like_count": 0,
+      "author": "@Jan_Be",
+      "author_thumbnail": "https://yt3.ggpht.com/HI870xvdG-a21IMIfzpOU2hWNH7xnYN5kR-4Fcesi1RM3XX9702Q3slDCrfYMZWMsA1e2wS_=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyjgG9AI3SqP5mhWdB4AaABAg",
+      "parent": "root",
+      "text": "no AI? How is that possible",
+      "like_count": 0,
+      "author": "@404nnotfoundd",
+      "author_thumbnail": "https://yt3.ggpht.com/C1yB-ErIPcIOk3KH2mEkEkKSiRgaZt5awtSObNPf4IYuHY8k8-FOzSFjaJ56omEfhCn5qBO0AA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy32VAugizkUUEorYN4AaABAg",
+      "parent": "root",
+      "text": "Sylvan Franklin",
+      "like_count": 1,
+      "author": "@kendalljackson9326",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lEVM2FTSbdJzoUXbLfn_xAtnUltJqTCjAco7iesw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz4myFJHq3xL450E7h4AaABAg",
+      "parent": "root",
+      "text": "1:23 idk why but seeing sex as a boolean seemed funny (as I think yes/no from boolean isABC patterns), esp wrt to horses. \nBut I guess it saves space compared to a varchar(1) or smallint or something so I could see how it's practical lol",
+      "like_count": 0,
+      "author": "@VSpectrum",
+      "author_thumbnail": "https://yt3.ggpht.com/qdSaXIAKZDyUEIx1ezdWr7bv9RNyGIv-dISGXPrCIQnehbHinlnSzmHqcyLxddYi3NHODWlNPQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz6ZpoxrNBm96QIJIV4AaABAg",
+      "parent": "root",
+      "text": "you didn't even mention how it can flawlessly work with dataframes and query them as SQL",
+      "like_count": 0,
+      "author": "@snay6869",
+      "author_thumbnail": "https://yt3.ggpht.com/Qp8xf-2EsJEmdj75yprryv8guS1Nyj_BB8J7D4l_mXSTcfuEWBWAinhJgseXW2-uC2NjnfuE=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx778cqnBCUq63hi_R4AaABAg",
+      "parent": "root",
+      "text": "THE COMMUNITY HAS SPOKEN! Only make these videos = happy viewers",
+      "like_count": 0,
+      "author": "@KylerEdginton-e6p",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k9UxnvSEs8JwuJDQ-mV6u1Ei1FmVZ81IqmMkbvtyEEUuGBEHgOsXdETp1IQUaanB9mRA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxpSkVQiS29DSone754AaABAg",
+      "parent": "root",
+      "text": "Add this to the 100s of code playlist please!",
+      "like_count": 0,
+      "author": "@BryceLeo",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lWbuVfg5FBXpkGMgfv2sa_OHbpgqThcvsC2OmC2v1VGoo=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzwucE6pDMA1hyGF4l4AaABAg",
+      "parent": "root",
+      "text": "What music did you use in the intro?",
+      "like_count": 0,
+      "author": "@suspense_comix3237",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kh3T9ntSiOglFmdCXGbWf-Lj0PUZoSXH2ttWKetMrCEQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzA9iRL6h6iAmqp52h4AaABAg",
+      "parent": "root",
+      "text": "What is the difference of using duckdb and using clickhouse as a cli and storing everything in a parquet file?",
+      "like_count": 0,
+      "author": "@dryanichek8547",
+      "author_thumbnail": "https://yt3.ggpht.com/2Z1ntmWhV3EQjUaUfHDWLyQBmflKUNRbTGBBoFEBWMI3XmQ5mz5WSffiRMNf6HLE4YeMks5oA3o=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugxm6H-bP61v4W5-Dp94AaABAg",
+      "parent": "root",
+      "text": "Another reason why i personally love DuckDB is for the more advanced Types it allows for. It allows even Lists and Unions as Column Types. Which is amazing.",
+      "like_count": 0,
+      "author": "@the_mastermage",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mQjD-KAyx2wgI8Ay0WV95Ccpnw7fpU5SySRvuIN4xhgLg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxSEgtNAB63jHXQL254AaABAg",
+      "parent": "root",
+      "text": "I didn't realize I needed this DB. Since the video, I have used DuckDB so much, and I love it. Thank you.",
+      "like_count": 0,
+      "author": "@dogonthego",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kDyUBZLpqWRmYxzdiRxiUGOop7IqqYqLVcfRe-UdmVxNQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxjOjrHqEWtf_w5pyN4AaABAg",
+      "parent": "root",
+      "text": "0:44 all you should watch. 1 frame.",
+      "like_count": 0,
+      "author": "@kahnfatman",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m07syhemLLh62E-Ss-oP1AQuZwd0i_KI4I_yp0SW8uY9Y=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNrnP9lqcyJL4_Gex4AaABAg",
+      "parent": "root",
+      "text": "\"sex BOOLEAN'\"",
+      "like_count": 0,
+      "author": "@MisterGorr",
+      "author_thumbnail": "https://yt3.ggpht.com/Jl0-PcWSIpL6qCbBFXNwcySS0rmmoe3MgAciZj152oilT6cOPsrw9VUyMLyt-3Ixywz_tTfo=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzRoNc0pGBoEhvOPiB4AaABAg",
+      "parent": "root",
+      "text": "We staan er weer goed op jongens!",
+      "like_count": 0,
+      "author": "@screamified409",
+      "author_thumbnail": "https://yt3.ggpht.com/TUjc-8zcStF2Hego5pAr3m-2MBlDEIMSKB_79q1hAgqCDqNRvceRiMJBXihfvhM47kw73hQHIOA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzmIa2Xe7lLLo5gNS54AaABAg",
+      "parent": "root",
+      "text": "That's the fireship spirit. Duckdb is awesome and well worth the shout out. Kinda surprised no Ai vice was mentioned in the comments.",
+      "like_count": 0,
+      "author": "@krzysztofkaminski6474",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lUjgy_YVyun-ZAOFWg5BPrQmHGwMC1zkSYTl3zhdTYeg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyW1Iv9jtUjWNv5kFR4AaABAg",
+      "parent": "root",
+      "text": "I wished these non-AI related videos had more views, but I think most is their target people have already given up of the channel.",
+      "like_count": 0,
+      "author": "@r4phides",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nG4SbiRinF1vfW-o9Rnw5llJVk7TkcI6fsy_QOXjoibee1KSsh76gul9To0U7W2NWuBQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyVkEJRImwYJ1p434R4AaABAg",
+      "parent": "root",
+      "text": "thank you for not posting another ad for slop ai. All GenAI is SlopAI.",
+      "like_count": 1,
+      "author": "@xeno4729",
+      "author_thumbnail": "https://yt3.ggpht.com/RfNpZpLhf_DZZ6k8BFQvMGJzhB2macWCaA8Aj3CkpudGsYb8ibsNkhHiU7h4hPRdUHlt8ra06Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw7I4oDkQEQsySVqoR4AaABAg",
+      "parent": "root",
+      "text": "no A word, impressive !",
+      "like_count": 0,
+      "author": "@redgood5879",
+      "author_thumbnail": "https://yt3.ggpht.com/16a51ygKjlXjW0k7At0AATn_33Wal_scLqy5sBd2emEbovp5hsHYUhJl6exoLunCmm89TeqteA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwRLYSUnqYFbvq4zZV4AaABAg",
+      "parent": "root",
+      "text": "Yaaaay!! I was just looking into using duckDB and was so happy to see a fireship video! I think that these kinds of videos have much better long-term value than the AI ones. I don't think anyone's going to be searching about AI news in a couple months, but having a good summary like this will get searches long term.",
+      "like_count": 0,
+      "author": "@itisinfactpaul2868",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_npQ-I2Pw8udkkSdkXFeXPXrcQSTTGbaLpgVDGvwU0dP48=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxuRG2E48veNzPYpzl4AaABAg",
+      "parent": "root",
+      "text": "did Fireship quit?",
+      "like_count": 0,
+      "author": "@Luminaz_",
+      "author_thumbnail": "https://yt3.ggpht.com/7DVwLhpeyyHm2O81-prf_kb7qaTAtxPy6gsNlQRetWNpCqWctDwdrOPFCyr1Ru9Lk_oKOsbD=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw_L_MclngN3XFeavx4AaABAg",
+      "parent": "root",
+      "text": "Elon musk launched Macrohard saying it as a replacement of Microsoft",
+      "like_count": 1,
+      "author": "@Asurishere",
+      "author_thumbnail": "https://yt3.ggpht.com/mfZ8L76jlDCCVBQjZ1ekcdW9SMipfH4y_Ey6iwX46sqF9lqnRieWny2oW3QAculcLXoNMPg2rA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwA0BKY19pT0_9l0JV4AaABAg",
+      "parent": "root",
+      "text": "Is It Actually Better than Cursor+ Claude?? In terms of building complex apps?, whats the best vibe coder or AI assisted AI for coding?? The  ai that can build the most complex ever algorithms and apps and software?",
+      "like_count": 1,
+      "author": "@VideosFromThe_Internet",
+      "author_thumbnail": "https://yt3.ggpht.com/vSnxqAn9ACHKyDGypWv11VIKR1ZOgd5AoZQXcdziV-jvIwXlM27QUhKihYz2Dw45KfKi__hpaw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyCjYRPK6Jtn8NhEmB4AaABAg",
+      "parent": "root",
+      "text": "Macrohard when????",
+      "like_count": 0,
+      "author": "@naouxan",
+      "author_thumbnail": "https://yt3.ggpht.com/vREp5zxs1j8rCxm1-tE6PXWITbjDy-DmqBKWP6Qzv4EuNDkOt0deaK7pHY-bK3KB7qRaaRO1Wg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxgdqvTPoc1OWbJ86t4AaABAg",
+      "parent": "root",
+      "text": "aah it feels like an old pre AI Fireship video.",
+      "like_count": 1,
+      "author": "@AjinkyaBhushan",
+      "author_thumbnail": "https://yt3.ggpht.com/uO2tJEzt9DcMqxwDXjHMZHGxgoh_Bj4RQK0ENzlGbKZR1fOTL8NY2h6-4ZxxyCnJkgyk7pJwsJA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy0ClFlP5Ygii_0tP14AaABAg",
+      "parent": "root",
+      "text": "Vectorized batches of rows and multithreaded by default, got it, I'm an expert now",
+      "like_count": 0,
+      "author": "@malding1",
+      "author_thumbnail": "https://yt3.ggpht.com/GYkOXxSVNLX2h-idnl2ha4Qyuv4Y78YlS89M-FgGyoMS_2VdbwzmTKwo4aoER0-TpEZYly4SJA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx8HSXgCjQo3soSpDB4AaABAg",
+      "parent": "root",
+      "text": "This seems similar to what Vertica does, right? just that , vertica is based on top of Postgre",
+      "like_count": 0,
+      "author": "@workforflint",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kgWiirPcPRLjkXfZC3wjGXWWaUlP5RnDqL-TKTlm9TLQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugzh6h2eTrvmszqtlMF4AaABAg",
+      "parent": "root",
+      "text": "0:41 That silk road e-commerce reference 💀",
+      "like_count": 0,
+      "author": "@RandomMGyt",
+      "author_thumbnail": "https://yt3.ggpht.com/wk5yWrvhIPL_-eT7466xJcxmp1SCpZjRYP2m1n3mAIsbPSa-ZjruJDm6AqvB_XTEm6JR9x06dA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxG4LGTbgQJl8K3ycZ4AaABAg",
+      "parent": "root",
+      "text": "👏👏👏👏👏",
+      "like_count": 1,
+      "author": "@marcusmoore5526",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_n0_QM6j-NKYVHGbMQrMNnJusZNOl6NlLw-RDs1l90=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyUvyXEr4sXxBWeHNR4AaABAg",
+      "parent": "root",
+      "text": "dope",
+      "like_count": 0,
+      "author": "@zbones-x",
+      "author_thumbnail": "https://yt3.ggpht.com/cE59C8fy-k629Qe96XalBNI2QXn_zefiXtvZRuSshi9CMGTzUkekz4Z1Hj00SLId5DHmK8IS=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzscbUgsUB3d0tY9YB4AaABAg",
+      "parent": "root",
+      "text": "Please make video on grpc in 100 second",
+      "like_count": 0,
+      "author": "@pranjaljaiswal5215",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lImWjpMrIvdRovD-M6t404B4iy4JtBgKSvugbuhj_RH1T6wD48Xs1RhVDJF9ywMr1Udg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwOVdYbY8gWcNoCMyt4AaABAg",
+      "parent": "root",
+      "text": "Why were you looking for sex from horses? Stay on task.",
+      "like_count": 0,
+      "author": "@leadmission8015",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lH1zJmlsA1WqGJZyMpgTbIfXRnmiC714MlofQqnMaTuRgkpG4o42a60HhOGPyJpAPAuA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    }
+  ]
+}

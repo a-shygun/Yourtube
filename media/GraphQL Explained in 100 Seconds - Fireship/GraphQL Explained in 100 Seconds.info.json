@@ -1,0 +1,472 @@
+{
+  "title": "GraphQL Explained in 100 Seconds",
+  "thumbnail": "https://i.ytimg.com/vi_webp/eIQh02xuVw4/maxresdefault.webp",
+  "description": "What is GraphQL? Learn how it compares to REST and why developers love this query language for reading and mutating data in APIs https://fireship.io/tags/graphql\n\nGraphQL API Docs https://graphql.org/\nSpaceX GraphQL API https://api.spacex.land/graphql/\n\n#dev#graphql #100SecondsOfCode\n\nInstall the quiz app 🤓\n\niOS https://itunes.apple.com/us/app/fireship/id1462592372?mt=8\nAndroid https://play.google.com/store/apps/details?id=io.fireship.quizapp\n\nUpgrade to Fireship PRO at https://fireship.io/pro\nUse code lORhwXd2 for 25% off your first payment. \n\nMy VS Code Theme\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font",
+  "duration": 142,
+  "view_count": 1509320,
+  "webpage_url": "https://www.youtube.com/watch?v=eIQh02xuVw4",
+  "comment_count": 50,
+  "like_count": 53795,
+  "channel": "Fireship",
+  "channel_follower_count": 4320000,
+  "channel_is_verified": true,
+  "uploader_id": "@Fireship",
+  "uploader_url": "https://www.youtube.com/@Fireship",
+  "upload_date": "2021-02-13",
+  "resolution": "1280x720",
+  "categories": [
+    "Science & Technology"
+  ],
+  "comments": [
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "parent": "root",
+      "text": "Are you subscribed 👍 yet? If not, how dare you!",
+      "like_count": 928,
+      "author": "@Fireship",
+      "author_thumbnail": "https://yt3.ggpht.com/3fPNbkf_xPyCleq77ZhcxyeorY97NtMHVNUbaAON_RBDH9ydL4hJkjxC8x_4mpuopkB8oI7Ct6Y=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289JiBr19lDxR",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "I lol'd hard at that part. Nice editing",
+      "like_count": 8,
+      "author": "@leonf.7893",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m26ok3_QCTmE-tPDUMJKJNn41GTC5bTK5UUSuGHYClN8c=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289JihHnJi-F9",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "Oddly enough, I was unsubbed without asking me",
+      "like_count": 1,
+      "author": "@jomesias",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lff8ku1AHh5G5nvJP4vJsnWp1Dsz2Ru1TfpU-CEw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289Ns9hLv1Ws-",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "I think you should give credit to 'Hasura' you used for the video",
+      "like_count": 0,
+      "author": "@sanjuruk",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kigmLCswN5MhMzPgd86TRPgTBkRsLfIknmQtFhRoDmhnuB=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289QJAsDarlHh",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "I did good sir!",
+      "like_count": 0,
+      "author": "@sajibsrs",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k9flC75nP-JWDQyHAk0ouYrcZKi-ak3phztuwX5nXqKXx5=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289XKYDetzJuA",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "I had to pause and giggle at How Dare You",
+      "like_count": 0,
+      "author": "@OOsirishotep",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lpnzRnybDqrHNevOCmdAz8hWC1_SQZkKf23Ks8KokRlIo=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2022-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289YOQU-A_Z0M",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "Isn't subscribing harmful for nature?\n\nIt consumes electricity ig",
+      "like_count": 0,
+      "author": "@sumide8761",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lthI25adOgHxnJoz62cfYKc_pOuslezTZ-zcNGYul0jyY=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2022-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289YYrVRYyDF0",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "What is the music in the background?",
+      "like_count": 0,
+      "author": "@TonyStark-pi4mc",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lp3GrOeSWTAqgYW9rXWqrG8JQVTM608h4Tbxp_FrLuSYM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2022-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289f0aO9aDoG7",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "\"How dare you\"?.. Lol..",
+      "like_count": 0,
+      "author": "@frontend315",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nwfT50htsthWKbQG8XZyTVXCJKIY_cr3d_ec0f87HyoTEKTHQKJHAeBtG6dhmYybmTcg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2022-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289lW8_9hDjM4",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "OMG I am going to subscribe right now! LOL!",
+      "like_count": 0,
+      "author": "@tongobong1",
+      "author_thumbnail": "https://yt3.ggpht.com/W3hyp5l6HT1D_rlnXwFiFNzNXPsWKcRAjaIisQ3JoI53DwYmF0yjpSzV1uRIupqHFAmhw8TOpg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2023-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH28ADb6Ey8f0Ny",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "I want to run GitHub graph Ql , from where I can get the query??? Plz help",
+      "like_count": 0,
+      "author": "@diyshubh",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nOTkF0XaRfpY04P7UPgzBX5A1dLhVKzEWt7pEArE3QWw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH28AY-3IlFIHNL",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "yes",
+      "like_count": 0,
+      "author": "@emadpoursina",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kDpTl9uk7iXnTpPGxm4klKt9IKbnyF2TJx9K9dIvLfSxjuMAIbmkG6AnLgI0W4GlDF3w=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-06-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH28AYTouXyL4vm",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "That's true, I do watch your videos but I've subscribed yet",
+      "like_count": 0,
+      "author": "@BraveraChacha-y8q",
+      "author_thumbnail": "https://yt3.ggpht.com/WIx5gmR3mEte61Bho-y9naqz2TrPsIn6-T7bcIJ55UzwHyt06vcv6x4xdZBflA0cC0I4Y8Wi=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-06-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289Jj-ATTtu4_",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "Next video 👉 \"How dare you in 100 seconds\"",
+      "like_count": 3,
+      "author": "@linleo816",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lHWbGX8F6OiFx3E4mwja-T-P423LvKaeB0T6YbCJUcQ3Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289JjOJPfY3n6",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289Jj-ATTtu4_",
+      "text": " @linleo816  COBOL in 100 seconds - How dare you!",
+      "like_count": 2,
+      "author": "@leonf.7893",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m26ok3_QCTmE-tPDUMJKJNn41GTC5bTK5UUSuGHYClN8c=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289JhxXCV5ehZ",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "do mongoose/mongodb next pls",
+      "like_count": 2,
+      "author": "@flameseeker4060",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kHTBLG20aTtPV2tVO-W2LQ1MCdfz4clYkkTzPjtM3slg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289Q0MuVIU6Vf",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "i approve this message... how dare you not be subscribed to the most on point videos about interesting technologies?",
+      "like_count": 2,
+      "author": "@RootsterAnon",
+      "author_thumbnail": "https://yt3.ggpht.com/aI-QOr-8A33xfkjPp0y1_anwDwrvmtnIygRSh9YxBLnE1NCnpYLe45jWjpEXY3wMh7xgrLk_=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289JhrUWHtNMG",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "More than 100 seconds on GraphQL",
+      "like_count": 5,
+      "author": "@techpro8733",
+      "author_thumbnail": "https://yt3.ggpht.com/3I1490_w2z_q7mudYwUd3Q4EXEJALZuWZTg9ds2MPkdo2_63TXVtZAs9vNGg3XPDFTCbBwVEXg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289JjO35ZkLKD",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289JhrUWHtNMG",
+      "text": " @techpro8733   That's technically correct",
+      "like_count": 0,
+      "author": "@leonf.7893",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m26ok3_QCTmE-tPDUMJKJNn41GTC5bTK5UUSuGHYClN8c=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNllp4mVy3A3f03Yd4AaABAg.9JhnvY7tH289JhqAYn2wo2",
+      "parent": "UgwNllp4mVy3A3f03Yd4AaABAg",
+      "text": "i need the link to that video \"How daree you\"?",
+      "like_count": 5,
+      "author": "@TheBatTech",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nSEuBa5m3UPBiUa8ksfbklUzOaSArM-X8T_6bXl370MQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2021-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxFFAU6DgAH9FwbLYZ4AaABAg",
+      "parent": "root",
+      "text": "Upvote for Greta",
+      "like_count": 0,
+      "author": "@brian9999",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nDvY1O8ziNVD9v_EJiu1OwLyOomKbq-D-qSuPbcCIIbw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-08-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugywvm10lUCay_3otHR4AaABAg",
+      "parent": "root",
+      "text": "Super helpful😊",
+      "like_count": 0,
+      "author": "@rizkygabriel7587",
+      "author_thumbnail": "https://yt3.ggpht.com/Sg2um2sJL8HM-sYZFNVd1HoRr1UvL6ohFaXJbhVuwA-uth5lMJc8GyugGyX__HxDkYy4NhnoOcA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-08-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugype8ikHWaRq9Vdudh4AaABAg",
+      "parent": "root",
+      "text": "Thanks , putting graphql on my resume now",
+      "like_count": 0,
+      "author": "@rajatrampal4011",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nhoOi8Lhcr7w0l0Ur6N0ern1n6gqe49p8sDZDsXjKezsAllwS3frRAi1p45L_qVDrCfQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-06-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyqTaJdxjsPvUWMNAJ4AaABAg",
+      "parent": "root",
+      "text": "\"How dare you\" lol, well done!",
+      "like_count": 0,
+      "author": "@ritmo2k",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nCgSDhQsWZPmwx3yEw-GX9w6Yt8WaVABVq9Vx96Zc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-05-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgypQlafxsF-B5hf2Yx4AaABAg",
+      "parent": "root",
+      "text": "🧩 GraphQL\n\n👉 You say exactly what you want:\n\n“I want rice, chicken, and juice”\n\n✔ You get only that\n✔ Nothing extra\n\n🧩 REST (for comparison)\n\n👉 You order a fixed meal 🍱\n\nComes with:\nrice\nchicken\nsalad\ndessert\n\n👉 Even if you don’t need everything ❌",
+      "like_count": 0,
+      "author": "@WijthaGayan",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lgbX2RvLwOcidYsM6TESOdvMz1hJtogTu7YGX_MNUzo1M=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-05-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxrCxn7JxxA67sxLaZ4AaABAg",
+      "parent": "root",
+      "text": "Greta lmao",
+      "like_count": 0,
+      "author": "@TheEthanHunt",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k-0H_7soW3gxzmcyzqVgaiWFuhf18TX9jkbA8qH3_Qmak=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy8-Ve1RWb55KKhd1V4AaABAg",
+      "parent": "root",
+      "text": "These videos help me know just enough to be dangerous. 😁😄",
+      "like_count": 0,
+      "author": "@DanA-yw1hs",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mY6pKkZ8lqHd3msBTnA-64Il5EMsVJvJmynKHCKViMb1A=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyVJvzchtpXbM6bRkd4AaABAg",
+      "parent": "root",
+      "text": "\"how dare you\" felt like a personal attack. lol. Thanks for these videos. Gem!",
+      "like_count": 0,
+      "author": "@DanA-yw1hs",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mY6pKkZ8lqHd3msBTnA-64Il5EMsVJvJmynKHCKViMb1A=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw-9PYNUkX0a5mQmJh4AaABAg",
+      "parent": "root",
+      "text": "Didn't understand shit",
+      "like_count": 0,
+      "author": "@qisaww",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nNwN3M1NRuI8VqJJoeYZGsBzTA-eRrybR_bgLae8t4q9uss4ZmbKr0OLmr82Sk_0zgHg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx7N_MA8npKiH-_6jJ4AaABAg",
+      "parent": "root",
+      "text": "Good content",
+      "like_count": 0,
+      "author": "@munny4325",
+      "author_thumbnail": "https://yt3.ggpht.com/iaV4P9GoKctOG4eql3YZMZ9iixzedhGN2h_5N_g7Kj4yST2BgI9EygSX9doU5E9VbR9nd1G5=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwtP1IVmuPGEQRAaOt4AaABAg",
+      "parent": "root",
+      "text": "howdareyou",
+      "like_count": 0,
+      "author": "@binexploit3992",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mEZHvwRV0keWlWe2UghE8cXAaBJ4oGZBpTbw3Y2PtF4KjhE3lNuL5IOut58OWZDL5bag=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugxi_B6vahPln_iut8x4AaABAg",
+      "parent": "root",
+      "text": "0:48 For some reason, I laughed so hard",
+      "like_count": 0,
+      "author": "@hsaka-hehe",
+      "author_thumbnail": "https://yt3.ggpht.com/E3MYw5Sd_8nLbL6zdbCwbK-vQzywldx76fF3lTydh3zWr_Tjn9hmwcaHMkKxWAg5yVmdCZEJpig=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz5q0Z72s7vqWcZLEF4AaABAg",
+      "parent": "root",
+      "text": "thank you for this quick video - it gave me a good idea of graphql quickly, and without too much pain. just what i needed :)",
+      "like_count": 0,
+      "author": "@miskaknapek",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m7jQdoHhXp-NHrXgAXeyrGMlHSuYYqm5bkmVZ9gE7jFR4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugyxdi2HLpYiUXem5rZ4AaABAg",
+      "parent": "root",
+      "text": "guys, for a frontend developer, how hard is it  to learn graphql",
+      "like_count": 0,
+      "author": "@rhodes369",
+      "author_thumbnail": "https://yt3.ggpht.com/aoON9ohH1ETAJBNVZyTyUHCyjy4z-Hp3mpHAN_ZkkEYbZeceRIhsIJzoQ9E_HVabJ42JDc3p_kA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzdGtpEtmu0C87IkS94AaABAg",
+      "parent": "root",
+      "text": "Please do gRPC! @Fireship",
+      "like_count": 0,
+      "author": "@EpicGifted",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k3qBU9wPDB7D0e_2_JlP94DeiDTUYdhQH9b8wD1zs=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx10uVprJMA51Yl3w54AaABAg",
+      "parent": "root",
+      "text": "As a beginner I have to see this video on 0.5 x because there is so much information per second",
+      "like_count": 0,
+      "author": "@hassaanamjad6922",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kueCZeGD2GHyR5sQ3GSA8uCxdMHvNNXgOxnvzChmIN01U=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugzb5LOT7Ugyge4Ies54AaABAg",
+      "parent": "root",
+      "text": "Thanks for sharing! I need help: My crypto wallet on OKX holds some TRX 20 USDT, and I know the recovery phrase: clean party soccer advance audit clean evil finish -tonight involve whip -action-. How to proceed with moving them to Bitget?",
+      "like_count": 0,
+      "author": "@kadesalgado6318",
+      "author_thumbnail": "https://yt3.ggpht.com/Gw5U4DOQdhpeVY7QwVbiM9ExJRBy8hLuLLpIGvH-7NhQMN1anzHAR6Y-4YyT8Nzl3rM3mUQkQkQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz0ZWLwkIurbaEguS14AaABAg",
+      "parent": "root",
+      "text": "0:15  what is that GUI ?? can anyone give me the name please",
+      "like_count": 1,
+      "author": "@kuriosityverse",
+      "author_thumbnail": "https://yt3.ggpht.com/cig5p9ki96Cz1g-sN7kRZBqh5jv7p-SM5JqLsyjMkzO4_rJ3jJTiL5blKzexRxiqD_zXyocOoA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz0ZWLwkIurbaEguS14AaABAg.AGlvxJdoq2kAJT1supMe9Q",
+      "parent": "Ugz0ZWLwkIurbaEguS14AaABAg",
+      "text": "hasura",
+      "like_count": 0,
+      "author": "@nerd2544",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k8uqLL0mpMU-zHrDmSj-W1EkMS4TBbh-FmlDQLJL21NnY=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzjCRjYcI4qN8Xn3qF4AaABAg",
+      "parent": "root",
+      "text": "1\nVM926:1 2\nVM926:1 3\nVM926:1 4\nVM926:1 5\nVM926:1 6\nVM926:1 7\nVM926:1 8\nVM926:1 9\nVM926:1 10\nVM926:1 11\nVM926:1 12\nVM926:1 13\nVM926:1 14\nVM926:1 15\nVM926:1 16\nVM926:1 17\nVM926:1 18\nVM926:1 19\nVM926:1 20\nVM926:1 21\nVM926:1 22\nVM926:1 23\nVM926:1 24\nVM926:1 25\nVM926:1 26\nVM926:1 27\nVM926:1 28\nVM926:1 29\nVM926:1 30\nVM926:1 31\nVM926:1 32\nVM926:1 33\nVM926:1 34\nVM926:1 35\nVM926:1 36\nVM926:1 37\nVM926:1 38\nVM926:1 39\nVM926:1 40\nVM926:1 41\nVM926:1 42\nVM926:1 43\nVM926:1 44\nVM926:1 45\nVM926:1 46\nVM926:1 47\nVM926:1 48\nVM926:1 49\nVM926:1 50\nVM926:1 51\nVM926:1 52\nVM926:1 53\nVM926:1 54\nVM926:1 55\nVM926:1 56\nVM926:1 57\nVM926:1 58\nVM926:1 59\nVM926:1 60\nVM926:1 61\nVM926:1 62\nVM926:1 63\nVM926:1 64\nVM926:1 65\nVM926:1 66\nVM926:1 67\nVM926:1 68\nVM926:1 69\nVM926:1 70\nVM926:1 71\nVM926:1 72\nVM926:1 73\nVM926:1 74\nVM926:1 75\nVM926:1 76\nVM926:1 77\nVM926:1 78\nVM926:1 79\nVM926:1 80\nVM926:1 81\nVM926:1 82\nVM926:1 83\nVM926:1 84\nVM926:1 85\nVM926:1 86\nVM926:1 87\nVM926:1 88\nVM926:1 89\nVM926:1 90\nVM926:1 91\nVM926:1 92\nVM926:1 93\nVM926:1 94\nVM926:1 95\nVM926:1 96\nVM926:1 97\nVM926:1 98\nVM926:1 99\nVM926:1 100\nVM926:1 101\nVM926:1 102\nVM926:1 103\nVM926:1 104\nVM926:1 105\nVM926:1 106\nVM926:1 107\nVM926:1 108\nVM926:1 109\nVM926:1 110\nVM926:1 111\nVM926:1 112\nVM926:1 113\nVM926:1 114\nVM926:1 115\nVM926:1 116\nVM926:1 117\nVM926:1 118\nVM926:1 119\nVM926:1 120\nVM926:1 121\nVM926:1 122\nVM926:1 123\nVM926:1 124\nVM926:1 125\nVM926:1 126\nVM926:1 127\nVM926:1 128\nVM926:1 129\nVM926:1 130\nVM926:1 131\nVM926:1 132\nVM926:1 133\nVM926:1 134\nVM926:1 135\nVM926:1 136\nVM926:1 137\nVM926:1 138\nVM926:1 139\nVM926:1 140\nVM926:1 141\nVM926:1 142\nVM926:1 143\nVM926:1 144\nVM926:1 145\nVM926:1 146\nVM926:1 147\nVM926:1 148\nVM926:1 149\nVM926:1 150\nVM926:1 151\nVM926:1 152\nVM926:1 153\nVM926:1 154\nVM926:1 155\nVM926:1 156\nVM926:1 157\nVM926:1 158\nVM926:1 159\nVM926:1 160\nVM926:1 161\nVM926:1 162\nVM926:1 163\nVM926:1 164\nVM926:1 165\nVM926:1 166\nVM926:1 167\nVM926:1 168\nVM926:1 169\nVM926:1 170\nVM926:1 171\nVM926:1 172\nVM926:1 173\nVM926:1 174\nVM926:1 175\nVM926:1 176\nVM926:1 177\nVM926:1 178\nVM926:1 179\nVM926:1 180\nVM926:1 181\nVM926:1 182\nVM926:1 183\nVM926:1 184\nVM926:1 185\nVM926:1 186\nVM926:1 187\nVM926:1 188\nVM926:1 189\nVM926:1 190\nVM926:1 191\nVM926:1 192\nVM926:1 193\nVM926:1 194\nVM926:1 195\nVM926:1 196\nVM926:1 197\nVM926:1 198\nVM926:1 199",
+      "like_count": 0,
+      "author": "@sriramamirishetty3253",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kmUWJAILa3TKmilMtSGEovwkFMG7F2-7d1ZFWGC2o=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzI42iivO0Ivj3oGNp4AaABAg",
+      "parent": "root",
+      "text": "/usr is not user, it is “Unix System resources”",
+      "like_count": 0,
+      "author": "@ibrahiomzkan",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nrjw9_FmqwsN1IlZT0nqrqmkbpAuU3-WBVs9TEewKD-Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw5CvA1fjl1I1eQzEt4AaABAg",
+      "parent": "root",
+      "text": "The \"how dare you !\" caught me off-guard 🤣",
+      "like_count": 0,
+      "author": "@wailelbani9815",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lW68xmFpZ9S95X6bKl5fhLJFFX7qqGQYLzj25JKcA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy0rxacjxPIf3P6Q-h4AaABAg",
+      "parent": "root",
+      "text": "Fantastic, thank you!",
+      "like_count": 0,
+      "author": "@asterizk",
+      "author_thumbnail": "https://yt3.ggpht.com/-1OqdiSIH15EFPj6FY9WPirZX936RYi5BRD5tUycXXxbX5fdwrnsK6BAVpyUG_7dgHBq-Nt8=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwi6SheKjcTgJctqoF4AaABAg",
+      "parent": "root",
+      "text": "0:49, I spilled my coffee! LOL",
+      "like_count": 11,
+      "author": "@jamestef",
+      "author_thumbnail": "https://yt3.ggpht.com/_qsuU6Vp4bRwPc7ZnrDnAzeBa4bShFcacIEzCs4woNO4MvK_Ob_1DjAXI5nwH2I8TI8irCmT=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy8p7R-24HTzV0F-Dd4AaABAg",
+      "parent": "root",
+      "text": "I want to run GitHub graph Ql , from where I can get the query??? Plz help",
+      "like_count": 0,
+      "author": "@diyshubh",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nOTkF0XaRfpY04P7UPgzBX5A1dLhVKzEWt7pEArE3QWw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxhJ5u4dnbMIyvtmR54AaABAg",
+      "parent": "root",
+      "text": "Thanks for sharing your knowledge ❤❤❤❤❤❤😂😂😂❤❤❤❤😂😂❤❤❤❤😂😂😂😂❤❤❤😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂",
+      "like_count": 1,
+      "author": "@S-Lomar",
+      "author_thumbnail": "https://yt3.ggpht.com/Bg-bVZXafkl6fSWSIr9Tgd30co_DX2Iz0ARuomX6_IrElF6JmSUifcHwDFNhmDjspCrvJIxay4g=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwGeCiHZJEmeyWcNmt4AaABAg",
+      "parent": "root",
+      "text": "Fireship says it's 100s but most of the time its more than it 😂😂",
+      "like_count": 0,
+      "author": "@codersilicon",
+      "author_thumbnail": "https://yt3.ggpht.com/ImPPivv-9drKY_WD3v1OgJf5Xw2VEK062YUUqFfILM6TuJW1KtOIn3j8vkJg0GtJgOGAtou0IH4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzT8KbWOwfiopFTO4R4AaABAg",
+      "parent": "root",
+      "text": "Treutel Union",
+      "like_count": 0,
+      "author": "@TerryModert-d6j",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nU2YD2Z--lTM_gdrvauZL95c14lMizI3TCYnoHVH-z3cvFi5RKknXfib9wghzEocwihg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxRk7uZoVkozCeVvhV4AaABAg",
+      "parent": "root",
+      "text": "Arianna Green",
+      "like_count": 0,
+      "author": "@MarkRodriguez-u9b",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k18TQOefWzLa5SvdJmEE0dDZLfk4am4CaTqv-UUpCP4ll3lucs6Ttsxlbnh6UOy4Y8dw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwd73FzUs1hzKNuHT14AaABAg",
+      "parent": "root",
+      "text": "948 Kris Alley",
+      "like_count": 0,
+      "author": "@HousmanSimon",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kDVWTVor4oDMnrA8JSn1QfWKy679_pAFdisj868GXmAFhdW5SbK7lG9s-tsd8cKauiOQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-26T00:00:00+00:00"
+    }
+  ]
+}

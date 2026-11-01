@@ -1,0 +1,472 @@
+{
+  "title": "NestJS in 100 Seconds",
+  "thumbnail": "https://i.ytimg.com/vi/0M8AYU_hPas/maxresdefault.jpg",
+  "description": "Nest is a progressive framework for building server-side applications and APIs with Node.js. It leverages TypeScript and a powerful CLI to ship reliable apps quickly https://fireship.io/tags/nest/\n\n#js #webdev #100SecondsOfCode\n\nThis video is NOT sponsored\n\n🔗 Resources\n\nNest on Github https://github.com/nestjs/nest\nNest Docs https://docs.nestjs.com/\n\n 🤓 Install the quiz app\n\niOS https://itunes.apple.com/us/app/fireship/id1462592372?mt=8\nAndroid https://play.google.com/store/apps/details?id=io.fireship.quizapp\n\n🔥 Watch more with Fireship PRO\n\nUpgrade to Fireship PRO at https://fireship.io/pro\nUse code lORhwXd2 for 25% off your first payment. \n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font",
+  "duration": 141,
+  "view_count": 850782,
+  "webpage_url": "https://www.youtube.com/watch?v=0M8AYU_hPas",
+  "comment_count": 50,
+  "like_count": 30157,
+  "channel": "Fireship",
+  "channel_follower_count": 4320000,
+  "channel_is_verified": true,
+  "uploader_id": "@Fireship",
+  "uploader_url": "https://www.youtube.com/@Fireship",
+  "upload_date": "2021-07-30",
+  "resolution": "1280x720",
+  "categories": [
+    "Science & Technology"
+  ],
+  "comments": [
+    {
+      "id": "UgxMDYyhFxYGDcuKXOB4AaABAg",
+      "parent": "root",
+      "text": "I use hono and remade everything  nests does l don't need a new framework",
+      "like_count": 0,
+      "author": "@Michael-webdev8mq5k",
+      "author_thumbnail": "https://yt3.ggpht.com/S2TyhS45AozM_z-4SLOHWKpByvoTDDAku0_nvq2pmi_hGB3I55WWkGH419RspSIA9SqGiWU_Hdg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-09-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy4jKL2kzwvet3XYSB4AaABAg",
+      "parent": "root",
+      "text": "no fking way this looks so good",
+      "like_count": 0,
+      "author": "@Roxy.ftEnus",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m0OvrcinosF_tmn2XrAA5xEFLXP9OeosmYkh-6n9TWPw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-07-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwr74Z2mjoogU9QkHZ4AaABAg",
+      "parent": "root",
+      "text": "This was good before AI slop era, I miss these days",
+      "like_count": 1,
+      "author": "@thehumanalive",
+      "author_thumbnail": "https://yt3.ggpht.com/_aFlCylH1OZJvQsyG6KtGyAPUW0FWyUcqXpaVDENsi_Bi4Xldq63uZd_aCIMY7FyRzk44UAwWQU=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-04-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx2GNbOU4uRngRlb6R4AaABAg",
+      "parent": "root",
+      "text": "why does it sound so similar to django ?",
+      "like_count": 1,
+      "author": "@PhantomDLX9987",
+      "author_thumbnail": "https://yt3.ggpht.com/S4SCKxdAdF3aMEbcwc37auMTWTioAFe9qeQz-pRMY8ia5o4-c8kxurMVNB6YCKlbFSwccAdCMMM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwcGUYW5gbH5JnyNSR4AaABAg",
+      "parent": "root",
+      "text": "They also have super awesome docs",
+      "like_count": 1,
+      "author": "@naterojas9272",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k-dPClXRf80Dbmqd-ifCEhCGxbo24x0zk-KapVhZc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw2X2cODornxO5hvQJ4AaABAg",
+      "parent": "root",
+      "text": "this definitely inspired by Spring Boot",
+      "like_count": 0,
+      "author": "@lokeshr9794",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mp2jSjpFvQ00Zpx_tFY4Rrb3K0TzGpnvLlFsix28yqEfE=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwRg4BWz54Trk6EINN4AaABAg",
+      "parent": "root",
+      "text": "I learned about nest JS two days ago, and I’ve been in love with it ever since.❤❤❤❤❤",
+      "like_count": 0,
+      "author": "@ahmedElmahadi-l6n",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nudM7s5vhOkMHGpNJi_gu05pvD7zhkQQovNL-PuohCjTh4O8zP8SlhbbevJ3RoL5ZpYg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw1-CcRSPGsCNAcCbV4AaABAg",
+      "parent": "root",
+      "text": "This kind of reminds me of .NET syntax.",
+      "like_count": 0,
+      "author": "@TheMaDNiaC",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nedLenmAjaqZcC1B2rJx1fAdgtZnexPxKI4a1vLqJp0Z8=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwdeWBJz9G7W-NGDKd4AaABAg",
+      "parent": "root",
+      "text": "believe in the Lord Jesus Christ to be saved!",
+      "like_count": 0,
+      "author": "@seesmof",
+      "author_thumbnail": "https://yt3.ggpht.com/Y2Q_hgYO9qsZol7wHxVmGPczyDn402giORsfxDL5u0MMfuCP3XIQPOmnCwhFRmCxcI_O1E7PwQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwMMdfigHtexT2fXvR4AaABAg",
+      "parent": "root",
+      "text": "0:12 i find the image of amish building a barn super appropriate here, because they are stubbornly refusing to use modern tools based on ideaology that makes no sense",
+      "like_count": 1,
+      "author": "@shazmunchdylbertoid",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nFO4kBuWtoqi5-WG4cnq-QsIZhYpmR5cX-X1gts52yLbM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwg72WOQouxnFOzqAp4AaABAg",
+      "parent": "root",
+      "text": "NestJS is Angular syntax on the backend",
+      "like_count": 1,
+      "author": "@Jabberwockybird",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kDfjY2h0fwaBlOqtOG1SZgZShJ8HM8tED_h2-UHF8=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzJItFn_nLB2O2HM-F4AaABAg",
+      "parent": "root",
+      "text": "Nest JS is spring boot implementation in javascript.",
+      "like_count": 0,
+      "author": "@ariashow4088",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k-0vKAMRnr69DspCcnYM9YrNdg05Gp_O6KzjgHy3l5iuU=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxvChJSR8gLrHooCBx4AaABAg",
+      "parent": "root",
+      "text": "like it so far but it’s so damn verbose which is not a completely bad thing but it just feels weird after being in the typescript ecosystem for so long. it reminds me of java.",
+      "like_count": 0,
+      "author": "@martiananomaly",
+      "author_thumbnail": "https://yt3.ggpht.com/SfqeLlQyEUvVLcEwUi_oEhKffBfYu89bgqEQXT6J5SxGDqA73cvK-Np62bjiEzOqLwC-9XVm1_k=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy5qDFCtj424z6xsHh4AaABAg",
+      "parent": "root",
+      "text": "Call me old timer but I have an aversion to anything that is integrated to any sort of ORM. Plain old SQL is the way as far as I am concerned.",
+      "like_count": 0,
+      "author": "@uthoshantm",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mSsN1p_6neUWktdUNi_nkz6JVQA9cB2buRzNJiZrsfQsdy=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzOKbHjm-woMJwRD2l4AaABAg",
+      "parent": "root",
+      "text": "NestJS, aka backend Angular. Nice, this'll be a breeze to learn!",
+      "like_count": 0,
+      "author": "@TheRandomSpectator",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mJ6RN6Bnmv2zt3ANKGk4ljNpDYKWc_IBpqyIivoN-xfQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzCMv_mg8gHxboO93F4AaABAg",
+      "parent": "root",
+      "text": "Google rewrotely rewrote.",
+      "like_count": 0,
+      "author": "@MagistrTheOne",
+      "author_thumbnail": "https://yt3.ggpht.com/YCkarzZO_DA9GVLFoLV4JTRdHdetAZDZRArtIdHhZ5ItRkf3jPoxU5dxZRn_Ln90cbnIxx72Gw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyloZug0L2sLGBydpJ4AaABAg",
+      "parent": "root",
+      "text": "Comming here in 8th of Jun 2025, to learn what Nest.js is. ❤ ❤ 💪🏻💪🏻 my guy, you are the absolute best.",
+      "like_count": 0,
+      "author": "@Victor-eg8sl",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k4qNykaTFKU4ZGRXhiaKSXA68lA7XzdLGS7MtYk7Nk0V4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz1CzmeVDTfZmsGga54AaABAg",
+      "parent": "root",
+      "text": "This looks a lot like SpringBoot for Java, pretty interesting",
+      "like_count": 0,
+      "author": "@mitchwintrow",
+      "author_thumbnail": "https://yt3.ggpht.com/ePCkWIJ4Xhx1zvV7egYLUEJSAK8ZWw1Li5t9VU3SjaUFuPoJe11epfExCyUmj6s4pBewWM6RBnI=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzEnHie3N-IETmw9eN4AaABAg",
+      "parent": "root",
+      "text": "When you say \"I see you in the next one\" you mean the Next.js one?",
+      "like_count": 0,
+      "author": "@velho70n",
+      "author_thumbnail": "https://yt3.ggpht.com/LXInwvCLqAUW8MJyAy6Q1nO4XqTEmFPu4kdltZkfQW9yt0bvG9v-IOZZ0Wx_-awh5VeM3gkwFVw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy0hWC1PMhmFg_s3zd4AaABAg",
+      "parent": "root",
+      "text": "Looks like angular",
+      "like_count": 0,
+      "author": "@akhilkumarsingh5041",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nQBCwH9XA5Xdc8aks_suAh9Mj-VPtHlMDGfQPILq9HJRL5=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzV7YIx-2IGhqBIiPB4AaABAg",
+      "parent": "root",
+      "text": "the beauty of convention over configuration, just save hours of time from choosing libraries and juggling over those libraries' docs! you can build entire app just by looking at the nestjs docs how cool is that",
+      "like_count": 1,
+      "author": "@Alveolus00",
+      "author_thumbnail": "https://yt3.ggpht.com/kSuAAjTcOwkg8AeGgZHQUDGRpXXzdDfboKAoqcs-4MlRazieM96un7HDq7JlYeThopKED2pzzw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz-BIAh-_C-svOPj314AaABAg",
+      "parent": "root",
+      "text": "Everytime this channel post a 100 seconds video helps me learned another langguage to add in my CV. 😊😊",
+      "like_count": 0,
+      "author": "@Begadgets",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m8Z8x7wTWVqVHO_1aAhB02c4Vs9rGDBHYRXTMR2zBZTg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwjVyeQ0Zk-Pieoimx4AaABAg",
+      "parent": "root",
+      "text": "The nestjs controller is much like Spring Boot Controller.",
+      "like_count": 1,
+      "author": "@sadiulhakim7814",
+      "author_thumbnail": "https://yt3.ggpht.com/_WFtpyy8mWgMkjahJ8kxo4cy30z-C8pbKK2GfoqF8hac7ywKjrwq_qD2WQtsGvsyDMV395Dm=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxpruZ9fq4d8_s2FFZ4AaABAg",
+      "parent": "root",
+      "text": "Is this Angular?",
+      "like_count": 0,
+      "author": "@amatiasq",
+      "author_thumbnail": "https://yt3.ggpht.com/d8nXn-XP0D6ENcpbKnO0A0KsuFL1m9OT0XM1_CTI5tQ12Mz1Vg3nx_32P7luPwpgqJ6V2T0PVtA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwI1lbNnKTn4jlJQJB4AaABAg",
+      "parent": "root",
+      "text": "I see java in different file extension",
+      "like_count": 2,
+      "author": "@januarmuhtadiin2316",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_n4mEbOIO39yBYcmQMkKfJhBA2SFYYKWvvI0M-jCXNoJ_Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgycGy5Z6d3kxl8Wibp4AaABAg",
+      "parent": "root",
+      "text": "Just discovered this framework after being forced to leave spring boot to node.",
+      "like_count": 0,
+      "author": "@melkor8848",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lbt1NidQ4VdFp9wmZ5GL_I7v8iWlfLsmTPztZ966MdCWX3HyB8AR4y_ozf4bQkMiOO-w=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzEVdOxmBtBZvUNHE14AaABAg",
+      "parent": "root",
+      "text": "Idiots apparently like to use injectable everywhere and make the app unreadable and unmaintainable.",
+      "like_count": 1,
+      "author": "@gandalfgrey91",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mnLITsokr27UL6AROI5H_kjg3Nc8PwolTdEMctW8zXHMs=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy28aj4ylXWeOtb4Tp4AaABAg",
+      "parent": "root",
+      "text": "I dont know why no one is talking about the laravel js framework its called adonisjs and i think its really interesting",
+      "like_count": 1,
+      "author": "@sandiss1210",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nSBAsB_3JXP9JREyhK_Q-7mwhsGINhGtveAcpw0_bGrw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy28aj4ylXWeOtb4Tp4AaABAg.AEY6HK3qUmHAFE8tXAhIwQ",
+      "parent": "Ugy28aj4ylXWeOtb4Tp4AaABAg",
+      "text": "Thanks for this, first time hearing adonisjs and it looks interesting.",
+      "like_count": 0,
+      "author": "@Templar2300",
+      "author_thumbnail": "https://yt3.ggpht.com/eIgydC98Lz9O0XC-gyCSwpLXKODShFl1XNr6ZxNDhvqO4SrFi2jg0a6zp6HaLAn6xxSy7cg9=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzU57ULRXFGxOyj71N4AaABAg",
+      "parent": "root",
+      "text": "Copied rails CHEAT",
+      "like_count": 0,
+      "author": "@Mw-od6sd",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kxZObAha60V4PHXrRlqQXoaXluc5MhqwqFr6muNxNXRfc-iLC5QbCiS1waQRHeq0MNNFk=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxLvs1PqR4gjIYAmkZ4AaABAg",
+      "parent": "root",
+      "text": "Disastrous framework",
+      "like_count": 0,
+      "author": "@Mw-od6sd",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kxZObAha60V4PHXrRlqQXoaXluc5MhqwqFr6muNxNXRfc-iLC5QbCiS1waQRHeq0MNNFk=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxLvs1PqR4gjIYAmkZ4AaABAg.ACucoWPzzqOAD0a-q9fWmC",
+      "parent": "UgxLvs1PqR4gjIYAmkZ4AaABAg",
+      "text": "I just use raw express or apollo server, well that's all I know. But people here in france use this shit in tons and they have this in my new job so I wonder if this is bad. Already dudes, built a medical web tool in nodejs two years ago with angular as frontend, it seems to be the whole architecture for this project was made by some biased engineer.",
+      "like_count": 0,
+      "author": "@moneymox8",
+      "author_thumbnail": "https://yt3.ggpht.com/FPGEXjq-g_wKdHdSKJknHXQ1-3UgLmIPn2b753efBIUHaKlSEdyws_e0CsXB7RBOcEcQV47ytA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz7Jlr4igG2Wni2xG54AaABAg",
+      "parent": "root",
+      "text": "Seems like .NET in JS lmao",
+      "like_count": 1,
+      "author": "@ssjxn",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lyeqYhVmkSLKxpiKLHVWsiIYSC3APogt6udPNxGq8=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz1aYzYqTQsMxwDE014AaABAg",
+      "parent": "root",
+      "text": "its spring but in typescript",
+      "like_count": 1,
+      "author": "@sebastianjulonchamana2987",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mGNqYTov3si9XmU_PeuTSvz6OPK-6gtwTgkdW4HPrbUhk=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw5iYEiE0cYsPr1s_F4AaABAg",
+      "parent": "root",
+      "text": "This is most likely Angular",
+      "like_count": 0,
+      "author": "@dumitrualin5156",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kyeJPJ00iP-r7jJAO-yCwSsLrKdaUqms-4VdHi99lTLRU=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgybzA8xPHooIMBqUU54AaABAg",
+      "parent": "root",
+      "text": "I deployed a Vite React project on Vercel, and it works fine. However, when I tried to set up an API using NestJS to serve the front end, I encountered a problem. The NestJS server is trying to load the assets, including the index.js file, but it returns a 404 error because it can't find the file. As a result, nothing is displayed.\n\nThe assets I’m trying to load are included in the code files I deployed to Vercel, and I'm calling this deployed code from Vercel to use as the interface for the API I’m developing. The only solution I see is to build the project again and include it in the NestJS file structure.\n\nCan you please advise me on how to resolve this issue?",
+      "like_count": 0,
+      "author": "@xlr6991",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kyZRFRxeREeg40fSZC96dOAXhSFLAewgROsvfyaQWL04GEa47MuFBCtvbof3femRgt6A=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzMxNeCvepzvDEo6Sd4AaABAg",
+      "parent": "root",
+      "text": "Serverless framework using node js vs nest js.\nWhich is best?\nAnyone have suggestions",
+      "like_count": 0,
+      "author": "@magie7764",
+      "author_thumbnail": "https://yt3.ggpht.com/1eyfnoS8du5Chi_hpWSwDaVEesI72QgBK9KTmtQJv8MmxPOrCe7HoD4buuXqZIZvlEuDYTzZQw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx6hMF9pyIeCV3qk7Z4AaABAg",
+      "parent": "root",
+      "text": "I really don't get it how developers dislike angular, and companies ditch this framework, and prefer react. In the same time, they choose nest.js over express.\nDecoders, moduls, injectables are all fundamentals in ts that you can like or not. But please be consistent.\n*The only reason I can think of, is the ui template and rendering method of angular that is less prefer.\nBut why angular now try ditch to ditch the use of IOC and their code, and try to be more functional like react",
+      "like_count": 0,
+      "author": "@azulay7",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nn4AN4eeDy6hu4cXsDeP20wEHMluLppInO9ecOPQ_CIqw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugww92QV6qNlrR9pbd54AaABAg",
+      "parent": "root",
+      "text": "I love NestJS",
+      "like_count": 1,
+      "author": "@jordankittle",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lVdgv6VK0IOScTdHt1R4NdIFdRkvG2Y1jsrCR_otHBLogTg1YjnUt3k9YQBrmAT3VFLg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw9I7_uqKfzNW3rQwd4AaABAg",
+      "parent": "root",
+      "text": "Problem is too many dependency injection and typescript.",
+      "like_count": 2,
+      "author": "@demogyani2419",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kJ2YbemL2gcZ2ryUzxx19QtEiQr2itXve_rXoMfY0=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwOMrEkIJnR5HVtAch4AaABAg",
+      "parent": "root",
+      "text": "Angular developers be like - I've seen this somewhere :xD",
+      "like_count": 0,
+      "author": "@rajivranjan1573",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kkjn8x5C3PGHk2rwbEx2GL3l_v8FTvzasnrFBDxBTNINOf=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyQBP21BJAbF37Ar7d4AaABAg",
+      "parent": "root",
+      "text": "Why nestJS feels like Angular.",
+      "like_count": 0,
+      "author": "@noneedtoknowthishandle",
+      "author_thumbnail": "https://yt3.ggpht.com/UQn_Z2i44MXKKpZyTqzliVJCq5zUQGNn6rCscI8zB0YZ668u9bzpU0E7vXXrH0Xb-PvqWy9K5w=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyQBP21BJAbF37Ar7d4AaABAg.A6ZrdWbNtjaAQVLvatWpE_",
+      "parent": "UgyQBP21BJAbF37Ar7d4AaABAg",
+      "text": "According to the docs, the architecture is heavily inspired by Angular",
+      "like_count": 0,
+      "author": "@jeremejazz",
+      "author_thumbnail": "https://yt3.ggpht.com/gC4e4sNZ8FhX42gz4EkPotiTNF_aauAKu_ntz3fSbpJS83CWT0EQGXFzlbFYUUyBn6-9yxT5Fw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwJf767C7jviOiUnfZ4AaABAg",
+      "parent": "root",
+      "text": "why not overcomplicate things for literally no return on investment...",
+      "like_count": 2,
+      "author": "@HKRazieL",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m7jzBbWwB_D7bnE9vs0qnfBOzJgT8DhOWvcIx77jzBjw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzDB6lh1hXm0R25xrl4AaABAg",
+      "parent": "root",
+      "text": "Great vídeo. Straight to the point.",
+      "like_count": 0,
+      "author": "@fernandomezini",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_npQtTFbodx-VX56jbfK_HPLOOHNUS2SFSbr-1HjV4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwviNrGvPaocI0BIeF4AaABAg",
+      "parent": "root",
+      "text": "Nest in corner :- I take more than 100s to start",
+      "like_count": 0,
+      "author": "@atifhussain5505",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kJfe5kSKxBm38KJnqhGvJh4anfiapjJrnCTDk_G7Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugyl1RBkq02g3U55Ja14AaABAg",
+      "parent": "root",
+      "text": "What's your icon extension?",
+      "like_count": 0,
+      "author": "@benjaflinston",
+      "author_thumbnail": "https://yt3.ggpht.com/QayG5JZqFtJQIGy3wtilq4-lwZfNUfxyQa1DnPKhoAXo2jDf63jmp1t0zdSYWEwMi7cCUQOkFQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwWsW4_7V35l_go6Tp4AaABAg",
+      "parent": "root",
+      "text": "классный обменник",
+      "like_count": 0,
+      "author": "@SANTINOGONZALEZA",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nlBilyjMA1U52oKK26XZ_UcnniCFBmVBEaZcWRZocnDN18ZKMnESUSGCHsm8S0Thv9RQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugxov4xs0WqzPyMjL6l4AaABAg",
+      "parent": "root",
+      "text": "Check out my NestJS tutorial video in my channel—perfect for anyone just starting with backend development!",
+      "like_count": 0,
+      "author": "@bfurkanakgul",
+      "author_thumbnail": "https://yt3.ggpht.com/XhruCB-RcGmuV6jNNfwOMch2kYXNsX5sUl-jQV0yKDRNG3K1mL7sKYFxn7RNn0bMlMhLQmRq=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwgO8zYkbVKY1qZMll4AaABAg",
+      "parent": "root",
+      "text": "More like Js spring 🙂",
+      "like_count": 0,
+      "author": "@R_Y_Z_E_N",
+      "author_thumbnail": "https://yt3.ggpht.com/MZ104UHHvSBygGM8Lv8zjRiN1rzHSSg2zHEy10ihmIcrdIlQvvQ3TqvSrF9AwNEdBrmcfsq0Fw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    }
+  ]
+}

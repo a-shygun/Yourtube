@@ -1,0 +1,472 @@
+{
+  "title": "Kotlin in 100 Seconds",
+  "thumbnail": "https://i.ytimg.com/vi_webp/xT8oP0wy-A0/maxresdefault.webp",
+  "description": "Kotlin is a programming language designed as a modern alternative to Java. It supports functional patterns, coroutines, multi-platform compilation, and is now the recommended language for Android mobile development. \n\n#programming #android #100SecondsOfCode\n\n🔗 Resources\n\nKotlin Docs https://kotlinlang.org/\nKotlin on Android https://developer.android.com/kotlin\nWatch Java in 100 Seconds https://youtu.be/l9AzO1FMgM8\n\n🔥 Get More Content - Upgrade to PRO\n\nUpgrade to Fireship PRO at https://fireship.io/pro\nUse code lORhwXd2 for 25% off your first payment. \n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n🔖 Topics Covered\n\n- Kotlin vs Java\n- Kotlin basic syntax\n- Using kotlin on Android\n- Kotlin coroutines overview\n- What is kotlin?\n- Is kotlin a JVM language?",
+  "duration": 141,
+  "view_count": 1619904,
+  "webpage_url": "https://www.youtube.com/watch?v=xT8oP0wy-A0",
+  "comment_count": 50,
+  "like_count": 61949,
+  "channel": "Fireship",
+  "channel_follower_count": 4320000,
+  "channel_is_verified": true,
+  "uploader_id": "@Fireship",
+  "uploader_url": "https://www.youtube.com/@Fireship",
+  "upload_date": "2021-11-05",
+  "resolution": "1280x720",
+  "categories": [
+    "Science & Technology"
+  ],
+  "comments": [
+    {
+      "id": "UgxbCgJfU9Q0hfZEI0F4AaABAg",
+      "parent": "root",
+      "text": "A perfect language for the coding junkies.",
+      "like_count": 0,
+      "author": "@anonymous_anonymity",
+      "author_thumbnail": "https://yt3.ggpht.com/8QcEAOb6o5Zt8IK2yxadiqeDT8pXMcCn6XU5pjzgBD1g6YcWFxQPiqKpjdj333AQJ358uCCTiA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-10-05T00:00:00+00:00"
+    },
+    {
+      "id": "UgzKMYAYDb5yYA0vAQ14AaABAg",
+      "parent": "root",
+      "text": "IT MADE ME WANT TO CODE AGAIN",
+      "like_count": 0,
+      "author": "@theodd2Dgamer",
+      "author_thumbnail": "https://yt3.ggpht.com/pFu2uOFFI7_iWcKcGxQanZCsDe7VkN7RRqnMwJd1o5apjFeZmkwPAzNpbK68kt7vxlUu027EdQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-09-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz0rcAjgYIW5l1Uy_l4AaABAg",
+      "parent": "root",
+      "text": "i already had head ache with all those !! with kotlin, strict and verbose for the sake for being strict and makes you write more code",
+      "like_count": 0,
+      "author": "@pennygeno5629",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mj24IiEIRKDsLyO_jhuZrvNpqZoSxO5UKln8gTEYQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-09-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz-6iTwzuR8_ba_BiV4AaABAg",
+      "parent": "root",
+      "text": "Welp, I know what I'm gonna learn today!",
+      "like_count": 0,
+      "author": "@5TC",
+      "author_thumbnail": "https://yt3.ggpht.com/q5UCa-cI8NgoECv_n8SFb79Jbp0iUmoW7jcutV1yM_E3uIY18i9nzyb1gOw8mnZXpThVk1ZFRQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-08-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx9qO6Z5qosQE_FtQV4AaABAg",
+      "parent": "root",
+      "text": "Java: \"Who are you?\"\nKotlin: \"Im you but better\"",
+      "like_count": 0,
+      "author": "@Ali-animation-good",
+      "author_thumbnail": "https://yt3.ggpht.com/aC1KaRnR2WZFTPq4sQUtj28k6IU9xjO2wuZdF0NhJUf0xqzNyWdSTydabx47otUf_A-hli6OOmc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-08-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugyim7O4H6MEqdSZ9YF4AaABAg",
+      "parent": "root",
+      "text": "fun fact: kotlin also had something like String[] args, being \"args: Array<String>\"",
+      "like_count": 0,
+      "author": "@grubkilleryt",
+      "author_thumbnail": "https://yt3.ggpht.com/FBQu_MIFHLAtekjpsBF-iTpGQfItPvWCUCdSuo6Zm4AFObapP6Mwe1INYW069gN8DF_YPBrHHw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-06-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzNx5ZPIYryXpcsFhN4AaABAg",
+      "parent": "root",
+      "text": "So a lazy language for people who don't want to write quality code. Sounds perfect for this generation",
+      "like_count": 1,
+      "author": "@christopherjoseph651",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kFXl5K8hVuLaOu1grzDmslnh388zERHHHfbTwxMzc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-06-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzNx5ZPIYryXpcsFhN4AaABAg.AYA2oyinGx4AbZl4g8Fwv-",
+      "parent": "UgzNx5ZPIYryXpcsFhN4AaABAg",
+      "text": "Okay, now go play bingo and retire in Florida XD",
+      "like_count": 0,
+      "author": "@crissdetabarnakdhosti",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k2MBvG9XLwRN9If4YzA0VF87BhAwOctBy8L32dSbG-AmH722OkziMXKiHaJkuGXf4ZlA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-10-05T00:00:00+00:00"
+    },
+    {
+      "id": "UgyQ9xBXF8AjLV8Wpb14AaABAg",
+      "parent": "root",
+      "text": "The worst for loop syntax you’ve EVER encountered",
+      "like_count": 0,
+      "author": "@FPChris",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kSbLk-s63norv2s2Epf7yWlIEV8j4oWLWQI6eQEPZQlNc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-05-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyQ9xBXF8AjLV8Wpb14AaABAg.AW79ikSRcNDAYYs9vWGXQX",
+      "parent": "UgyQ9xBXF8AjLV8Wpb14AaABAg",
+      "text": "Yes ok...\n That i agree with like frr wth is.. And until.\nI wish they left that C style",
+      "like_count": 0,
+      "author": "@Hello_darkworld",
+      "author_thumbnail": "https://yt3.ggpht.com/KhNYpB3bK5Q4Ux1LJMcj08_Kcv4sD6W2GZZ723RFsVIR2GgVUcovWhqMzsZJns5YX-kF5saKlQc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-07-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgylEwiUzOQO7mRFdxl4AaABAg",
+      "parent": "root",
+      "text": "Coming from Java, it's hard to resist.",
+      "like_count": 1,
+      "author": "@BlizV2",
+      "author_thumbnail": "https://yt3.ggpht.com/oDyIPdvmAvbYWBQxb1cn2CgQslO2oEl80MMP-Airc8RHadXYhXzRDFWWouWvGcS7nHnIpFRp=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-05-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzlP8cXTVyby1F4GtR4AaABAg",
+      "parent": "root",
+      "text": "0:39  XCode (Blue w/ hammer), Android Studio (Green circle w/ protractor), JavaScript (Yellow box), microservices representation (Neon green box w/ gear icon), which could also imply either the JVM (Java Virtual Machine) or cloud services.",
+      "like_count": 0,
+      "author": "@firestormsentry80",
+      "author_thumbnail": "https://yt3.ggpht.com/MFiCLwdic49g7LyzwFcXWFKWtLd3WFFosfXW6iiRPxmwkVxkb7q3u3zz-9EunxHH-YBdA9Lws90=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-04-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwBv8HSOae-vV1CPyR4AaABAg",
+      "parent": "root",
+      "text": "still java is better",
+      "like_count": 0,
+      "author": "@RajputAnkit11",
+      "author_thumbnail": "https://yt3.ggpht.com/jOSnlc87lGBgqgIHEsrFafUnP1CitK3VzEDbi4dP4smVgoS08EYGEWgTnzToXGEQCY9Zy7qL=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxLMq5wkD9MkqO72Ch4AaABAg",
+      "parent": "root",
+      "text": "I was mislead to learning java for mobile development in 2026, glad i discovered this now before i went too deep",
+      "like_count": 1,
+      "author": "@Yasser-444",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_msf2VqBZBjE07h79G40EbzOZkbS5_42Jfug-RqZje9ewc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-01-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugysc59G03_yiQgdjKF4AaABAg",
+      "parent": "root",
+      "text": "I'm a Java Developer and now I'm thinking that Kotlin is best for scripting over performance especially when it comes to writing longer code more than just output which increases the complexity unnecessarily.",
+      "like_count": 1,
+      "author": "@rifleblade",
+      "author_thumbnail": "https://yt3.ggpht.com/kstiaVLQSUWdw9S9jV5HPdpIfbnkhQbc3x5_-yDP6EiZA1m0R9jsNSnhYhbrnuBUsT-eUbrBogc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx4xnsYQi-r0aopq6B4AaABAg",
+      "parent": "root",
+      "text": "2025",
+      "like_count": 1,
+      "author": "@Its_Alan_Paul",
+      "author_thumbnail": "https://yt3.ggpht.com/_Tm9z2G9J3owgj_xNiGyeXnuIUrQO0TuzhhMXrbI-30MiVOVzSUUTNm-xivM93lC1N2ful0Sjw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxMGgoH2iEZDkEmopl4AaABAg",
+      "parent": "root",
+      "text": ", Kotlin",
+      "like_count": 1,
+      "author": "@crishnasb",
+      "author_thumbnail": "https://yt3.ggpht.com/9sH-79fkyDVIdX90ws3el_mHzSKdZUqKCCX733gIc4fPWByq8Xk_lzdzwC2Dhfx3t-AV1DVgHA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyZZhb-tYyudblGL-B4AaABAg",
+      "parent": "root",
+      "text": "Another FUN fact - Kotlin is also the brand name of one of ketchup (among others vegetable products) makers here in Poland. The company exists since 1928 and is named after a town where it was located :) I always found this (fictitious) origin story for Kotlin lang tastier :)",
+      "like_count": 0,
+      "author": "@zoladkow",
+      "author_thumbnail": "https://yt3.ggpht.com/PO3Huv2BFMnd5fvJKa6dZbbpctHOwV9ccz7DUVo_5vhEtqf8y86wNBM1BobTiaGg_6ymK3bqQqY=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-12-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugzqbois0StwWkUqxu94AaABAg",
+      "parent": "root",
+      "text": "Excellent content as always.",
+      "like_count": 0,
+      "author": "@MjgyXwrgg",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nO5_AnrR5wC3yikrkeRVMEqqK2JYLnvMQub5cKxd-mCQNDacSpJv5wGRkTMh4pgO6TqQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyQqiiYtZvgk061iNJ4AaABAg",
+      "parent": "root",
+      "text": "Thanks for sharing this content.",
+      "like_count": 0,
+      "author": "@ertrtfsgggtrt",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k8GjNiCECo12FOY9lA7bNUVwYiFLUAtJCer6l41_qK5-6jt4IxJrSx_wW8JAcTX-SIUg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugxnjts8pbAT7lmIgNZ4AaABAg",
+      "parent": "root",
+      "text": "a week of learning java for what, this darn kotshit",
+      "like_count": 0,
+      "author": "@Apocfall700",
+      "author_thumbnail": "https://yt3.ggpht.com/mPyCBbIX7bSi9xMNwNO4W0eE0ZE9OvPHt7OD3_tFZ-QwO3HBjM3TT_lwXF9PPx765eJS67qE6A=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxQkWfRH5b7c-NGHqh4AaABAg",
+      "parent": "root",
+      "text": "This was a great watch.",
+      "like_count": 0,
+      "author": "@JessieSauvage",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m3yH3CkDYbBlrEro0QnKb_ItobeFHLwKuQcGuP0f6Bn7OoKZ8W5OF5gGcuK2Gkd9LxEg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwIrHiCbdyWIYu-_Fh4AaABAg",
+      "parent": "root",
+      "text": "Always great content from you.",
+      "like_count": 0,
+      "author": "@MarinaMeri-u6i",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_meZQDvkVwIytlz05tUr4sKYRoxduo30MYm6fDWZDFwo5Dx5x44u4bpmQY2f_R4uW4yGQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugyg8f8dZ9ye7sg6mAd4AaABAg",
+      "parent": "root",
+      "text": "This clarified a lot for me.",
+      "like_count": 0,
+      "author": "@ElanorCurtsinger",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lTaXMnHl5ycRM12wip5QSC_0L6EYLJoZU_WM0vnmFvK93hYF87jOMuZAoF0ocTJ3TCig=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxVh_kQGYkVGZef6S94AaABAg",
+      "parent": "root",
+      "text": "I understood everything perfectly.",
+      "like_count": 0,
+      "author": "@RonWardlow-e2i",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lkDhfR4IQoQOti0IosPsSAEqhLLgtyGqmMmRGIpKBIdhtOTK_iy1Z_GU0MKBc9sh8dlA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxPcGiUi1x-VzAcDg54AaABAg",
+      "parent": "root",
+      "text": "Really appreciate the way you explained this.",
+      "like_count": 0,
+      "author": "@ArdenObregon",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nHNmhgK4mtwlkvbYzWQNsHe7dvV4nJKisK6SmVW8O7u9Pa8T0cWxyinae9f8_eisKzEw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwLYdvWHzRw4ho2yJh4AaABAg",
+      "parent": "root",
+      "text": "Nicely detailed without being too long.",
+      "like_count": 0,
+      "author": "@Gjhh-w2c",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mimC9VbaEtPyRCUL55_Vduus-POLQbK2d7hopubLvgA-UFiK0RjYIlhwdeLV7yKNeYJA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugzek40VJAWjaZG82m14AaABAg",
+      "parent": "root",
+      "text": "Very helpful step by step guide.",
+      "like_count": 0,
+      "author": "@OigbgRush",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nLDRFkW4-H3DXefKqVCiv64nSX1pCGNxxB-s1JqQGZT_lalhc7_7OcXHx652isf4T3ag=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyYjaKrKzezcoPDX014AaABAg",
+      "parent": "root",
+      "text": "Very helpful and informative.",
+      "like_count": 0,
+      "author": "@TheoWojcik-e1x",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m_u8q8PQuuwasnsvA6HcWNnQOy4E9IknxOF4z5Hkt3CXWlTAE0MiksI9oF40grXAO5Ow=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugzbl3DRNuZ6Q8m8F1p4AaABAg",
+      "parent": "root",
+      "text": "Great effort on this video.",
+      "like_count": 0,
+      "author": "@CaryMary-h6n",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mIwmOWixO3beIzPS1KrkOcL7bCtFf4JjSrxK3XBh3w8AGlMUaGWuQGy0UKisQHftHW9Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwfsS1Cxn_3UV0rzg94AaABAg",
+      "parent": "root",
+      "text": "Perfectly explained without any confusion.",
+      "like_count": 0,
+      "author": "@HtrhdgSarg",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_n14VfaJx7-Nx-uYsNa_r4T2An9PFn1QfDDHBi3kZq9F5c2y6qSdYwkKa6AmV-YlsKZJQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx4XyffNqXNE9FaRax4AaABAg",
+      "parent": "root",
+      "text": "One of the best videos I’ve seen.",
+      "like_count": 0,
+      "author": "@YuriTarded-j8o",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nOdM3ViStZOOIkAhZQairhZV_oWjhXnOfhG2SNmu0tH8n2nVSO2lfB6G-4u0gI2rrX4w=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugxbll4kAI_8LeTlALl4AaABAg",
+      "parent": "root",
+      "text": "Really appreciate this upload.",
+      "like_count": 0,
+      "author": "@seangwilloams",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kQmoKU8jutFWahUO7_VzxGZDtZUKEyDA85aZRpQ-gUz-JKqbFVN4C9rKZwBSJ3zld_cg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxVP5HYTAk-18b4TCp4AaABAg",
+      "parent": "root",
+      "text": "Helpful content, thank you.",
+      "like_count": 0,
+      "author": "@TeodoraVarzar",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mB0AEzuPBnHUnbJ05Kn6OFC0GWil99rk2mq0C8tMcOp8jSTPBxtIYFzdnOER1R9KYpvA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgypNYEIuGRbuKxbaAl4AaABAg",
+      "parent": "root",
+      "text": "Good breakdown of the topic.",
+      "like_count": 0,
+      "author": "@JohanaWagner-w6m",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_ltIu98QW9aVmbqVxBW_IQi0xR-vFgzH-Rl4Tsb2VD6G1NqCdIv6pqabuAAW4pBrhtoAw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw5amK5nCALuKfbBeR4AaABAg",
+      "parent": "root",
+      "text": "Nicely put together video.",
+      "like_count": 0,
+      "author": "@OrenMcglynn-p8s",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_noTn5R62t8CWUZjhQ-xGduzMUZogFthqniMOcRODwOpkuKXBfW9JT96sWLZe3gs2nANQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzPPxayNJXeeOB-50d4AaABAg",
+      "parent": "root",
+      "text": "The presentation was excellent.",
+      "like_count": 0,
+      "author": "@RosarioMestro",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nhoOi8Lhcr7w0l0Ur6N0ern1n6gqe49p8sDZDsXjKezsAllwS3frRAi1p45L_qVDrCfQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzCfNXOJV7iR3F0dix4AaABAg",
+      "parent": "root",
+      "text": "I learned something new today.",
+      "like_count": 0,
+      "author": "@ResanAkter",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kgeb3tvIBGrdY-IdjHykSG-MSKpwcehWUAO3_O6TXPgadO46BAk4RkoG8qNgXDJBfHxg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxqGsP6EN-Yz3IidvN4AaABAg",
+      "parent": "root",
+      "text": "This was informative and useful.",
+      "like_count": 0,
+      "author": "@AftgTdxg",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lImVEFshLCzwKPwsKil_wI44W3fLO5VgHisdM_-Jtm5ZMsPSMXFTRot9-tSU3zW38Ftw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgzdBFXKHuEgLdsNTwN4AaABAg",
+      "parent": "root",
+      "text": "This made things very clear.",
+      "like_count": 0,
+      "author": "@DavidG-j8y",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kQnWSAD6Gm3-wtlJwdGQ5jT55-cFBUBsNuleFX8xZm76T3ar1J01mTypF-cd73dN1eDg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy0KvEnAbfD5ztosSZ4AaABAg",
+      "parent": "root",
+      "text": "The video was easy to follow.",
+      "like_count": 0,
+      "author": "@WandaEverett-k7v",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kmZYzKVWQjJAUlnH7IlLfloqTLqWwElYOqabfpVNV6I-jDwgTR-fRhzJ0ofbX0v5rhbA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugyeqp5pHhRvLmmPFwh4AaABAg",
+      "parent": "root",
+      "text": "This was excellent content.",
+      "like_count": 0,
+      "author": "@XaumiIslamic",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mWEh8CqiHBVS7GM8peWgyJdr96ru9-yRjFzNRaTCpyONuYt939W3H4tfR_iqHLlx3Dkg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz8HgbOVZsFQ-T_o7B4AaABAg",
+      "parent": "root",
+      "text": "The delivery was great.",
+      "like_count": 0,
+      "author": "@MeghanathPasawan",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m5DHdJOQs40hzoitGNZg5x-fmV6OYmJoszNAslGR0idT_rVnRjRUDprHsTC8XFm7CrIA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgxAb0Sg4pFtIXryqk14AaABAg",
+      "parent": "root",
+      "text": "Exactly what I was looking for.",
+      "like_count": 0,
+      "author": "@VhcyxsoXvfcv",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nIdFEF768caFO6uGO_7sHylbcu1LASbdq3k55MltwBzAcqqxgGI7M1stx6ZHD97mnpRQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwnEveOfB32vcMeqBB4AaABAg",
+      "parent": "root",
+      "text": "Straight to the point, well done.",
+      "like_count": 0,
+      "author": "@SurendraOraon-n7r",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nn2r27xgt-QLsA4NOafS588bIhGJEP80r8XEC4pJEMwtmsmIosL5hG9gzQ2AyEbG8G0A=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgycDsDQFSWzvTKqnEF4AaABAg",
+      "parent": "root",
+      "text": "Very well executed video.",
+      "like_count": 0,
+      "author": "@strinebbsmith",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lu2GvO15oLoFqtmkrWoInS2HA3EvUIuYaSEl5ezEb8Gvc30M1jhmQ3R_ZkJAHMGki_Pw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgyQamhizKGiBmaJK4N4AaABAg",
+      "parent": "root",
+      "text": "This was nicely explained.",
+      "like_count": 0,
+      "author": "@TraceyHawkins-k9x",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kZuilMfxj5PImZM1A3I8BnU3xb8QbnaemgnBUQDMYq2DP9oL_IKvimuDh7U2oAw-yNMA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgwWq-S8DEb9WMz9u-x4AaABAg",
+      "parent": "root",
+      "text": "This made things very clear.",
+      "like_count": 0,
+      "author": "@RrViirf88",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nda3NuW4HXFz11TFja6elUTDgEB9wuwjLWBcCho3VqWai3G3DxOL09_d1cje349l3kKw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "UgynhyHe8IYiO5uaxf14AaABAg",
+      "parent": "root",
+      "text": "This was easy to understand.",
+      "like_count": 0,
+      "author": "@Rapi99-c3x",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nhoOi8Lhcr7w0l0Ur6N0ern1n6gqe49p8sDZDsXjKezsAllwS3frRAi1p45L_qVDrCfQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwe-mmpWKFCKvTPFDd4AaABAg",
+      "parent": "root",
+      "text": "Appreciate the effort put into this.",
+      "like_count": 0,
+      "author": "@OrenMcglynn-p8s",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_noTn5R62t8CWUZjhQ-xGduzMUZogFthqniMOcRODwOpkuKXBfW9JT96sWLZe3gs2nANQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-26T00:00:00+00:00"
+    }
+  ]
+}

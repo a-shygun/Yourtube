@@ -1,0 +1,472 @@
+{
+  "title": "Arduino in 100 Seconds",
+  "thumbnail": "https://i.ytimg.com/vi/1ENiVwk8idM/maxresdefault.jpg",
+  "description": "Arduino is a programmable circuit board that makes it possible for the average developer to build custom hardware products. Learn about Arduino's architecture, microcontroller, programming language, and IDE in 100 seconds. \n\n#programming #arduino #100SecondsOfCode\n\n💬 Chat with Me on Discord\n\nhttps://discord.gg/fireship\n\n🔗 Resources\n\n- Arduino Docs https://docs.arduino.cc/\n- Raspberry Pi in 100 Seconds https://youtu.be/eZ74x6dVYes\n\n🔥 Get More Content - Upgrade to PRO\n\nUpgrade at https://fireship.io/pro\nUse code YT25 for 25% off PRO access \n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n🔖 Topics Covered\n\n- What is an Arduino? \n- CPU vs Microcontroller\n- Raspberry Pi vs Arduino\n- How do electrical circuits work?\n- What is a microcontroller?\n- How to get started with Arduino? \n- What programming language does Arduino use?",
+  "duration": 142,
+  "view_count": 1105597,
+  "webpage_url": "https://www.youtube.com/watch?v=1ENiVwk8idM",
+  "comment_count": 50,
+  "like_count": 53623,
+  "channel": "Fireship",
+  "channel_follower_count": 4320000,
+  "channel_is_verified": true,
+  "uploader_id": "@Fireship",
+  "uploader_url": "https://www.youtube.com/@Fireship",
+  "upload_date": "2022-12-12",
+  "resolution": "1280x720",
+  "categories": [
+    "Science & Technology"
+  ],
+  "comments": [
+    {
+      "id": "UgxXBt6t6nvxJkInclJ4AaABAg",
+      "parent": "root",
+      "text": "In one of my exam I wrote connected to a 'computer' in place of microcontroller. When I asked why my diagram wasn't accepted, the teachee, despite having a CS degree, just looked at me with great anger and said COMPUTER! I had to refrain myself no getting into that debate.",
+      "like_count": 0,
+      "author": "@Xenonxps",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lx5UOocXmV-35Dz-594h-GrIPskpCCzO4tdYqQWv4f4CDDgnM9QYqJ51u0f4ntGfWIsw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-08-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwQofvQRf9VxmTyKFB4AaABAg",
+      "parent": "root",
+      "text": "Question?\nWHY C++ instead of PYTHON?",
+      "like_count": 0,
+      "author": "@Marshalllapenta-b1m",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nO5_AnrR5wC3yikrkeRVMEqqK2JYLnvMQub5cKxd-mCQNDacSpJv5wGRkTMh4pgO6TqQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-07-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw1GNezI-fKBv6PGrt4AaABAg",
+      "parent": "root",
+      "text": "Actually this is Arduino in 142 seconds",
+      "like_count": 0,
+      "author": "@Checkmatein_1",
+      "author_thumbnail": "https://yt3.ggpht.com/3ajS_414C4sdHqw3Aaq-ZvITpUXxQp4foxElV3I4a7BF6llsHHHWIvzVNPHEFG8YL7r68AL82Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-05-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwN_B28EVfAQ9dummt4AaABAg",
+      "parent": "root",
+      "text": "Love the \"Delay 420\" line.",
+      "like_count": 0,
+      "author": "@Scottysaan",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nP1EjuTiNkjaKLMBs4M1P9V2tt89rvVRGkag_Bnva6Wm4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-04-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxkeMYtWQgumfVJ6EZ4AaABAg",
+      "parent": "root",
+      "text": "Thank you I now have even less idea than I had before",
+      "like_count": 0,
+      "author": "@paulwhite7475",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lobq11cXJEkkntp0z7cEbBaxz2WSacQM7bxXva-t4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-03-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwI7ffB23aoFSw7CKJ4AaABAg",
+      "parent": "root",
+      "text": "The fact that it's in C++ but you have to write function(a, b) instead of a.function(b)...",
+      "like_count": 0,
+      "author": "@Feliks_WR",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_l6fY4D08NPHPW-gzBm2lWcr16plZV4fHUYfEY2lTtvOf8tVM_46_-KIzuPN4QRrmYoLIE=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwo9rJZJQycwHc1-Dh4AaABAg",
+      "parent": "root",
+      "text": "Since when is C++ purpose built, for anything really? And since when is it easy to learn? People like eme have learned it, loved it, then seen the actual idiomatic code you need to write... [[nodiscard]] btw",
+      "like_count": 0,
+      "author": "@Feliks_WR",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_l6fY4D08NPHPW-gzBm2lWcr16plZV4fHUYfEY2lTtvOf8tVM_46_-KIzuPN4QRrmYoLIE=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2026-02-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxOOGHzlGaUmheaWUl4AaABAg",
+      "parent": "root",
+      "text": "Here before arduino dies",
+      "like_count": 3,
+      "author": "@Jalecko",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nUgRK5T4rVk35EZqc46zH_o5jj39eIUlPdpbp8ANyI4k0=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-11-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxQgIZr3-pmXh8W4BR4AaABAg",
+      "parent": "root",
+      "text": "too hard to coding bro🥲",
+      "like_count": 1,
+      "author": "@NGYUJIANMoe",
+      "author_thumbnail": "https://yt3.ggpht.com/2M3Oz_YYwO7S1oTmM4iSG86yNAFWQWPucqffuGuFi__k7MhSKOZmEWd9uClL-yN--O4MeKPaHA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwP3oMosZ-gZGJrDe14AaABAg",
+      "parent": "root",
+      "text": "Anyone here after Qualcomm announced it will acquire Arduino?",
+      "like_count": 1,
+      "author": "@souravjamwal77",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_l3G-fRvuhiiRoLzneXTVBxyEYEe1Ge3ALpnQvw4w1CysI=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgykgT4s7oKuT6MC4oF4AaABAg",
+      "parent": "root",
+      "text": "I’m a freshman and my bimestral computer lab proyecto is a 8 page essay in 4 days about arduino send help",
+      "like_count": 0,
+      "author": "@zZZ-lm3ms",
+      "author_thumbnail": "https://yt3.ggpht.com/k2dp2qGbbwpvDD1mEI_hjRpIY0OwXY65FqN9NwAMplwyEJ_dq_yRDOVJot9dIPThI8ygLd8llQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzdHdd1UWLmDXYgssZ4AaABAg",
+      "parent": "root",
+      "text": "that actually wasn't 100 s",
+      "like_count": 0,
+      "author": "@gelay232000",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k677mSp99eQLr7FsOn8SbJzT1Sa1nMUvkJX4qCvn0aPNaZ3xuiM4eKIIzArYaFWYy_8g=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwTKHoTDkQp0q8yZnd4AaABAg",
+      "parent": "root",
+      "text": "Delay 420?\n\nExactly what a borderline of high and low 🗿",
+      "like_count": 0,
+      "author": "@bilyDAgily",
+      "author_thumbnail": "https://yt3.ggpht.com/WClIE3PO4jNLXavFGc_BwkNKdl6SYqN_a7zUR6w0yx3sSRx8XYgNq7_6Y8BWcx4OI54uUBWIaAg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy-dAI2RckIm6UK3Rx4AaABAg",
+      "parent": "root",
+      "text": "Good old memories of 4 years of wasting my education loan for a ETC degree.",
+      "like_count": 1,
+      "author": "@sudevsen",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lDzecHANg8LTyZJVs5SEL7WuVGRTzmX83rXkmmmiowNA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugxu1TfkT-6OtORXg-R4AaABAg",
+      "parent": "root",
+      "text": "‏‪1:47‬‏ programming drivers 😅",
+      "like_count": 0,
+      "author": "@mr_dev2005",
+      "author_thumbnail": "https://yt3.ggpht.com/JfdVi5vPi8X8-q3GFS6pXj0gvKurjSSzF9NjGuQt-UAL0LtW0_qEYR0c9eDkBT0cSiqPMT7jiw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyrxCq9XShtcd-p8KR4AaABAg",
+      "parent": "root",
+      "text": "C++ is very hard and very nice and flash speed 😂",
+      "like_count": 0,
+      "author": "@mr_dev2005",
+      "author_thumbnail": "https://yt3.ggpht.com/JfdVi5vPi8X8-q3GFS6pXj0gvKurjSSzF9NjGuQt-UAL0LtW0_qEYR0c9eDkBT0cSiqPMT7jiw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz72WguEhYnmrz4nf54AaABAg",
+      "parent": "root",
+      "text": "Incredible summarized video of the most important or interesting facts about Arduino, I wish there was a video like this in Spanish.",
+      "like_count": 0,
+      "author": "@betsiebermeo7917",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kcaHilDdZx-7dfMQLf8ONEz1XN63UgodrxwXKfrW_izdUu=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx03EcsQvq3tOe4PoJ4AaABAg",
+      "parent": "root",
+      "text": "What program and Programming language did you use? :)))",
+      "like_count": 0,
+      "author": "@prosnakegamer4dx483",
+      "author_thumbnail": "https://yt3.ggpht.com/8aeW70KD58fSzWN0OcgsQPdy9jmbuXZ7pJEkAGPFtGEY1atUY8O2l40yYCsVxFmQcQ-o8Uvb4qY=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxjZFjzXsNuEETxOUV4AaABAg",
+      "parent": "root",
+      "text": "understanding this should be a crime lmao its so comprehensible",
+      "like_count": 0,
+      "author": "@BakedConjurer5",
+      "author_thumbnail": "https://yt3.ggpht.com/NhDiYLKdqC52lrzCa6SLY3ksB6fRnARyrrfe45ojGI7B59aUt1lYl5FY5ZlWLcnzB6eV_IBsr3Y=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzPlpjqqyaicWs06vt4AaABAg",
+      "parent": "root",
+      "text": "Thank you. Without this video i probably would have spent 6 hours reading an arduino textbook. (:",
+      "like_count": 0,
+      "author": "@dilophosaurusplayz",
+      "author_thumbnail": "https://yt3.ggpht.com/OthxXyG_xL0n94opNkMntAiJdqLMXlGWSH3gVqgz-yCYcnw3h9CZ5lXofdn2iWCP7J9IEqar=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzFBjcQyOs752vvRaR4AaABAg",
+      "parent": "root",
+      "text": "Running high,and running my battery LOW! So when I say that something was runnin my battery dead, I WAS RIGHT! Aholes!",
+      "like_count": 0,
+      "author": "@LeahleahB",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_n1hHNFfhXBR4BASbMAHa8CRJOT-_7vV_OG-i3RKWwWIZ-j-3B7Fl4iapOfpamSrb2qYA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugy4GT5AX50o12zbFFd4AaABAg",
+      "parent": "root",
+      "text": "Very useful, thanks!",
+      "like_count": 0,
+      "author": "@nikolaialeksiev2536",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lKXOUpwbiK6XFdVuuduSW-6FSWcPRLbJ878iX-fLUwb3l7=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxZD4VlHb03ELq9vFt4AaABAg",
+      "parent": "root",
+      "text": "Bro knows both software dev as well as hardware dev 💀",
+      "like_count": 0,
+      "author": "@ArifBillahOnGoogle",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_k1Qc0gKMvU3Un3WIqeT169OoTh2RLsc3tNfhAokaQeyPY=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwOOJ4C5fUGj9aXFZ54AaABAg",
+      "parent": "root",
+      "text": "I heard that these are costly?",
+      "like_count": 0,
+      "author": "@AhmedKhan-y9w",
+      "author_thumbnail": "https://yt3.ggpht.com/1K-zJDXe9ozIZl8vMZSVXcELNb9k6qafSc9WXWWqOuYksHD6JWoJU8qcw20uj3JagXvQ8eVe=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw-F2ifwIyFQC-df2p4AaABAg",
+      "parent": "root",
+      "text": "Look, I got a small electrical kit with hopes to learn. I'm more lost than  an ant without hormones",
+      "like_count": 0,
+      "author": "@mosin_boi",
+      "author_thumbnail": "https://yt3.ggpht.com/v_mVKqC5JzInlbUEKIODgqWLPV8ShpLNdmx5TtFIEfVsKgXQqmWgIJz_MVoobxwODM1lM0Gp6_Q=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugyz1HYAIPeCnj40-Vp4AaABAg",
+      "parent": "root",
+      "text": "Thank you for my first arduino lesson. I programmed my Uno to blink \"Bite Me\" in morse code. 🤭",
+      "like_count": 0,
+      "author": "@ChrisArtsTube",
+      "author_thumbnail": "https://yt3.ggpht.com/wAA9qTYiyV_qNMiIdeKyFqYgiHFLU7VNEmfFXhU0ZKOV0FLv6zFPdCcDfsGTOf45OtUKynyeNw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwKVLQvQirVdxKP82t4AaABAg",
+      "parent": "root",
+      "text": "im doing engineering at college and icl, this short video actually explained the basics of the coding so much better than my college lmao",
+      "like_count": 0,
+      "author": "@AnotherPole",
+      "author_thumbnail": "https://yt3.ggpht.com/No983B-tmxbBPGU8fTMUxD2yLuInMJF4hkDa-ALxgJYqy6agCDaXPv0VQ_7-t2FBWtOyqrj9cg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgynG20Rwxb9DmOt--54AaABAg",
+      "parent": "root",
+      "text": "I don't know how to code, but with the advent of AI like chatgpt, making projects now without knowing how to code is now possible",
+      "like_count": 0,
+      "author": "@aaroncobeng",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mlGGgjonHgSVUUDn-mZ0gvQk4EAyhtWxOiStslgYnb0qM=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxtIQ0qhD_ikOZXvbh4AaABAg",
+      "parent": "root",
+      "text": "I’m good at this stuff",
+      "like_count": 0,
+      "author": "@johnthompson4011",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_kjUVrqCB6UWF75gLzU932nE3hFxWgq9DnF2J5ZgTdjAIb7ONkpz4bBRKOhrX02vgoUJA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwNNMH8tO1JsmXNxPB4AaABAg",
+      "parent": "root",
+      "text": "ما شاء الله على الشرح الواضح و الدقيق",
+      "like_count": 0,
+      "author": "@MARYAMOUSSA-e1l",
+      "author_thumbnail": "https://yt3.ggpht.com/xVvDY2aWqv-vSNaf_KwOukDxbjMMYPbY1wJKq5lYzN-2NlBo5fmQUAWO7LH0Da4cA_p8eQA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgyBdRwGn6-s52GnVXl4AaABAg",
+      "parent": "root",
+      "text": "Wow",
+      "like_count": 0,
+      "author": "@favourskizim",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_myg8CZgVjJTaC2vB9_EVpSUbgbyo8pkgFN4B5qpzTPLRcv0aUWVMRW1O8a9Ffmm_OcJg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugxk6QCi7Har68m6mtN4AaABAg",
+      "parent": "root",
+      "text": "142 SECONDS ACTUALLY",
+      "like_count": 0,
+      "author": "@vasi1y717",
+      "author_thumbnail": "https://yt3.ggpht.com/sa_POlEQxhiZN_GZIH4XgZfDwK8wsWkOmR4B1RlutVrYWuqyT2A1iaWCtjrv_c_v97czmDxtPg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2025-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzeV58ZH_3lPo1K7sZ4AaABAg",
+      "parent": "root",
+      "text": "It's actually 144 seconds.",
+      "like_count": 2,
+      "author": "@nankinanko5790",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_l3w5pHbAbv1UvTOPK0opzB0B7dPW0ZNUdarnydvhKgG4l6j3Av59TtPzgAeNOLj7pxDQ=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgytcPMaulrnk9SIPnl4AaABAg",
+      "parent": "root",
+      "text": "shit ass video, i still dk how to code",
+      "like_count": 0,
+      "author": "@rohnyteh9249",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lMjZHBrv5mxSOSzX-XP34EjSyt30IDlJZdAHZDNAc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugygwg3UeRQF3AmnH6t4AaABAg",
+      "parent": "root",
+      "text": "shit ass video, i still dk",
+      "like_count": 0,
+      "author": "@rohnyteh9249",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_lMjZHBrv5mxSOSzX-XP34EjSyt30IDlJZdAHZDNAc=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugz8EsBXSBdvccRndSR4AaABAg",
+      "parent": "root",
+      "text": "I wanna get into sustainable agriculture after my biotech degree to hopefully support my goal of nanomedicine in phytochemicals. The sooner i start the better. I also have some programming knowlege from lua (roblox games, no i didnt earn any robux), and alsk bioinformatics programming (i hate it).\nLETS DO THIS\nIf yall have ideas or anhthing, plz share em.",
+      "like_count": 0,
+      "author": "@Wyatt07",
+      "author_thumbnail": "https://yt3.ggpht.com/IZbpxGhKrjTkVRl2usQoUdjeqIWPv2Y6ZYXbWupFgOfAvhsodNdJQ_yvvSldTCRGjugd0Gjsuw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxjOe-ezNuK8FoHLEl4AaABAg",
+      "parent": "root",
+      "text": "bro thought me more in 100 seconds than my teacher in 1/5 year💀",
+      "like_count": 0,
+      "author": "@mateogonzales3213",
+      "author_thumbnail": "https://yt3.ggpht.com/oUu3Ar4j1NgIoxAZ44-C3Fznis-kB1ZpzDaZWiGXLx4kjgrCoi98Ma1OFMALe9-zpJA2DzZH=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzcMe_MrpTFRvpn1614AaABAg",
+      "parent": "root",
+      "text": "Those who only noticed that the video wasnt 100 seconds...",
+      "like_count": 0,
+      "author": "@kavitachoudhary4613",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_m7dJP0ZnV4w8UDwAKdm8qmzVPPlCblzuWb3C69A1I=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgwqmD4WwjULpU3IDft4AaABAg",
+      "parent": "root",
+      "text": "nicely done",
+      "like_count": 0,
+      "author": "@princebanini",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_navcdTPS2Ncorwv4yMqXsBOZ4qLLg09Y_A1cmde8PcrL4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwj0VdLbgPhL3CBGxt4AaABAg",
+      "parent": "root",
+      "text": "1:11",
+      "like_count": 0,
+      "author": "@yakshmalavia8128",
+      "author_thumbnail": "https://yt3.ggpht.com/XQfPhSQq61s31AdMq_a50oefuK5gj319ceLgyXvpmX8p-G0LcSKPjx2m9xI91z6BcqIhvCsZKm4=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugyk9iYWWNL6iVx3cZ94AaABAg",
+      "parent": "root",
+      "text": "This is very useful vedio for us 💗",
+      "like_count": 0,
+      "author": "@dggunawardhana9796",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_mBVNsGOPmaU5A11ntmIeNgKYqCDoujcui9IgUTGH76DIMXsWCfsYP1u5nTgQTXotUAtA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugwwme1lvAl53jXsN614AaABAg",
+      "parent": "root",
+      "text": "I thought Arduino used C++. 🤔",
+      "like_count": 1,
+      "author": "@oglothenerd",
+      "author_thumbnail": "https://yt3.ggpht.com/QztFt8G1F7luTUKg3Mastd1S8X1ozp-_mxHF_lzJyMbp4SnEPc5UDtZtiR4ULF7FSEHdoh0-=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgxztJFTuUk2o5t4UOJ4AaABAg",
+      "parent": "root",
+      "text": "this is 142 seconds of arduino",
+      "like_count": 0,
+      "author": "@HoussamZeddou-ul8qg",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_nKOqIVC_wjCGDpD96rhr1ZSOIcdvmYOi5pFdtljKl4eJy8AVLi8mdgjfZHrXpiFTZecw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw6ckIrlMBaMEUSFVp4AaABAg",
+      "parent": "root",
+      "text": "Arduino is the modern handymans best friend.",
+      "like_count": 0,
+      "author": "@mirochlebovec6586",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_n4O4X2oHVHLb1Q3aEhfFppeD0MNHCm4YokG8ksRfSj4PY=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugx2kb7KsdNTXPrjeG54AaABAg",
+      "parent": "root",
+      "text": "2:15\nFireship programs it as input and switches it to high.\nAlso he didn't even give a value to switchState.\nI find this so funny.",
+      "like_count": 0,
+      "author": "@QubitLabs",
+      "author_thumbnail": "https://yt3.ggpht.com/nn27DpNNot8f_ZbV-KqgchwYTUevTQL8-lF-O5qit3OBmiYdxxZZvxR9mymLSFwDc1Eyxqg6qg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugyj_CJPLA1O3xsyAjx4AaABAg",
+      "parent": "root",
+      "text": "erm actually that was 144 seconds",
+      "like_count": 2,
+      "author": "@zain3532",
+      "author_thumbnail": "https://yt3.ggpht.com/kHt3HHu8tlc2JJvrE0YBTf7ZuJhuBwx-HXcXr8HHLUQgk6W8HuQFSlU9G4w-CklYoT8r4J4CIg=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugw5Nw_fK2l_EUNMOt94AaABAg",
+      "parent": "root",
+      "text": "OWWH I got it now, thanks",
+      "like_count": 0,
+      "author": "@theonlybow5130",
+      "author_thumbnail": "https://yt3.ggpht.com/hnVMo1IwuNPYmRQwdht3J1_V0gTnIwoRlSQ65fkpAwsUWufgyZZJCZv28ZaaJ3nNq8MxZTj3Sw=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzZq6k7PfhPvOQESbJ4AaABAg",
+      "parent": "root",
+      "text": "adding this to my resume now",
+      "like_count": 0,
+      "author": "@theeldest263",
+      "author_thumbnail": "https://yt3.ggpht.com/6XoP3bJeiTVy5nGygQCVcOv6IjVOfTGf4mmZZPRFrzY6D0F0e6H6dNA3PTnMuSD0MqwrlI8NRA=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "UgzSfyWfJpgIkzYUeOh4AaABAg",
+      "parent": "root",
+      "text": "An arduino nano is not only more powerful (has more pins) but is also smaller and cheap, I got mine back in 2019 for 1.8€ on ebay, unluckily they're a bit more expensive nowadays but still cheaper than the UNO. The only drawback is that it more or less requires a protoboard to use",
+      "like_count": 0,
+      "author": "@aquss33",
+      "author_thumbnail": "https://yt3.ggpht.com/hBGbpFrFZDb47_Fma_H6q93DS94MPPpn3WoASAqJW7T2irOHbDNgfrqthmbSnb_xA54ROnm2GJs=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    },
+    {
+      "id": "Ugxe1tXMu-PUmdRgCUJ4AaABAg",
+      "parent": "root",
+      "text": "i did arduino last year,but the prof forbid me to use arduino library,since it was too easy he said,i had to code the projects in assembler or AVR C\nit's not that hard,even in C,you just play with registers anyway",
+      "like_count": 0,
+      "author": "@pham3383",
+      "author_thumbnail": "https://yt3.ggpht.com/ytc/AIdro_msARPo8BZvi-AYSdZynI9baUMSBcdKNNVBJFUxBfY=s88-c-k-c0x00ffffff-no-rj",
+      "timestamp": "2024-10-27T00:00:00+00:00"
+    }
+  ]
+}
