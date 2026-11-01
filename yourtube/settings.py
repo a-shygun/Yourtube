@@ -29,7 +29,6 @@ INSTALLED_APPS = [
     'accounts',
     'videos',
     "crispy_forms",
-    "widget_tweaks",
 
     "crispy_tailwind",
     'django.contrib.admin',
