@@ -1,3 +1,4 @@
+import mimetypes
 import shutil
 from uuid import uuid4
 
@@ -5,9 +6,10 @@ from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Prefetch, Q
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse, StreamingHttpResponse
 from django.shortcuts import get_object_or_404, redirect
 from django.utils import timezone
+from django.utils._os import safe_join
 from django.views.decorators.http import require_POST
 from django.views.generic import DetailView, ListView
 from django.views.static import serve
@@ -16,6 +18,45 @@ from .models import Category, Channel, Comment, Playlist, Video
 
 
 def serve_media(request, path):
+    range_header = request.headers.get("Range")
+    if range_header and range_header.startswith("bytes="):
+        file_path = safe_join(settings.DATA_ROOT, path)
+        file_size = file_path.stat().st_size
+        start_text, end_text = range_header.removeprefix("bytes=").split("-", 1)
+        if start_text:
+            start = int(start_text)
+            end = min(int(end_text), file_size - 1) if end_text else file_size - 1
+        else:
+            start = max(0, file_size - int(end_text))
+            end = file_size - 1
+
+        if start >= file_size or start > end:
+            response = HttpResponse(status=416)
+            response["Content-Range"] = f"bytes */{file_size}"
+            return response
+
+        length = end - start + 1
+
+        def read_range():
+            with open(file_path, "rb") as media_file:
+                media_file.seek(start)
+                remaining = length
+                while remaining:
+                    chunk = media_file.read(min(65536, remaining))
+                    if not chunk:
+                        break
+                    remaining -= len(chunk)
+                    yield chunk
+
+        content_type = mimetypes.guess_type(file_path)[0] or "application/octet-stream"
+        response = StreamingHttpResponse(
+            read_range(), status=206, content_type=content_type
+        )
+        response["Accept-Ranges"] = "bytes"
+        response["Content-Length"] = str(length)
+        response["Content-Range"] = f"bytes {start}-{end}/{file_size}"
+        return response
+
     return serve(request, path, document_root=settings.DATA_ROOT)
 
 

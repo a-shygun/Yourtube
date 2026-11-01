@@ -62,32 +62,6 @@ document.querySelectorAll("[data-video-duration]").forEach((element) => {
   element.textContent = formatDuration(element.dataset.videoDuration);
 });
 
-document.querySelectorAll("[data-video-player]").forEach((video) => {
-  const button = video.parentElement.querySelector("[data-video-toggle]");
-  const playIcon = button?.querySelector("[data-play-icon]");
-  const pauseIcon = button?.querySelector("[data-pause-icon]");
-  if (!button) return;
-
-  const updateButton = () => {
-    const playing = !video.paused;
-    button.setAttribute("aria-label", playing ? "Pause video" : "Play video");
-    button.title = playing ? "Pause video" : "Play video";
-    button.classList.toggle("opacity-0", playing);
-    button.classList.toggle("opacity-100", !playing);
-    playIcon?.classList.toggle("hidden", playing);
-    pauseIcon?.classList.toggle("hidden", !playing);
-  };
-
-  button.addEventListener("click", () => {
-    if (video.paused) video.play().catch(() => {});
-    else video.pause();
-  });
-  video.addEventListener("play", updateButton);
-  video.addEventListener("pause", updateButton);
-  video.addEventListener("ended", updateButton);
-  updateButton();
-});
-
 document.querySelectorAll("[data-favorite-form]").forEach((form) => {
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
