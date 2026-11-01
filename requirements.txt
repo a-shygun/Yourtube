@@ -1,5 +1,7 @@
-asgiref==3.12.1
 Django==6.1.2
 pillow==13.0.0
+python-dotenv>=1.0,<2
 django-crispy-forms
 crispy-tailwind
+gunicorn>=23,<26
+whitenoise>=6.9,<7

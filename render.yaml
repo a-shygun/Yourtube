@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: yourtube
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: mkdir -p /tmp/yourtube-account-images && python manage.py migrate --noinput && python manage.py sync_library && gunicorn yourtube.wsgi:application --bind 0.0.0.0:$PORT --workers 2 --timeout 3600
+    envVars:
+      - key: DJANGO_DEBUG
+        value: "false"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: .onrender.com,localhost,127.0.0.1,yourtube.amirshygun.ir
+      - key: CSRF_TRUSTED_ORIGINS
+        value: https://*.onrender.com,https://yourtube.amirshygun.ir
+      - key: YOURTUBE_UPLOAD_ROOT
+        value: /tmp/yourtube-account-images

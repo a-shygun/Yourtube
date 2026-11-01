@@ -1,4 +1,5 @@
 {% extends 'videos/main.html' %}
+{% load static %}
 {% block title %}
   {% if search_query %}
     Search: {{ search_query }}
@@ -48,6 +49,8 @@
               <option value="latest"{% if sort_order == 'latest' %} selected{% endif %}>Latest</option>
               <option value="oldest"{% if sort_order == 'oldest' %} selected{% endif %}>Oldest</option>
               <option value="popular" {% if sort_order == 'popular' %}selected{% endif %}>Most popular</option>
+              <option value="shortest"{% if sort_order == 'shortest' %} selected{% endif %}>Shortest first</option>
+              <option value="longest"{% if sort_order == 'longest' %} selected{% endif %}>Longest first</option>
             </select>
           </form>
         </div>
@@ -56,28 +59,42 @@
 
     <section class="grid grid-cols-1 gap-x-5 gap-y-9 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {% for item in object_list %}
-        <article class="min-w-0">
+        <article class="min-w-0" data-video-card>
           <div class="group relative aspect-video overflow-hidden bg-surface-alt">
             <a class="absolute inset-0 block overflow-hidden" href="{% url 'video-detail' item.id %}">
-              <img class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src="{% url 'library-media' item.thumbnail_loc %}" alt="{{ item.title }} thumbnail" loading="lazy" />
-              <span class="video-duration-badge absolute bottom-2 right-2 bg-black/80 px-2 py-1 text-xs font-semibold" data-video-duration="{{ item.duration }}">{{ item.duration }}</span>
+              {% if item.thumbnail_loc %}
+                <img class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src="{% url 'media' item.thumbnail_loc %}" alt="{{ item.title }} thumbnail" loading="lazy" />
+              {% else %}
+                <img class="h-full w-full object-cover" src="{% static 'videos/img/video-placeholder.svg' %}" alt="{{ item.title }} thumbnail" loading="lazy" />
+              {% endif %}
+              <span class="video-duration-badge absolute bottom-2 left-2 bg-black/80 px-2 py-1 text-xs font-semibold" data-video-duration="{{ item.duration }}">{{ item.duration }}</span>
             </a>
             {% if user.is_authenticated %}
-              <form class="absolute left-2 top-2 z-10 {% if item.user_status != 'watched' %}opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100{% endif %}" method="post" action="{% url 'video-status' item.id %}">
-                {% csrf_token %}{% if item.user_status != 'watched' %}<input type="hidden" name="status" value="watched" />{% endif %}<input type="hidden" name="next" value="{{ request.get_full_path }}" />
-                <button class="bg-black/55 px-2 py-1 text-xs font-bold text-white hover:bg-black/75" type="submit" aria-label="{% if item.user_status == 'watched' %}Remove watched status{% else %}Mark watched{% endif %}">{% if item.user_status == 'watched' %}Watched{% else %}Mark watched{% endif %}</button>
+              <form data-status-form data-status-target="watched" class="absolute left-2 top-2 z-10 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100 {% if item.watch_status != 'watched' %}opacity-0{% endif %}" method="post" action="{% url 'video-status' item.id %}">
+                {% csrf_token %}{% if item.watch_status != 'watched' %}<input type="hidden" name="status" value="watched" />{% endif %}
+                <button class="bg-black/55 px-2 py-1 text-xs font-bold text-white hover:bg-black/75" type="submit" aria-label="{% if item.watch_status == 'watched' %}Remove watched status{% else %}Mark watched{% endif %}">{% if item.watch_status == 'watched' %}Watched{% else %}Mark watched{% endif %}</button>
               </form>
-              <form class="absolute right-2 top-2 z-10 {% if item.user_status != 'to-watch' %}opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100{% endif %}" method="post" action="{% url 'video-status' item.id %}">
-                {% csrf_token %}{% if item.user_status != 'to-watch' %}<input type="hidden" name="status" value="to-watch" />{% endif %}<input type="hidden" name="next" value="{{ request.get_full_path }}" />
-                <button class="bg-black/55 px-2 py-1 text-xs font-bold text-white hover:bg-black/75" type="submit" aria-label="{% if item.user_status == 'to-watch' %}Remove to-watch status{% else %}Mark to watch{% endif %}">To watch</button>
+              <form data-status-form data-status-target="to-watch" class="absolute right-2 top-2 z-10 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100 {% if item.watch_status != 'to-watch' %}opacity-0{% endif %}" method="post" action="{% url 'video-status' item.id %}">
+                {% csrf_token %}{% if item.watch_status != 'to-watch' %}<input type="hidden" name="status" value="to-watch" />{% endif %}
+                <button class="bg-black/55 px-2 py-1 text-xs font-bold text-white hover:bg-black/75" type="submit" aria-label="{% if item.watch_status == 'to-watch' %}Remove to-watch status{% else %}Mark to watch{% endif %}">To watch</button>
+              </form>
+              <form data-favorite-form class="absolute bottom-2 left-1/2 z-10 -translate-x-1/2 opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100" method="post" action="{% url 'video-favorite' item.id %}">
+                {% csrf_token %}
+                <button class="rounded-full bg-black/65 p-1.5 {% if item.is_fav %}text-amber-300{% else %}text-white{% endif %} hover:text-amber-300" type="submit" aria-label="{% if item.is_fav %}Remove from favorites{% else %}Add to favorites{% endif %}" title="{% if item.is_fav %}Remove from favorites{% else %}Add to favorites{% endif %}">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true" {% if item.is_fav %}fill="currentColor"{% else %}fill="none"{% endif %}><path stroke-linecap="round" stroke-linejoin="round" d="m12 3 2.75 5.57 6.15.9-4.45 4.34 1.05 6.13L12 17.05l-5.5 2.89 1.05-6.13L3.1 9.47l6.15-.9L12 3Z" /></svg>
+                </button>
+              </form>
+              <form data-delete-form data-confirm-delete="Delete “{{ item.title|escape }}” from the database and filesystem? This cannot be undone." class="absolute bottom-2 right-2 z-10 opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100" method="post" action="{% url 'video-delete' item.id %}">
+                {% csrf_token %}
+                <button class="bg-red-700/90 px-2 py-1 text-xs font-bold text-white hover:bg-red-600" type="submit" aria-label="Delete {{ item.title }}">Delete</button>
               </form>
             {% endif %}
           </div>
           <div class="pt-3">
-            <h2 class="line-clamp-2 text-base font-semibold leading-snug"><a class="hover:text-accent-light" href="{% url 'video-detail' item.id %}">{{ item.title }}</a></h2>
-            <a class="mt-1 block text-sm text-muted hover:text-ink" href="{% url 'channel-videos' item.channel_id %}">{{ item.channel_name }}</a>
+            <h2 class="truncate text-sm font-semibold leading-snug"><a class="hover:text-accent-light" title="{{ item.title }}" href="{% url 'video-detail' item.id %}">{{ item.title }}</a></h2>
+            <a class="mt-1 block truncate text-sm text-muted hover:text-ink" title="{{ item.channel.name }}" href="{% url 'channel-videos' item.channel_id %}">{{ item.channel.name }}</a>
             <p class="mt-1 text-xs text-subtle">
-              <span data-compact-count="{{ item.view_count }}">{{ item.view_count }}</span> views · {{ item.date|date:'M j, Y' }}
+              <span data-compact-count="{{ item.view_count }}">{{ item.view_count }}</span> views · {{ item.upload_date|date:'M j, Y' }}
             </p>
           </div>
         </article>

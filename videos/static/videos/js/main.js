@@ -43,12 +43,117 @@ function formatDuration(value) {
   return `${minutes}:${paddedSeconds}`;
 }
 
+async function postForm(form) {
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+    headers: { Accept: "application/json" },
+  });
+  const result = await response.json();
+  if (!response.ok) throw new Error(result.error || "The request failed.");
+  return result;
+}
+
 document.querySelectorAll("[data-compact-count]").forEach((element) => {
   element.textContent = compactCount(element.dataset.compactCount);
 });
 
 document.querySelectorAll("[data-video-duration]").forEach((element) => {
   element.textContent = formatDuration(element.dataset.videoDuration);
+});
+
+document.querySelectorAll("[data-favorite-form]").forEach((form) => {
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const button = form.querySelector("button[type='submit']");
+    if (!button || button.disabled) return;
+
+    button.disabled = true;
+    try {
+      const { favorited } = await postForm(form);
+      const label = favorited ? "Remove from favorites" : "Add to favorites";
+      button.setAttribute("aria-label", label);
+      button.title = label;
+      button.classList.toggle("text-amber-300", favorited);
+      button.querySelector("svg")?.setAttribute("fill", favorited ? "currentColor" : "none");
+      const text = button.querySelector("[data-favorite-label]");
+      if (text) text.textContent = favorited ? "Favorited" : "Favorite";
+
+      if (!favorited && form.dataset.removeOnUnfavorite) {
+        form.closest("[data-favorite-card]")?.remove();
+      }
+    } catch {
+      button.title = "Could not update favorite. Try again.";
+    } finally {
+      button.disabled = false;
+    }
+  });
+});
+
+document.querySelectorAll("[data-status-form]").forEach((form) => {
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const card = form.closest("[data-video-card]");
+    const statusForms = card?.querySelectorAll("[data-status-form]");
+    const buttons = statusForms?.length
+      ? [...statusForms].map((statusForm) => statusForm.querySelector("button[type='submit']"))
+      : [form.querySelector("button[type='submit']")];
+    if (!buttons[0] || buttons[0].disabled) return;
+    buttons.forEach((button) => { if (button) button.disabled = true; });
+
+    try {
+      const { status } = await postForm(form);
+      if (statusForms?.length) {
+        statusForms.forEach((statusForm) => {
+          const target = statusForm.dataset.statusTarget;
+          const active = status === target;
+          let statusInput = statusForm.querySelector("input[name='status']");
+          if (!statusInput) {
+            statusInput = document.createElement("input");
+            statusInput.type = "hidden";
+            statusInput.name = "status";
+            statusForm.append(statusInput);
+          }
+          statusInput.value = active ? "" : target;
+          statusForm.classList.toggle("opacity-0", !active);
+
+          const button = statusForm.querySelector("button[type='submit']");
+          button.textContent = target === "watched" && !active ? "Mark watched" : target === "watched" ? "Watched" : "To watch";
+          button.setAttribute("aria-label", active
+            ? `Remove ${target === "watched" ? "watched" : "to-watch"} status`
+            : target === "watched" ? "Mark watched" : "Mark to watch");
+        });
+      } else {
+        const select = form.querySelector("select[name='status']");
+        if (select) select.value = status;
+        const button = buttons[0];
+        button.textContent = "Saved";
+        setTimeout(() => { button.textContent = "Save"; }, 1500);
+      }
+    } catch (error) {
+      buttons[0].title = error.message;
+    } finally {
+      buttons.forEach((button) => { if (button) button.disabled = false; });
+    }
+  });
+});
+
+document.querySelectorAll("[data-delete-form]").forEach((form) => {
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!window.confirm(form.dataset.confirmDelete)) return;
+
+    const button = form.querySelector("button[type='submit']");
+    if (!button || button.disabled) return;
+    button.disabled = true;
+    try {
+      await postForm(form);
+      form.closest("[data-video-card]")?.remove();
+    } catch (error) {
+      button.title = error.message;
+      button.disabled = false;
+    }
+  });
 });
 
 const catalogSort = document.querySelector("#sort-catalog");

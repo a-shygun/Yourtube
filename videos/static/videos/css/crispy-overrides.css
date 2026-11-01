@@ -16,21 +16,4 @@ form label {
   font-weight: 600;
 }
 
-.profile-upload {
-  max-width: 34rem;
-}
-
-.profile-upload label {
-  text-align: left;
-}
-
-.profile-upload input[type="file"] {
-  display: block;
-  width: 100%;
-  margin-top: 0.5rem;
-  border: 1px solid var(--input-border) !important;
-  background: var(--surface-alt) !important;
-  padding: 0.6rem;
-  color: var(--ink) !important;
-}
 

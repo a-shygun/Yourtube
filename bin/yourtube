@@ -1,0 +1,40 @@
+#!/bin/zsh
+set -euo pipefail
+
+project_dir="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$project_dir"
+
+nginx_bin="$(command -v nginx)" || {
+  echo "Nginx is required. Install it with: brew install nginx" >&2
+  exit 1
+}
+
+.venv/bin/python manage.py migrate --noinput
+.venv/bin/python manage.py collectstatic --noinput
+.venv/bin/python manage.py sync_library
+
+mkdir -p var
+media_root="$(DJANGO_SETTINGS_MODULE=yourtube.settings .venv/bin/python -c 'from django.conf import settings; print(settings.DATA_ROOT)')"
+command ln -shf "$media_root" var/local-media
+
+nginx_config="$project_dir/nginx.conf"
+nginx_prefix="$project_dir/"
+"$nginx_bin" -t -c "$nginx_config" -p "$nginx_prefix"
+
+lan_ip="$(/usr/sbin/ipconfig getifaddr en0 2>/dev/null || /usr/sbin/ipconfig getifaddr en1 2>/dev/null || true)"
+echo "YourTube is available at http://127.0.0.1:8081/"
+if [[ -n "$lan_ip" ]]; then
+  echo "On your LAN: http://$lan_ip:8081/"
+fi
+
+(sleep 1 && open "http://127.0.0.1:8081/") >/dev/null 2>&1 &
+.venv/bin/python -m gunicorn yourtube.wsgi:application --workers 1 --bind 127.0.0.1:8001 &
+backend_pid=$!
+
+cleanup() {
+  kill "$backend_pid" 2>/dev/null || true
+  "$nginx_bin" -s quit -c "$nginx_config" -p "$nginx_prefix" 2>/dev/null || true
+}
+trap cleanup EXIT INT TERM
+
+"$nginx_bin" -g 'daemon off;' -c "$nginx_config" -p "$nginx_prefix"

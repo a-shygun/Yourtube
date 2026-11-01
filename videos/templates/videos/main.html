@@ -32,8 +32,8 @@
       }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{% static 'videos/css/site.css' %}" />
-    <script src="{% static 'videos/js/main.js' %}?v=15" defer></script>
+    <link rel="stylesheet" href="{% static 'videos/css/site.css' %}?v=profile-card-1" />
+    <script src="{% static 'videos/js/main.js' %}?v=19" defer></script>
     <title>
       {% block title %}
         YourTube
@@ -45,8 +45,8 @@
       <div class="mx-auto flex min-h-14 w-full max-w-[96rem] flex-wrap items-center gap-3 px-4 py-2 sm:flex-nowrap sm:gap-4">
         <a href="{% url 'home' %}" class="shrink-0 text-lg font-bold tracking-tight hover:text-accent">YourTube</a>
         <form method="get" action="{% url 'home' %}" role="search" class="order-3 flex w-full sm:order-none sm:mx-auto sm:max-w-2xl">
-          <label for="site-search" class="sr-only">Search videos and playlists</label>
-          <input id="site-search" name="q" type="search" value="{{ request.GET.q|default:'' }}" placeholder="Search videos and playlists" class="min-w-0 flex-1 border border-r-0 border-input-border bg-surface-alt px-4 py-1.5 text-sm text-ink outline-none placeholder:text-subtle focus:border-accent focus:ring-0" />
+          <label for="site-search" class="sr-only">Search videos and channels</label>
+          <input id="site-search" name="q" type="search" value="{{ request.GET.q|default:'' }}" placeholder="Search videos and channels" class="min-w-0 flex-1 border border-r-0 border-input-border bg-surface-alt px-4 py-1.5 text-sm text-ink outline-none placeholder:text-subtle focus:border-accent focus:ring-0" />
           <button type="submit" aria-label="Search" class="border border-input-border bg-surface-hover px-4 text-soft hover:bg-surface-hover focus:outline-none focus:ring-2 focus:ring-accent">
             <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
               <circle cx="10.8" cy="10.8" r="6.8"></circle>
@@ -66,7 +66,6 @@
               </button>
               <div id="account-menu-panel" class="absolute right-0 z-30 mt-2 w-52 border border-line p-2 text-sm shadow-xl" style="background-color: #121212" role="menu" aria-labelledby="account-menu-toggle" hidden>
                 <a class="block px-3 py-2" role="menuitem" href="{% url 'profile' %}">Profile</a>
-                <a class="block px-3 py-2" role="menuitem" href="{% url 'library-import' %}">Import</a>
                 <button id="theme-toggle" type="button" role="menuitemcheckbox" aria-checked="false" class="flex w-full items-center justify-between px-3 py-2 text-left">
                   <span>Light mode</span>
                   <span class="theme-switch" aria-hidden="true"><span class="theme-switch-knob"></span></span>
@@ -86,7 +85,8 @@
                 <path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"></path>
               </svg>
             </button>
-            <a class="hover:text-ink" href="{% url 'login' %}?next={{ request.get_full_path|urlencode }}">Log in</a>
+            {% url 'login' as login_url %}
+            <a class="hover:text-ink" href="{{ login_url }}{% if request.resolver_match.url_name == 'login' %}{% if request.GET.next and request.GET.next|slice:":7" != '/login/' %}?next={{ request.GET.next|urlencode }}{% endif %}{% elif request.resolver_match.url_name != 'register' %}?next={{ request.get_full_path|urlencode }}{% endif %}">Log in</a>
             <a class="hover:text-ink" href="{% url 'register' %}">Register</a>
           {% endif %}
         </nav>

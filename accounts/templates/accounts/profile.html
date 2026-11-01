@@ -1,55 +1,43 @@
 {% extends 'videos/main.html' %}
-{% load crispy_forms_tags static %}
+{% load static %}
 {% block title %}
   Profile · YourTube
 {% endblock %}
 {% block content %}
-  <div class="mx-auto max-w-6xl p-4">
-    <p class="mb-2 font-semibold text-accent">PROFILE</p>
-    <div class="grid gap-6 lg:grid-cols-2">
-      <section class="flex flex-col gap-4 border border-line bg-surface p-5 sm:flex-row">
-        <div class="h-36 w-36 shrink-0 self-center sm:h-auto sm:self-stretch">
-          {% if account.profile_image and account.profile_image.name != 'videos/img/default-avatar.svg' %}
-            <img class="h-full w-full border object-cover" src="{{ account.profile_image.url }}" alt="{{ user.username }} profile" />
-          {% elif account.image_url %}
-            <img class="h-full w-full border object-cover" src="{{ account.image_url }}" alt="{{ user.username }} profile" />
-          {% else %}
-            <img class="h-full w-full border object-cover" src="{% static 'videos/img/default-avatar.svg' %}" alt="{{ user.username }} profile" />
-          {% endif %}
-        </div>
-        <div class="flex-1">
-          <h1 class="text-2xl font-bold">{{ user.username }}</h1>
-          <p class="mt-1 text-sm text-subtle">Your activity on YourTube</p>
-          <form class="profile-upload mt-3 flex flex-wrap items-end gap-3" method="post" enctype="multipart/form-data">
+  <div class="profile-page">
+    <p class="profile-page-title">Profile</p>
+    <div class="grid gap-6">
+      <section class="profile-card">
+        {% if account.profile_image and account.profile_image.name != 'videos/img/default-avatar.svg' %}
+          <img class="profile-avatar" src="{{ account.profile_image.url }}" alt="{{ user.username }} profile" />
+        {% elif account.image_url %}
+          <img class="profile-avatar" src="{{ account.image_url }}" alt="{{ user.username }} profile" />
+        {% else %}
+          <img class="profile-avatar" src="{% static 'videos/img/default-avatar.svg' %}" alt="{{ user.username }} profile" />
+        {% endif %}
+        <div class="profile-details">
+          <h1 class="profile-username">{{ user.username }}</h1>
+          <p class="profile-subtitle">Your activity on YourTube</p>
+          <form class="profile-upload" method="post" enctype="multipart/form-data">
             {% csrf_token %}
-            <div class="flex-1">{{ form|crispy }}</div>
-            <button class="border bg-accent px-4 py-2 text-white hover:bg-accent-hover" type="submit">Update profile picture</button>
-            {% if account.profile_image and account.profile_image.name != 'videos/img/default-avatar.svg' %}
-              <button class="border px-4 py-2 text-soft hover:text-white" type="submit" name="action" value="remove_profile_image" formnovalidate>Remove profile picture</button>
-            {% endif %}
+            <div class="profile-file-field">
+              {{ form.profile_image.label_tag }}
+              {{ form.profile_image }}
+              {% for error in form.profile_image.errors %}<p class="profile-error">{{ error }}</p>{% endfor %}
+            </div>
+            <div class="profile-actions">
+              <button class="profile-button profile-button-primary" type="submit">Update picture</button>
+              {% if account.profile_image and account.profile_image.name != 'videos/img/default-avatar.svg' %}
+                <button class="profile-button" type="submit" name="action" value="remove_profile_image" formnovalidate>Remove picture</button>
+              {% endif %}
+            </div>
           </form>
         </div>
       </section>
 
       <section class="border border-line bg-surface p-5">
-        <h2 class="mb-3 text-lg font-bold">Your comments</h2>
-        <div class="divide-y divide-line">
-          {% for comment in user_comments %}
-            <article class="py-4">
-              <div class="flex flex-wrap items-baseline justify-between gap-2">
-                <a class="hover:text-accent-light" href="{% url 'video-detail' comment.video_id %}">{{ comment.video.title }}</a><time class="text-xs text-subtle" datetime="{{ comment.timestamp|date:'c' }}">{{ comment.timestamp|date:'M j, Y' }}</time>
-              </div>
-              <p class="mt-2 whitespace-pre-line text-sm text-soft">{{ comment.text }}</p>
-            </article>
-          {% empty %}
-            <p class="text-sm text-subtle">You haven’t commented on any videos.</p>
-          {% endfor %}
-        </div>
-      </section>
-
-      <section class="border border-line bg-surface p-5 lg:col-span-2">
-        <h2 class="mb-3 text-lg font-bold">Videos</h2>
-        {% include 'accounts/profile_video_list.html' with video_statuses=video_statuses empty_message='No videos saved yet.' %}
+        <h2 class="mb-3 text-lg font-bold">Favorite videos</h2>
+        {% include 'accounts/profile_video_list.html' with favorites=favorite_videos empty_message='You haven’t favorited any videos yet.' %}
       </section>
     </div>
   </div>

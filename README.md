@@ -13,7 +13,7 @@ YourTube is a local Django app for organizing, searching, and watching your own 
 
 ## Run YourTube locally
 
-Requirements: Python 3.12 or newer. Internet access is needed for remote YouTube embeds and thumbnails.
+Requirements: Python 3.12 or newer and nginx (`brew install nginx` on macOS). Internet access is needed for remote YouTube embeds and thumbnails.
 
 From the repository directory:
 
@@ -22,51 +22,49 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+./bin/yourtube
 ```
 
-Open <http://127.0.0.1:8000/> and register an account. The import page asks you to choose an existing media folder; YourTube does not create a video-library folder in the repository.
+Open <http://127.0.0.1:8081/> on the computer running YourTube and register an account. To use YourTube from another device on the same Wi-Fi/LAN, open `http://<computer-LAN-IP>:8081/` on that device (for example, `http://192.168.1.20:8081/`). Find the computer's LAN IP in its network settings. Allow inbound connections to port 8081 in the computer's firewall if prompted. Set `YOURTUBE_PORT` to another available port when running multiple web sites, for example `YOURTUBE_PORT=8082 ./bin/yourtube`. The internal Django port defaults to 8001 and can be changed with `YOURTUBE_DJANGO_PORT` if needed.
 
-## Import a media library
+YourTube uses the repository's `media/` folder by default. Add small demonstration videos there; an adjacent same-name image can be used as a thumbnail. To use another folder, set `DATA_ROOT` in `.env`. The launcher runs `sync_library` at startup to add new video files to the database. Nginx serves static files and media directly; profile pictures use a separate upload path. YourTube uses the browser’s native video controls.
 
-YourTube does not download media itself. Open **Import library** and use **Browse folders** to choose an existing folder on this computer; the selected path is saved for playback and future refreshes. Follow the yt-dlp command shown on that page to download videos into the folder, then click **Scan folder and refresh database**. Scanning cleans yt-dlp `.info.json` sidecars before updating the database. It does not move or delete video files.
+```env
+DATA_ROOT=/absolute/path/to/another/video/library
+```
 
-The importer scans nested folders for `.info.json` metadata files and updates videos, channels, playlists, tags, categories, and comments in the database. It matches each metadata file with video and thumbnail files that share its basename. Rerunning the import updates matching records and removes database videos whose metadata is no longer in the selected folder.
+Set `YOURTUBE_PORT` or `YOURTUBE_DJANGO_PORT` before starting the launcher to change the public or internal port. The launcher updates its private Nginx config for those values.
 
-### Expected media layout
+## Deploy on Render
 
-Keep each `.info.json` metadata file beside its matching video and thumbnail. The importer scans nested folders and accepts common video and thumbnail extensions. Metadata should use the yt-dlp `.info.json` format; YourTube only reads these files and does not create them.
+The included `render.yaml` targets Render's free web service plan and allows `yourtube.amirshygun.ir`. Add that domain to the service in the Render Dashboard and point its DNS CNAME to the `onrender.com` hostname Render assigns. Render creates the HTTPS certificate after DNS verification. The deployed app builds a fresh SQLite database and scans the repository's `media/` folder. Database changes and profile uploads use temporary storage and can disappear when Render restarts, spins down, or redeploys the service. Free services also spin down after 15 minutes without traffic and can take about a minute to start again. Large local databases and media folders are not uploaded unless committed to the repository. For persistent data, use a paid service with a persistent disk. Nginx is used by the local launcher; Django serves library files on Render.
+
+## Sync a media library
+
+YourTube does not download media. Put video files under `media/` or the folder set by `DATA_ROOT`; `sync_library` scans nested folders and adds files with supported video extensions. The filename becomes the video title, categories come from the `categories` list in the adjacent `.info.json` file, and a same-name image beside the video is used as its thumbnail when present. The command adds new videos and refreshes their categories when synced again.
 
 ```text
 Yourtube project/
 ├── manage.py
 ├── db.sqlite3
-├── docs/                         # screenshots, account images, and import logs
-└── .library_media_root           # stores your selected absolute media path
+├── .env                          # Optional DATA_ROOT override
+├── media/                        # Demo videos and optional thumbnails
+└── docs/                         # screenshots and account images
 
-Chosen media directory/           # chosen by the user; may be outside the project
-├── Video title - Channel/
+Media folder/
+├── Category/
 │   ├── Video title.mp4
-│   ├── Video title.info.json
-│   └── Video title.jpg
-└── Another video - Channel/
-    ├── Another video.webm
-    ├── Another video.info.json
-    └── Another video.webp
+│   └── Video title.jpg            # optional thumbnail
+└── Another video.webm
 ```
 
-There is no default media directory. Choose an existing folder that YourTube can read, such as a folder on an external drive.
-
-Avoid renaming the sidecar files independently. Their shared filename lets the importer match metadata, thumbnail, and video. A valid `.info.json` is required for a video to be added to the database.
+The default media directory is `media/`. Set `DATA_ROOT` in `.env` to use another existing folder. Run `python manage.py sync_library` to rescan after adding files; the local launcher runs this command automatically.
 
 ![YourTube video detail page](docs/screenshots/video-detail.png)
 
 ## Local data and backups
 
-`db.sqlite3` contains local accounts, profiles, comments, and watch status. The selected media directory contains existing videos, thumbnails, and metadata; it can be anywhere the computer running YourTube can read. Profile images and import logs are stored under `docs/`; the account images and import logs are excluded from Git. Back up the database, `docs/account_images/`, and selected media directory separately to preserve your data.
-
-YourTube saves the chosen path in the ignored `.library_media_root` file in the project root.
+`db.sqlite3` contains local accounts, profiles, comments, and watch status. The media folder contains videos and optional thumbnails; it can be anywhere the computer running YourTube can read. Profile images are stored under `docs/account_images/` and excluded from Git. Back up the database, `docs/account_images/`, and the `DATA_ROOT` folder separately to preserve your data.
 
 ## Screenshots
 

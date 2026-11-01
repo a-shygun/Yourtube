@@ -1,19 +1,22 @@
+{% load static %}
 <section class="grid grid-cols-1 gap-x-5 gap-y-9 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-  {% for item in video_statuses %}
-    {% with video=item.video %}
-      <article class="min-w-0">
+  {% for item in favorites %}
+    {% with video=item %}
+      <article class="min-w-0" data-favorite-card>
         <div class="group relative aspect-video overflow-hidden bg-surface-alt">
           <a class="absolute inset-0 block overflow-hidden" href="{% url 'video-detail' video.id %}">
-            <img class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src="{% url 'library-media' video.thumbnail_loc %}" alt="{{ video.title }} thumbnail" loading="lazy" />
-            <span class="video-duration-badge absolute bottom-2 right-2 bg-black/80 px-2 py-1 text-xs font-semibold" data-video-duration="{{ video.duration }}">{{ video.duration }}</span>
+            {% if video.thumbnail_loc %}
+              <img class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" src="{% url 'media' video.thumbnail_loc %}" alt="{{ video.title }} thumbnail" loading="lazy" />
+            {% else %}
+              <img class="h-full w-full object-cover" src="{% static 'videos/img/video-placeholder.svg' %}" alt="{{ video.title }} thumbnail" loading="lazy" />
+            {% endif %}
+            <span class="video-duration-badge absolute bottom-2 left-2 bg-black/80 px-2 py-1 text-xs font-semibold" data-video-duration="{{ video.duration }}">{{ video.duration }}</span>
           </a>
-          <form class="absolute left-2 top-2 z-10 {% if item.status != 'watched' %}opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100{% endif %}" method="post" action="{% url 'video-status' video.id %}">
-            {% csrf_token %}{% if item.status != 'watched' %}<input type="hidden" name="status" value="watched" />{% endif %}<input type="hidden" name="next" value="{{ request.get_full_path }}" />
-            <button class="bg-black/55 px-2 py-1 text-xs font-bold text-white hover:bg-black/75" type="submit" aria-label="{% if item.status == 'watched' %}Remove watched status{% else %}Mark watched{% endif %}">{% if item.status == 'watched' %}Watched{% else %}Mark watched{% endif %}</button>
-          </form>
-          <form class="absolute right-2 top-2 z-10 {% if item.status != 'to-watch' %}opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100{% endif %}" method="post" action="{% url 'video-status' video.id %}">
-            {% csrf_token %}{% if item.status != 'to-watch' %}<input type="hidden" name="status" value="to-watch" />{% endif %}<input type="hidden" name="next" value="{{ request.get_full_path }}" />
-            <button class="bg-black/55 px-2 py-1 text-xs font-bold text-white hover:bg-black/75" type="submit" aria-label="{% if item.status == 'to-watch' %}Remove to-watch status{% else %}Mark to watch{% endif %}">To watch</button>
+          <form data-favorite-form data-remove-on-unfavorite="true" class="absolute right-2 top-2 z-10 opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100" method="post" action="{% url 'video-favorite' video.id %}">
+            {% csrf_token %}
+            <button class="rounded-full bg-black/65 p-1.5 text-amber-300 hover:text-white" type="submit" aria-label="Remove {{ video.title }} from favorites" title="Remove from favorites">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true" fill="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m12 3 2.75 5.57 6.15.9-4.45 4.34 1.05 6.13L12 17.05l-5.5 2.89 1.05-6.13L3.1 9.47l6.15-.9L12 3Z" /></svg>
+            </button>
           </form>
         </div>
         <div class="pt-3">

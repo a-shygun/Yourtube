@@ -38,6 +38,82 @@
 .site-header { background-color: var(--paper); }
 .category-chip { background-color: var(--accent); color: #fff; }
 
+.profile-page {
+  width: min(100% - 2rem, 72rem);
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+.profile-page-title {
+  margin: 0 0 1rem;
+  color: var(--accent-light);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.profile-card {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 1.5rem;
+}
+
+.profile-avatar {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  border: 1px solid var(--line);
+  object-fit: cover;
+}
+
+.profile-details { min-width: 0; }
+.profile-username { margin: 0; font-size: 1.75rem; font-weight: 700; }
+.profile-subtitle { margin: .25rem 0 1.25rem; color: var(--subtle); }
+.profile-upload { display: grid; gap: 1rem; max-width: 34rem; }
+.profile-file-field { min-width: 0; }
+.profile-file-field label { display: block; margin-bottom: .4rem; color: var(--soft); font-weight: 600; }
+.profile-file-field input[type="file"] {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--input-border);
+  background: var(--surface-alt);
+  padding: .45rem;
+  color: var(--ink);
+  font-size: .9rem;
+}
+.profile-file-field input[type="file"]::file-selector-button {
+  margin-right: .65rem;
+  border: 0;
+  background: var(--surface-hover);
+  padding: .4rem .65rem;
+  color: var(--ink);
+  cursor: pointer;
+}
+.profile-actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+.profile-button {
+  min-height: 2.5rem;
+  border: 1px solid var(--line);
+  background: var(--surface-alt);
+  padding: .55rem .9rem;
+  color: var(--ink);
+  font-size: .9rem;
+  cursor: pointer;
+}
+.profile-button-primary { border-color: var(--accent); background: var(--accent); color: #fff; }
+.profile-error { margin: .4rem 0 0; color: #ff7b7b; font-size: .875rem; }
+
+@media (max-width: 560px) {
+  .profile-card { grid-template-columns: 1fr; gap: 1rem; padding: 1rem; }
+  .profile-avatar { width: 7rem; height: 7rem; }
+  .profile-username { font-size: 1.5rem; }
+}
+
 a:hover,
 button:hover {
   color: var(--hover-accent) !important;
