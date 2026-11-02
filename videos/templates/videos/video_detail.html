@@ -121,9 +121,6 @@
               <dt class="text-subtle">Resolution</dt><dd>{{ object.resolution }}</dd>
             </div>
           </dl>
-          {% if object.playlist %}
-            <a class="mt-5 block border border-line p-3 hover:bg-surface-alt" href="{% url 'playlist-detail' object.playlist_id %}"><span class="block text-xs text-subtle">Part of</span><strong class="mt-1 block">{{ object.playlist.name }}</strong></a>
-          {% endif %}
         </section>
         <section class="border border-line bg-surface p-5">
           <h2 class="mb-4 text-xs font-bold tracking-[0.16em] text-subtle">CATEGORIES</h2>

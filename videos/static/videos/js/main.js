@@ -279,3 +279,23 @@ if (accountMenu && accountMenuToggle && accountMenuPanel) {
   });
 }
 
+const playbackVideo = document.querySelector("video");
+if (playbackVideo) {
+  document.addEventListener("keydown", (event) => {
+    const target = event.target;
+    const isTyping = target instanceof HTMLElement && (
+      target.isContentEditable ||
+      ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName)
+    );
+    if (isTyping || event.altKey || event.ctrlKey || event.metaKey) return;
+
+    const offset = event.key === "ArrowRight" ? 15 : event.key === "ArrowLeft" ? -15 : 0;
+    if (!offset) return;
+
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    const duration = Number.isFinite(playbackVideo.duration) ? playbackVideo.duration : Infinity;
+    playbackVideo.currentTime = Math.max(0, Math.min(duration, playbackVideo.currentTime + offset));
+  }, { capture: true });
+}
+

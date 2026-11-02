@@ -28,14 +28,5 @@
       </nav>
     </details>
 
-    <details>
-      <summary class="cursor-pointer list-none px-3 text-xs font-bold uppercase tracking-wider text-subtle">Playlists</summary>
-      <nav class="ml-3 mt-2 max-h-64 space-y-1 overflow-y-auto border-l border-line pl-2 text-sm scrollbar-hidden" aria-label="Playlists">
-        {% for playlist in sidebar_playlists %}
-          <a class="block truncate px-3 py-2 text-muted hover:bg-surface-hover" href="{% url 'playlist-detail' playlist.id %}">{{ playlist.name }}</a>
-        {% empty %}<p class="px-3 py-2 text-xs text-subtle">No playlists yet.</p>{% endfor %}
-      </nav>
-    </details>
-
   </div>
 </aside>

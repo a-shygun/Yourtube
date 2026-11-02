@@ -1,5 +1,6 @@
 import mimetypes
 import shutil
+from pathlib import Path
 from uuid import uuid4
 
 from django.conf import settings
@@ -14,13 +15,13 @@ from django.views.decorators.http import require_POST
 from django.views.generic import DetailView, ListView
 from django.views.static import serve
 
-from .models import Category, Channel, Comment, Playlist, Video
+from .models import Category, Channel, Comment, Video
 
 
 def serve_media(request, path):
     range_header = request.headers.get("Range")
     if range_header and range_header.startswith("bytes="):
-        file_path = safe_join(settings.DATA_ROOT, path)
+        file_path = Path(safe_join(settings.DATA_ROOT, path))
         file_size = file_path.stat().st_size
         start_text, end_text = range_header.removeprefix("bytes=").split("-", 1)
         if start_text:
@@ -105,7 +106,6 @@ class VideoListView(ListView):
             sidebar_channels=Channel.objects.filter(video__isnull=False)
             .distinct()
             .order_by("name"),
-            sidebar_playlists=Playlist.objects.all().order_by("name"),
         )
         return context
 
@@ -130,17 +130,6 @@ class ChannelVideosView(VideoListView):
         return Video.objects.filter(channel=channel)
 
 
-class PlaylistDetailView(DetailView):
-    model = Playlist
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["video_list"] = self.object.video_set.select_related(
-            "channel"
-        ).order_by("position_in_playlist", "pk")
-        return context
-
-
 class VideoDetailView(DetailView):
     model = Video
 
@@ -148,7 +137,7 @@ class VideoDetailView(DetailView):
         return (
             super()
             .get_queryset()
-            .select_related("channel", "playlist")
+            .select_related("channel")
             .prefetch_related("categories")
         )
 

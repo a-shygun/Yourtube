@@ -1,6 +1,5 @@
 from django.urls import path
 from .views import (
-    PlaylistDetailView,
     VideoListView,
     CategoryVideosView,
     ChannelVideosView,
@@ -17,8 +16,6 @@ urlpatterns = [
     path("category/<int:pk>/", CategoryVideosView.as_view(), name="category-videos"),
     path("channel/<int:pk>/", ChannelVideosView.as_view(), name="channel-videos"),
     path("video/<int:pk>/", VideoDetailView.as_view(), name="video-detail"),
-    path("playlist/<int:pk>/", PlaylistDetailView.as_view(), name="playlist-detail"),
-    
     path("media/<path:path>", serve_media, name="media"),
     path("video/<int:pk>/status/", set_video_status, name="video-status"),
     path("video/<int:pk>/favorite/", toggle_video_favorite, name="video-favorite"),
