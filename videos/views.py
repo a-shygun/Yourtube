@@ -6,7 +6,7 @@ from uuid import uuid4
 from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Prefetch, Q
+from django.db.models import Count, Prefetch, Q, Sum
 from django.http import HttpResponse, JsonResponse, StreamingHttpResponse
 from django.shortcuts import get_object_or_404, redirect
 from django.utils import timezone
@@ -101,6 +101,7 @@ class VideoListView(ListView):
             listing_type=self.listing_type,
             listing_id=self.listing_id,
             sidebar_categories=Category.objects.filter(video__isnull=False)
+            .filter(Q(owner__isnull=True) | Q(owner=self.request.user if self.request.user.is_authenticated else None))
             .distinct()
             .order_by("name"),
             sidebar_channels=Channel.objects.filter(video__isnull=False)
@@ -114,10 +115,62 @@ class CategoryVideosView(VideoListView):
     listing_type = "category"
 
     def get_listing_queryset(self):
-        category = get_object_or_404(Category, pk=self.kwargs["pk"])
+        visibility = Q(owner__isnull=True)
+        if self.request.user.is_authenticated:
+            visibility |= Q(owner=self.request.user)
+        category = get_object_or_404(Category, visibility, pk=self.kwargs["pk"])
         self.listing_title = category.name
         self.listing_id = category.pk
+        self.category = category
         return Video.objects.filter(categories=category).distinct()
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        videos = self.category.video_set.all()
+        context["category_stats"] = videos.aggregate(
+            video_count=Count("pk"), total_seconds=Sum("duration"),
+            watched_count=Count("pk", filter=Q(watch_status="watched")),
+            watched_seconds=Sum("duration", filter=Q(watch_status="watched")),
+        )
+        context["custom_category"] = self.category.owner_id is not None
+        return context
+
+
+@login_required(login_url="login")
+@require_POST
+def index_search_category(request):
+    name = request.POST.get("q", "").strip()
+    if not name:
+        messages.error(request, "Enter a name for this category.")
+        return redirect("home")
+    name = name[:100]
+    query = name
+    if not query:
+        messages.error(request, "Search for a word before indexing a category.")
+        return redirect("home")
+    category, created = Category.objects.get_or_create(owner=request.user, name=name)
+    matching = Video.objects.filter(Q(title__icontains=query) | Q(channel__name__icontains=query))
+    category.video_set.set(matching)
+    messages.success(request, f'{"Created" if created else "Updated"} “{name}” with {matching.count()} videos.')
+    return redirect("category-videos", pk=category.pk)
+
+
+@login_required(login_url="login")
+@require_POST
+def delete_user_category(request, pk):
+    category = get_object_or_404(Category, pk=pk, owner=request.user)
+    category.delete()
+    messages.success(request, "Category deleted. Your videos and files were not changed.")
+    return redirect("home")
+
+
+@login_required(login_url="login")
+@require_POST
+def remove_video_from_category(request, pk, video_pk):
+    category = get_object_or_404(Category, pk=pk, owner=request.user)
+    category.video_set.remove(get_object_or_404(Video, pk=video_pk))
+    messages.success(request, "Video removed from this category.")
+    return redirect("category-videos", pk=category.pk)
 
 
 class ChannelVideosView(VideoListView):

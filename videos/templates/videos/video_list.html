@@ -57,6 +57,20 @@
       {% endif %}
     </section>
 
+    {% if listing_type == 'category' and category_stats %}
+      <section class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4" aria-label="Category statistics">
+        <div class="border border-line bg-surface p-4"><p class="text-xs font-bold uppercase tracking-wider text-subtle">Videos</p><p class="mt-1 text-2xl font-bold">{{ category_stats.video_count }}</p></div>
+        <div class="border border-line bg-surface p-4"><p class="text-xs font-bold uppercase tracking-wider text-subtle">Content hours</p><p class="mt-1 text-2xl font-bold" data-hours="{{ category_stats.total_seconds|default:0 }}">{{ category_stats.total_seconds|default:0 }}</p></div>
+        <div class="border border-line bg-surface p-4"><p class="text-xs font-bold uppercase tracking-wider text-subtle">Watched</p><p class="mt-1 text-2xl font-bold">{{ category_stats.watched_count }}</p></div>
+        <div class="border border-line bg-surface p-4"><p class="text-xs font-bold uppercase tracking-wider text-subtle">Hours watched</p><p class="mt-1 text-2xl font-bold" data-hours="{{ category_stats.watched_seconds|default:0 }}">{{ category_stats.watched_seconds|default:0 }}</p></div>
+      </section>
+      {% if custom_category and user.is_authenticated %}
+        <div class="mb-6 flex justify-end">
+          <form method="post" action="{% url 'category-delete' listing_id %}" onsubmit="return confirm('Delete this category? Videos and files will remain in your library.');">{% csrf_token %}<button class="border border-red-800 px-3 py-2 text-sm font-semibold text-red-300 hover:bg-red-950" type="submit">Delete category</button></form>
+        </div>
+      {% endif %}
+    {% endif %}
+
     <section class="grid grid-cols-1 gap-x-5 gap-y-9 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {% for item in object_list %}
         <article class="min-w-0" data-video-card>
@@ -70,6 +84,9 @@
               <span class="video-duration-badge absolute bottom-2 left-2 bg-black/80 px-2 py-1 text-xs font-semibold" data-video-duration="{{ item.duration }}">{{ item.duration }}</span>
             </a>
             {% if user.is_authenticated %}
+              {% if custom_category %}
+                <form class="absolute bottom-2 left-2 z-10" method="post" action="{% url 'category-video-remove' listing_id item.id %}">{% csrf_token %}<button class="bg-black/75 px-2 py-1 text-xs font-bold text-white hover:bg-black" type="submit">Remove</button></form>
+              {% endif %}
               <form data-status-form data-status-target="watched" class="absolute left-2 top-2 z-10 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100 {% if item.watch_status != 'watched' %}opacity-0{% endif %}" method="post" action="{% url 'video-status' item.id %}">
                 {% csrf_token %}{% if item.watch_status != 'watched' %}<input type="hidden" name="status" value="watched" />{% endif %}
                 <button class="bg-black/55 px-2 py-1 text-xs font-bold text-white hover:bg-black/75" type="submit" aria-label="{% if item.watch_status == 'watched' %}Remove watched status{% else %}Mark watched{% endif %}">{% if item.watch_status == 'watched' %}Watched{% else %}Mark watched{% endif %}</button>

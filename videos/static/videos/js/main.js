@@ -62,6 +62,11 @@ document.querySelectorAll("[data-video-duration]").forEach((element) => {
   element.textContent = formatDuration(element.dataset.videoDuration);
 });
 
+document.querySelectorAll("[data-hours]").forEach((element) => {
+  const seconds = Number(element.dataset.hours);
+  element.textContent = `${(seconds / 3600).toFixed(1)} h`;
+});
+
 document.querySelectorAll("[data-favorite-form]").forEach((form) => {
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -123,6 +128,19 @@ document.querySelectorAll("[data-status-form]").forEach((form) => {
             ? `Remove ${target === "watched" ? "watched" : "to-watch"} status`
             : target === "watched" ? "Mark watched" : "Mark to watch");
         });
+      } else if (form.closest("[data-detail-status-group]")) {
+        const group = form.closest("[data-detail-status-group]");
+        group.querySelectorAll("[data-status-form]").forEach((statusForm) => {
+          const target = statusForm.dataset.statusTarget;
+          const active = status === target;
+          statusForm.querySelector("input[name='status']").value = active ? "none" : target;
+          const button = statusForm.querySelector("button[type='submit']");
+          button.setAttribute("aria-pressed", String(active));
+          button.classList.toggle("border-accent", active);
+          button.classList.toggle("bg-accent", active);
+          button.classList.toggle("text-white", active);
+          button.classList.toggle("border-input-border", !active);
+        });
       } else {
         const select = form.querySelector("select[name='status']");
         if (select) select.value = status;
@@ -158,6 +176,11 @@ document.querySelectorAll("[data-delete-form]").forEach((form) => {
 
 const catalogSort = document.querySelector("#sort-catalog");
 catalogSort?.addEventListener("change", () => catalogSort.form?.requestSubmit());
+
+document.querySelector("[data-site-search]")?.addEventListener("submit", (event) => {
+  const token = event.currentTarget.querySelector("input[name='csrfmiddlewaretoken']");
+  if (token) token.disabled = event.submitter?.name !== "index_category";
+});
 
 const catalogSidebar = document.querySelector("#catalog-sidebar");
 const catalogSidebarToggle = catalogSidebar?.querySelector("[data-catalog-sidebar-toggle]");

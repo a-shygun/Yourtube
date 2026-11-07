@@ -6,8 +6,7 @@
 {% block content %}
   {% with comments_count=object.comment_set.count %}
   <div class="mx-auto w-full max-w-[96rem] px-4 py-8 sm:py-10">
-    <a class="text-sm text-muted hover:text-ink" href="{% url 'home' %}">← Back to discover</a>
-    <article class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
+    <article class="grid gap-6">
       <div class="min-w-0">
         <div class="aspect-video overflow-hidden bg-black">
           <video class="h-full w-full" controls playsinline preload="metadata" {% if object.thumbnail_loc %}poster="{% url 'media' object.thumbnail_loc %}"{% else %}poster="{% static 'videos/img/video-placeholder.svg' %}"{% endif %}>
@@ -25,16 +24,16 @@
             </div>
             <div class="flex flex-wrap gap-2">
               {% if user.is_authenticated %}
-                <form data-status-form class="flex items-center gap-2" method="post" action="{% url 'video-status' object.pk %}">
-                  {% csrf_token %}
-                  <label class="sr-only" for="video-status">Video status</label>
-                  <select id="video-status" name="status" class="border border-input-border bg-surface-alt px-3 py-2 text-sm text-ink">
-                    <option value="none" {% if video_status == 'none' %}selected{% endif %}>None</option>
-                    <option value="watched" {% if video_status == 'watched' %}selected{% endif %}>Watched</option>
-                    <option value="to-watch" {% if video_status == 'to-watch' %}selected{% endif %}>To watch</option>
-                  </select>
-                  <button class="border border-input-border px-4 py-2 text-sm font-semibold hover:bg-surface-hover" type="submit">Save</button>
-                </form>
+                <div class="flex flex-wrap gap-2" data-detail-status-group>
+                  <form data-status-form data-status-target="watched" method="post" action="{% url 'video-status' object.pk %}">
+                    {% csrf_token %}<input type="hidden" name="status" value="{% if video_status == 'watched' %}none{% else %}watched{% endif %}" />
+                    <button class="border px-4 py-2 text-sm font-semibold hover:bg-surface-hover {% if video_status == 'watched' %}border-accent bg-accent text-white{% else %}border-input-border{% endif %}" type="submit" aria-pressed="{% if video_status == 'watched' %}true{% else %}false{% endif %}">Watched</button>
+                  </form>
+                  <form data-status-form data-status-target="to-watch" method="post" action="{% url 'video-status' object.pk %}">
+                    {% csrf_token %}<input type="hidden" name="status" value="{% if video_status == 'to-watch' %}none{% else %}to-watch{% endif %}" />
+                    <button class="border px-4 py-2 text-sm font-semibold hover:bg-surface-hover {% if video_status == 'to-watch' %}border-accent bg-accent text-white{% else %}border-input-border{% endif %}" type="submit" aria-pressed="{% if video_status == 'to-watch' %}true{% else %}false{% endif %}">To watch</button>
+                  </form>
+                </div>
                 <form data-favorite-form method="post" action="{% url 'video-favorite' object.pk %}">
                   {% csrf_token %}
                   <button class="inline-flex items-center gap-2 border border-input-border px-3 py-2 text-sm font-semibold {% if video_favorite %}text-amber-300{% else %}text-ink{% endif %} hover:bg-surface-hover" type="submit" aria-label="{% if video_favorite %}Remove from favorites{% else %}Add to favorites{% endif %}" data-favorited="{{ video_favorite|yesno:'true,false' }}">
@@ -53,6 +52,22 @@
             </section>
           {% endif %}
         </div>
+        <aside class="grid gap-4 sm:grid-cols-2">
+          <section class="border border-line bg-surface p-5">
+            <h2 class="mb-4 text-xs font-bold tracking-[0.16em] text-subtle">VIDEO DETAILS</h2>
+            <dl class="space-y-3 text-sm">
+              <div class="flex justify-between gap-3"><dt class="text-subtle">Duration</dt><dd data-video-duration="{{ object.duration }}">{{ object.duration }} sec</dd></div>
+              <div class="flex justify-between gap-3"><dt class="text-subtle">Comments</dt><dd>{{ comments_count }}</dd></div>
+              <div class="flex justify-between gap-3"><dt class="text-subtle">Resolution</dt><dd>{{ object.resolution }}</dd></div>
+            </dl>
+          </section>
+          <section class="border border-line bg-surface p-5">
+            <h2 class="mb-4 text-xs font-bold tracking-[0.16em] text-subtle">CATEGORIES</h2>
+            <div class="flex flex-wrap gap-2">
+              {% for category in object.categories.all %}<span class="category-chip inline-block px-3 py-1 text-xs font-semibold">{{ category.name }}</span>{% empty %}<span class="text-xs text-subtle">No categories</span>{% endfor %}
+            </div>
+          </section>
+        </aside>
         <section class="mt-8 border-t border-line pt-7">
           <div class="mb-5 flex items-end justify-between">
             <div>
@@ -107,33 +122,6 @@
           {% endif %}
         </section>
       </div>
-      <aside class="h-fit space-y-4">
-        <section class="border border-line bg-surface p-5">
-          <h2 class="mb-4 text-xs font-bold tracking-[0.16em] text-subtle">VIDEO DETAILS</h2>
-          <dl class="space-y-3 text-sm">
-            <div class="flex justify-between gap-3">
-              <dt class="text-subtle">Duration</dt><dd data-video-duration="{{ object.duration }}">{{ object.duration }} sec</dd>
-            </div>
-            <div class="flex justify-between gap-3">
-              <dt class="text-subtle">Comments</dt><dd>{{ comments_count }}</dd>
-            </div>
-            <div class="flex justify-between gap-3">
-              <dt class="text-subtle">Resolution</dt><dd>{{ object.resolution }}</dd>
-            </div>
-          </dl>
-        </section>
-        <section class="border border-line bg-surface p-5">
-          <h2 class="mb-4 text-xs font-bold tracking-[0.16em] text-subtle">CATEGORIES</h2>
-          <h3 class="mb-2 text-sm font-semibold">Categories</h3>
-          <div class="mb-4 flex flex-wrap gap-2">
-            {% for category in object.categories.all %}
-              <span class="category-chip inline-block px-3 py-1 text-xs font-semibold">{{ category.name }}</span>
-            {% empty %}
-              <span class="text-xs text-subtle">No categories</span>
-            {% endfor %}
-          </div>
-        </section>
-      </aside>
     </article>
   </div>
   {% endwith %}

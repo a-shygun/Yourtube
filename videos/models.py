@@ -14,7 +14,20 @@ class Channel(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=100)
+    owner = models.ForeignKey(
+        User, on_delete=models.CASCADE, null=True, blank=True, related_name="video_categories"
+    )
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=("name",), condition=models.Q(owner__isnull=True), name="unique_library_category_name"
+            ),
+            models.UniqueConstraint(
+                fields=("owner", "name"), condition=models.Q(owner__isnull=False), name="unique_user_category_name"
+            ),
+        ]
 
     def __str__(self):
         return self.name

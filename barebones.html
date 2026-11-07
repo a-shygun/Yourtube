@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YourTube</title>
+  </head>
+  <body>
+    <header>
+      <a href="/">YourTube</a>
+
+      <form action="/" method="get" role="search">
+        <label for="search">Search videos</label>
+        <input id="search" name="q" type="search" placeholder="Search videos and channels">
+        <button type="submit">Search</button>
+        <button type="button">Index</button>
+      </form>
+
+      <nav aria-label="Account">
+        <a href="/login/">Log in</a>
+        <a href="/register/">Register</a>
+      </nav>
+    </header>
+
+    <main>
+      <aside aria-label="Library navigation">
+        <nav aria-label="Main sections">
+          <h2>Library</h2>
+          <ul>
+            <li><a href="/">Discover</a></li>
+          </ul>
+        </nav>
+
+        <section aria-labelledby="categories-heading">
+          <h2 id="categories-heading">Categories</h2>
+          <ul>
+            <li><a href="#">Example category</a></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="channels-heading">
+          <h2 id="channels-heading">Channels</h2>
+          <ul>
+            <li><a href="#">Example channel</a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <section aria-labelledby="page-heading">
+        <header>
+          <p>Discover</p>
+          <h1 id="page-heading">Videos</h1>
+          <p>Browse videos from your library.</p>
+
+          <form action="/" method="get">
+            <label for="sort">Sort videos</label>
+            <select id="sort" name="sort">
+              <option value="latest">Latest</option>
+              <option value="oldest">Oldest</option>
+              <option value="popular">Most popular</option>
+              <option value="shortest">Shortest first</option>
+              <option value="longest">Longest first</option>
+            </select>
+          </form>
+        </header>
+
+        <ul aria-label="Videos">
+          <li>
+            <article>
+              <a href="#">
+                <img src="" alt="Video thumbnail">
+                <h2>Example video title</h2>
+              </a>
+              <p><a href="#">Example channel</a></p>
+              <p>10:24 · 1,234 views</p>
+              <button type="button">Mark watched</button>
+              <button type="button">Add to favorites</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <a href="#">
+                <img src="" alt="Video thumbnail">
+                <h2>Another example video</h2>
+              </a>
+              <p><a href="#">Another channel</a></p>
+              <p>4:18 · 567 views</p>
+              <button type="button">Mark watched</button>
+              <button type="button">Add to favorites</button>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>YourTube</p>
+    </footer>
+  </body>
+</html>

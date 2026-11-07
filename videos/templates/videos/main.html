@@ -44,7 +44,7 @@
     <header class="site-header sticky top-0 z-20 border-b border-line">
       <div class="mx-auto flex min-h-14 w-full max-w-[96rem] flex-wrap items-center gap-3 px-4 py-2 sm:flex-nowrap sm:gap-4">
         <a href="{% url 'home' %}" class="shrink-0 text-lg font-bold tracking-tight hover:text-accent">YourTube</a>
-        <form method="get" action="{% url 'home' %}" role="search" class="order-3 flex w-full sm:order-none sm:mx-auto sm:max-w-2xl">
+        <form method="get" action="{% url 'home' %}" role="search" data-site-search class="order-3 flex w-full sm:order-none sm:mx-auto sm:max-w-2xl">
           <label for="site-search" class="sr-only">Search videos and channels</label>
           <input id="site-search" name="q" type="search" value="{{ request.GET.q|default:'' }}" placeholder="Search videos and channels" class="min-w-0 flex-1 border border-r-0 border-input-border bg-surface-alt px-4 py-1.5 text-sm text-ink outline-none placeholder:text-subtle focus:border-accent focus:ring-0" />
           <button type="submit" aria-label="Search" class="border border-input-border bg-surface-hover px-4 text-soft hover:bg-surface-hover focus:outline-none focus:ring-2 focus:ring-accent">
@@ -53,6 +53,10 @@
               <path d="m16 16 4.5 4.5"></path>
             </svg>
           </button>
+          {% if user.is_authenticated %}
+            {% csrf_token %}
+            <button type="submit" name="index_category" value="1" formmethod="post" formaction="{% url 'category-index' %}" class="border border-l-0 border-input-border bg-accent px-4 text-sm font-bold text-white hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-accent">Index</button>
+          {% endif %}
         </form>
         <nav class="ml-auto flex min-w-0 max-w-full flex-wrap items-center justify-end gap-x-2.5 gap-y-2 text-xs font-bold uppercase tracking-wider text-muted sm:ml-0 sm:flex-nowrap sm:gap-3">
           {% if user.is_authenticated %}
